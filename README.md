@@ -1,11 +1,26 @@
 # OneSky Platform API
-===================
 
 OneSky Platform API provides programmatic access to OneSky's platform management.
 
 ## Endpoints
 
 #### Feedback Resources
+- <code>GET</code> [feedbacks]()
+- <code>GET</code> [feedback/:id]()
+- <code>POST</code> [feedback]()
+- <code>POST</code> [feedback/:id]()
+
+#### Feedback Block Resources
+- <code>GET</code> [feedback/blocks]()
+- <code>GET</code> [feedback/block/:id]()
+- <code>POST</code> [feedback/block]()
+- <code>POST</code> [feedback/block/:id]()
+
+#### Feedback String Resources
+- <code>GET</code> [feedback/strings]()
+- <code>GET</code> [feedback/string/:id]()
+- <code>POST</code> [feedback/string]()
+- <code>POST</code> [feedback/string/:id]()
 
 ## Authentication
 
