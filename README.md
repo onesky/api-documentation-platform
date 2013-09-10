@@ -2,44 +2,31 @@
 
 OneSky Platform API provides programmatic access to OneSky's platform management.
 
-## Endpoints
+## Resources
 
 #### Feedback Resources
-- <code>GET</code> [feedbacks]()
-- <code>GET</code> [feedback/:id]()
-- <code>POST</code> [feedback]()
-- <code>POST</code> [feedback/:id]()
+- `GET`  [feedback]()
+- `GET`  [feedback/:id]()
+- `POST` [feedback]()
+- `POST` [feedback/:id]()
 
 #### Feedback Block Resources
-- <code>GET</code> [feedback/blocks]()
-- <code>GET</code> [feedback/block/:id]()
-- <code>POST</code> [feedback/block]()
-- <code>POST</code> [feedback/block/:id]()
-
-#### Feedback String Resources
-- <code>GET</code> [feedback/strings]()
-- <code>GET</code> [feedback/string/:id]()
-- <code>POST</code> [feedback/string]()
-- <code>POST</code> [feedback/string/:id]()
+- `GET`  [feedback/block]()
+- `GET`  [feedback/block/:id]()
+- `POST` [feedback/block]()
+- `POST` [feedback/block/:id]()
 
 ## Authentication
 
-All of the endpoints require you to do authentication. You will have to find your own API key and API secret. First login to [oneskyapp](http://www.oneksyapp.com) and find the API key and secret in **Site Settings** under **API Keys & Usage**.
+All of the request require you to do authentication. Please refer [Authenticaion](/reference/authentication.md) page.
 
-#### Parameters
-- string `api_key`
-  > Your own API key
+## Sorting
 
-- string `api_secret`
-  > Your own API secret
+Sorting of list request. Please refer [Sorting](/reference/sorting.md) page.
 
-- int `timestamp`
-  > Current unix timestamp
+## Pagination
 
-- string `dev_hash`
-  > Calculate with `api_secret` and `timestamp`
-  >
-  > Formula: `md5(concatenate(<timestamp>, <api_secret>))`
+Pagination of list request. Please refer [Pagination](/reference/pagination.md) page.
 
 ## Request
 We accept request data in JSON format. Please specify request header with `content-type: application/json` and encode the data in JSON format.
@@ -50,8 +37,6 @@ SSL is applied to protect all request data. Make sure you are using https to ini
 Successful request will response with either `200` or `201` status code togehter with response data if there is. When there is a new record created, `201 Created` will be used. Otherwise, `200 OK` will apply.
 
 Failure request will response with an error status code together with an error message:
-```
-{'code': 400, 'message': 'Your request cannot be processed'}
-```
+`{'code': 400, 'message': 'Your request cannot be processed'}`
 
 Currently, we only support JSON data format in response.
