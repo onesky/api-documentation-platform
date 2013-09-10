@@ -22,7 +22,7 @@ Returns a listing of feedback blocks in the platform.
     "feedback_blocks": [
         {
             "id":"6789",
-            "created_at":"2013-03-03T03:03:03+0000".
+            "created_at":"2013-03-03T03:03:03+0000",
             "created_at_timestamp":1362301383,
             "category":"typo",
             "type":"string",
@@ -33,11 +33,11 @@ Returns a listing of feedback blocks in the platform.
         },
         {
             "id":"7890",
-            "created_at":"2013-03-03T03:03:03+0000".
+            "created_at":"2013-03-03T03:03:03+0000",
             "created_at_timestamp":1362301383,
             "category":"format",
             "type":"non-textual",
-            "ridx":"2"
+            "ridx":"2",
             "comment":"improper format",
             "suggestion":"shouldn't use underscore",
             "status":"new"

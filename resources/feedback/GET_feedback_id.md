@@ -20,13 +20,13 @@ None
 {
     "feedback": {
         "id":"123",
-        "created_at":"2013-03-03T03:03:03+0000".
+        "created_at":"2013-03-03T03:03:03+0000",
         "created_at_timestamp":1328475945,
         "url":"http://www.oneskyapp.com",
-        "locale":"ja_JP".
+        "locale":"ja_JP",
         "screenshot_url":"<screen shot url>",
         "submitter_user_type":"employee",
-        "submitter_email:"contact@oneskyapp.com",
+        "submitter_email":"contact@oneskyapp.com",
         "comment":"onesky is good",
         "status":"in-progress",
         "blocks": [

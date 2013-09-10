@@ -20,31 +20,31 @@ Returns a listing of feedbacks in the platform.
 ``` json
 {
     "feedbacks": [
-        (
+        {
             "id":"123",
-            "created_at":"2013-03-03T03:03:03+0000".
-            "created_at_timestamp":1362301383,
+            "created_at":"2013-03-03T03:03:03+0000",
+            "created_at_timestamp":1328475945,
             "url":"http://www.oneskyapp.com",
-            "locale":"ja_JP".
+            "locale":"ja_JP",
             "screenshot_url":"<screen shot url>",
             "submitter_user_type":"employee",
-            "submitter_email:"contact@oneskyapp.com",
+            "submitter_email":"contact@oneskyapp.com",
             "comment":"onesky is good",
             "status":"in-progress",
             "blocks": [
                 {"id":"1"},
-                {"id":"2"},
+                {"id":"2"}
             ]
         },
-        (
+        {
             "id":"456",
-            "created_at":"2013-03-04T04:04:04+0000".
+            "created_at":"2013-03-04T04:04:04+0000",
             "created_at_timestamp":1365066244,
             "url":"http://www.oneskyapp.com",
-            "locale":"zh_CN".
+            "locale":"zh_CN",
             "screenshot_url":"<screen shot url>",
             "submitter_user_type":"proofreader",
-            "submitter_email:"contact@oneskyapp.com",
+            "submitter_email":"contact@oneskyapp.com",
             "comment":"I love onesky",
             "status":"finished",
             "blocks": [

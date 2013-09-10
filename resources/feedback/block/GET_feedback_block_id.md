@@ -20,7 +20,7 @@ None
 {
     "feedback_block": {
         "id":"6789",
-        "created_at":"2013-03-04T04:04:04+0000".
+        "created_at":"2013-03-04T04:04:04+0000",
         "created_at_timestamp":1365066244,
         "category":"typo",
         "type":"string",
