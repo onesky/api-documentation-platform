@@ -2,31 +2,35 @@
 
 OneSky Platform API provides programmatic access to OneSky's platform management.
 
-## Resources
+## Endpoints
 
 #### Feedback Resources
-- `GET`  [feedback](/resources/feedback.md#list-of-feedbacks)
-- `GET`  [feedback/:id](/resources/feedback.md#feedback)
-- `POST` [feedback](/resources/feedback.md#create-feedback)
-- `POST` [feedback/:id](/resources/feedback.md#update-feedback)
+- `GET`  [feedback](/resources/feedback/GET_feedback.md)
+- `GET`  [feedback/:id](/resources/feedback/GET_feedback_id.md)
+- `POST` [feedback](/resources/feedback/POST_feedback.md)
+- `POST` [feedback/:id](/resources/feedback/POST_feedback_id.md)
 
 #### Feedback Block Resources
-- `GET`  [feedback/block](/resources/feedback_block.md#list-of-feedback-blocks)
-- `GET`  [feedback/block/:id](/resources/feedback_block.md#feedback-blocks)
-- `POST` [feedback/block](/resources/feedback_block.md#create-feedback-blocks)
-- `POST` [feedback/block/:id](/resources/feedback_block.md#update-feedback-blocks)
+- `GET`  [feedback/:feedback_id/block](/resources/feedback/block/GET_feedback_block.md)
+- `GET`  [feedback/:feedback_id/block/:id](/resources/feedback/block/GET_feedback_block_id.md)
+- `POST` [feedback/:feedback_id/block](/resources/feedback/block/POST_feedback_block.md)
+- `POST` [feedback/:feedback_id/block/:id](/resources/feedback/block/POST_feedback_block_id.md)
 
 ## Authentication
 
-All of the request require you to do authentication. Please refer [Authenticaion](/reference/authentication.md) page.
+All of the endpoints require you to do authentication. You will have to find your own API key and API secret. First login to [oneskyapp](http://www.oneksyapp.com) and find the API key and secret in **Site Settings** under **API Keys & Usage**.
 
-## Sorting
+#### Parameters
+- string `api_key`
+  > Your own API key
 
-Sorting of list request. Please refer [Sorting](/reference/sorting.md) page.
+- int `timestamp`
+  > Current unix timestamp
 
-## Pagination
-
-Pagination of list request. Please refer [Pagination](/reference/pagination.md) page.
+- string `dev_hash`
+  > Calculate with `api_secret` and `timestamp`
+  >
+  > Formula: `md5(concatenate(<timestamp>, <api_secret>))`
 
 ## Request
 We accept request data in JSON format. Please specify request header with `content-type: application/json` and encode the data in JSON format.
