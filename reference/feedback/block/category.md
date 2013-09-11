@@ -8,4 +8,4 @@ Define feedback categories
 - `translate` - Wrong translation
 - `style-and-tone` Style and tone issues
 - `format` - Formatting issues
-- `others` - Others
+- `other` - Other
