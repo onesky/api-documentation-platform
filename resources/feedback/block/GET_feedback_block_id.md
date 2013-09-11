@@ -27,6 +27,7 @@ None
         "strings":"onesky is bad",
         "comment":"unacceptable typo mistake",
         "suggestion":"onesky is excellent"
+        "status":"process"
     }
 }
 ```

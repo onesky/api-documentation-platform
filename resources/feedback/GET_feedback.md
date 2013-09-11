@@ -30,7 +30,7 @@ Returns a listing of feedbacks in the platform.
             "submitter_user_type":"employee",
             "submitter_email":"contact@oneskyapp.com",
             "comment":"onesky is good",
-            "status":"in-progress",
+            "status":"process",
             "blocks": [
                 {"id":"1"},
                 {"id":"2"}
@@ -46,7 +46,7 @@ Returns a listing of feedbacks in the platform.
             "submitter_user_type":"proofreader",
             "submitter_email":"contact@oneskyapp.com",
             "comment":"I love onesky",
-            "status":"finished",
+            "status":"finish",
             "blocks": [
                 {"id":"7"},
                 {"id":"8"},

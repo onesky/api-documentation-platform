@@ -29,7 +29,7 @@ Returns a listing of feedback blocks in the platform.
             "strings":"onesky is bad",
             "comment":"unacceptable typo mistake",
             "suggestion":"onesky is excellent",
-            "status":"in-progress"
+            "status":"progress"
         },
         {
             "id":"7890",
