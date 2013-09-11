@@ -1,5 +1,5 @@
 # Feedback Resources
-    POST feedback/:id
+    PUT feedback/:id
 
 ## Description
 Update a feedback
@@ -13,7 +13,7 @@ Update a feedback
 ## Example
 **Request**
 
-    POST https://api.platform.onesky.io/1/feedback/:id
+    PUT https://api.platform.onesky.io/1/feedback/:id
 
 **Response**
 ```

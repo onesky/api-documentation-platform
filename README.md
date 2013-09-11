@@ -8,13 +8,13 @@ OneSky Platform API provides programmatic access to OneSky's platform management
 - `GET`  [feedback](/resources/feedback/GET_feedback.md)
 - `GET`  [feedback/:id](/resources/feedback/GET_feedback_id.md)
 - `POST` [feedback](/resources/feedback/POST_feedback.md)
-- `POST` [feedback/:id](/resources/feedback/POST_feedback_id.md)
+- `PUT` [feedback/:id](/resources/feedback/PUT_feedback_id.md)
 
 #### Feedback Block Resources
 - `GET`  [feedback/:feedback_id/block](/resources/feedback/block/GET_feedback_block.md)
 - `GET`  [feedback/:feedback_id/block/:id](/resources/feedback/block/GET_feedback_block_id.md)
 - `POST` [feedback/:feedback_id/block](/resources/feedback/block/POST_feedback_block.md)
-- `POST` [feedback/:feedback_id/block/:id](/resources/feedback/block/POST_feedback_block_id.md)
+- `PUT` [feedback/:feedback_id/block/:id](/resources/feedback/block/PUT_feedback_block_id.md)
 
 ## Authentication
 
