@@ -13,7 +13,7 @@ None
 ## Example
 **Request**
 
-    GET https://api.platform.onesky.io/1/project/:project_id/feedback/:id
+    GET https://api.platform.onesky.io/1/feedback/:id
 
 **Response**
 ``` json

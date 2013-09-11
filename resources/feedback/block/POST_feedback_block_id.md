@@ -13,7 +13,7 @@ Update a feedback block
 ## Example
 **Request**
 
-    POST https://api.platform.onesky.io/1/project/:project_id/feedback/:feedback_id/block/:id
+    POST https://api.platform.onesky.io/1/feedback/:feedback_id/block/:id
 
 **Response**
 ```

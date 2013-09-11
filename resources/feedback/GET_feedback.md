@@ -10,11 +10,12 @@ Returns a listing of feedbacks in the platform.
 ## Parameters
 - `page` _(optional)_ - page number for pagination, default 1.
 - `per_page` _(optional)_ - items to be returned per page, default 15.
+- `project` _(optional)_ - filter the list by project which the feedback belongs to
 
 ## Example
 **Request**
 
-    GET https://api.platform.onesky.io/1/project/:project_id/feedback
+    GET https://api.platform.onesky.io/1/feedback
 
 **Response**
 ``` json
