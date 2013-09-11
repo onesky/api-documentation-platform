@@ -9,6 +9,7 @@ Update a feedback block
 
 ## Parameters
 - `status`_(optional)_ - change feedback block status ([reference](/reference/feedback/block/status.md))
+- `translated_string` _(optional) - translated string id in platform to associated with
 
 ## Example
 **Request**

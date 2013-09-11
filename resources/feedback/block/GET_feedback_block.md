@@ -31,6 +31,10 @@ Returns a listing of feedback blocks in the platform.
             "comment":"unacceptable typo mistake",
             "suggestion":"onesky is excellent",
             "status":"progress"
+            "translated_string":{
+                "id":"12308",
+                "string":"onesky is great"
+            }
         },
         {
             "id":"7890",
