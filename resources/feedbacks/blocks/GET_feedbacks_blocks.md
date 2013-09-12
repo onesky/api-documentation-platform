@@ -1,5 +1,5 @@
 # Feedback Block Resources
-    GET feedback/:feedback_id/block
+    GET feedbacks/:feedback_id/blocks
 
 ## Description
 Returns a listing of feedback blocks in the platform.
@@ -15,14 +15,14 @@ Returns a listing of feedback blocks in the platform.
 ## Example
 **Request**
 
-    GET https://api.platform.onesky.io/1/feedback/:feedback_id/block
+    GET https://api.platform.onesky.io/1/feedbacks/:feedback_id/blocks
 
 **Response**
 ``` json
 {
     "feedback_blocks": [
         {
-            "id":"6789",
+            "id":6789,
             "created_at":"2013-03-03T03:03:03+0000",
             "created_at_timestamp":1362301383,
             "category":"typo",
@@ -32,12 +32,12 @@ Returns a listing of feedback blocks in the platform.
             "suggestion":"onesky is excellent",
             "status":"progress"
             "translated_string":{
-                "id":"12308",
-                "string":"onesky is great"
+                "id":12308,
+                "string":"onesky is bad"
             }
         },
         {
-            "id":"7890",
+            "id":7890,
             "created_at":"2013-03-03T03:03:03+0000",
             "created_at_timestamp":1362301383,
             "category":"format",

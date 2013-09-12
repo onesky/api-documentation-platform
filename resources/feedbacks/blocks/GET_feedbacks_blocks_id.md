@@ -1,5 +1,5 @@
 # Feedback Block Resources
-    GET feedback/:feedback_id/block
+    GET feedbacks/:feedback_id/blocks/:id
 
 ## Description
 Returns the feedback block's attributes.
@@ -13,13 +13,13 @@ None
 ## Example
 **Request**
 
-    GET https://api.platform.onesky.io/1/feedback/:feedback_id/block/:id
+    GET https://api.platform.onesky.io/1/feedbacks/:feedback_id/blocks/:id
 
 **Response**
 ``` json
 {
     "feedback_block": {
-        "id":"6789",
+        "id":6789,
         "created_at":"2013-03-04T04:04:04+0000",
         "created_at_timestamp":1365066244,
         "category":"typo",
@@ -29,8 +29,8 @@ None
         "suggestion":"onesky is excellent"
         "status":"process"
         "translated_string":{
-            "id":"12308",
-            "string":"onesky is great"
+            "id":12308,
+            "string":"onesky is bad"
         }
     }
 }

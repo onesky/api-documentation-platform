@@ -1,5 +1,5 @@
 # Feedback Resources
-    PUT feedback/:id
+    PUT feedbacks/:id
 
 ## Description
 Update a feedback
@@ -8,12 +8,12 @@ Update a feedback
 - Details described [here](/README.md#authentication)
 
 ## Parameters
-- `status`_(optional)_ - change feedback status ([reference](/reference/feedback/status.md))
+- `status`_(optional)_ - change feedback status ([reference](/reference/feedbacks/status.md))
 
 ## Example
 **Request**
 
-    PUT https://api.platform.onesky.io/1/feedback/:id
+    PUT https://api.platform.onesky.io/1/feedbacks/:id
 
 **Response**
 ```

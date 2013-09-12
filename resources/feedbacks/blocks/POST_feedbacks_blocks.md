@@ -1,5 +1,5 @@
 # Feedback Block Resources
-    POST feedback/:feedback_id/block
+    POST feedbacks/:feedback_id/blocks
 
 ## Description
 Create a feedback block
@@ -8,7 +8,7 @@ Create a feedback block
 - Details described [here](/README.md#authentication)
 
 ## Parameters
-- `category` _(required)_ - feedback category ([reference](/reference/feedback/block/category.md))
+- `category` _(required)_ - feedback category ([reference](/reference/feedbacks/blocks/category.md))
 - `type` _(required)_ - feedback block type, either `string` or `non-textual`
 - `ridx` _(required)_ - for type `non-textual`, id marked on screenshot
 - `string`_(required)_ - for type `string`, feedback string
@@ -19,7 +19,7 @@ Create a feedback block
 ## Example
 **Request**
 
-    POST https://api.platform.onesky.io/1/feedback/:feedback_id/block
+    POST https://api.platform.onesky.io/1/feedbacks/:feedback_id/blocks
 
 **Response**
 ```

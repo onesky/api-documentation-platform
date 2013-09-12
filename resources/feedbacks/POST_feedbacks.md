@@ -1,5 +1,5 @@
 # Feedback Resources
-    POST feedback
+    POST feedbacks
 
 ## Description
 Create a feedback
@@ -15,11 +15,12 @@ Create a feedback
 - `project` -(optional)_ - the project belongs to
 - `email` _(optional)_ -  user email to reply
 - `comment` _(optional)_ - comment on feedback
+- `blocks` _(optional)_ - blocks array to create
 
 ## Example
 **Request**
 
-    POST https://api.platform.onesky.io/1/feedback
+    POST https://api.platform.onesky.io/1/feedbacks
 
 **Response**
 ```

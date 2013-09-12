@@ -1,5 +1,5 @@
 # Feedback Block Resources
-    POST feedback/:feedback_id/block/:id
+    PUT feedbacks/:feedback_id/blocks/:id
 
 ## Description
 Update a feedback block
@@ -8,13 +8,13 @@ Update a feedback block
 - Details described [here](/README.md#authentication)
 
 ## Parameters
-- `status`_(optional)_ - change feedback block status ([reference](/reference/feedback/block/status.md))
+- `status`_(optional)_ - change feedback block status ([reference](/reference/feedbacks/blocks/status.md))
 - `translated_string` _(optional) - translated string id in platform to associated with
 
 ## Example
 **Request**
 
-    POST https://api.platform.onesky.io/1/feedback/:feedback_id/block/:id
+    PUT https://api.platform.onesky.io/1/feedbacks/:feedback_id/blocks/:id
 
 **Response**
 ```
