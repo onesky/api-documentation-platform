@@ -33,7 +33,7 @@ Returns a listing of feedbacks in the platform.
                 "local_name": "日本語",
                 "locale": "ja",
                 "region" : "JP"
-            }
+            },
             "screenshot_url":"<screen shot url>",
             "submitter":{
                 "user_type":"employee",
@@ -50,7 +50,7 @@ Returns a listing of feedbacks in the platform.
                     "type":"string",
                     "strings":"onesky is bad",
                     "comment":"unacceptable typo mistake",
-                    "suggestion":"onesky is excellent"
+                    "suggestion":"onesky is excellent",
                     "status":"process"
                     "translated_string":{
                         "id":12308,
@@ -81,7 +81,7 @@ Returns a listing of feedbacks in the platform.
                 "local_name": "简体中文",
                 "locale": "zh",
                 "region" : "CN"
-            }
+            },
             "screenshot_url":"<screen shot url>",
             "submitter":{
                 "user_type":"proofreader",
@@ -98,8 +98,8 @@ Returns a listing of feedbacks in the platform.
                     "type":"string",
                     "strings":"The best translation site",
                     "comment":"wrong translation",
-                    "suggestion":"The best translate platform"
-                    "status":"finish"
+                    "suggestion":"The best translate platform",
+                    "status":"finish",
                     "translated_string":{
                         "id":2390,
                         "string":"The best translation site"

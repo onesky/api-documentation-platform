@@ -29,7 +29,7 @@ None
             "local_name": "日本語",
             "locale": "ja",
             "region" : "JP"
-        }
+        },
         "screenshot_url":"<screen shot url>",
         "submitter":{
             "user_type":"employee",
@@ -46,7 +46,7 @@ None
                 "type":"string",
                 "strings":"onesky is bad",
                 "comment":"unacceptable typo mistake",
-                "suggestion":"onesky is excellent"
+                "suggestion":"onesky is excellent",
                 "status":"process"
                 "translated_string":{
                     "id":12308,
