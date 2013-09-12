@@ -23,7 +23,13 @@ None
         "created_at":"2013-03-03T03:03:03+0000",
         "created_at_timestamp":1328475945,
         "url":"http://www.oneskyapp.com",
-        "locale":"ja_JP",
+        "language":{
+            "code": "ja_JP",
+            "english_name": "Japanese",
+            "local_name": "日本語",
+            "locale": "ja",
+            "region" : "JP"
+        }
         "screenshot_url":"<screen shot url>",
         "submitter":{
             "user_type":"employee",
