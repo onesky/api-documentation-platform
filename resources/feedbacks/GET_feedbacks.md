@@ -51,7 +51,7 @@ Returns a listing of feedbacks in the platform.
                     "strings":"onesky is bad",
                     "comment":"unacceptable typo mistake",
                     "suggestion":"onesky is excellent",
-                    "status":"process"
+                    "status":"process",
                     "translated_string":{
                         "id":12308,
                         "string":"onesky is bad"

@@ -8,7 +8,7 @@ Update a feedback
 - Details described [here](/README.md#authentication)
 
 ## Parameters
-- `status`_(optional)_ - change feedback status ([reference](/reference/feedbacks/status.md))
+- `status` _(optional)_ - change feedback status ([reference](/reference/feedbacks/status.md))
 
 ## Example
 **Request**

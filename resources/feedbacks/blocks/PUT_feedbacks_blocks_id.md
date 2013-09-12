@@ -8,8 +8,8 @@ Update a feedback block
 - Details described [here](/README.md#authentication)
 
 ## Parameters
-- `status`_(optional)_ - change feedback block status ([reference](/reference/feedbacks/blocks/status.md))
-- `translated_string` _(optional) - translated string id in platform to associated with
+- `status` _(optional)_ - change feedback block status ([reference](/reference/feedbacks/blocks/status.md))
+- `translated_string` _(optional)_ - translated string id in platform to associated with
 
 ## Example
 **Request**

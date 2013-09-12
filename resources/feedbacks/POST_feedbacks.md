@@ -12,7 +12,7 @@ Create a feedback
 - `locale` _(required)_ - translated string language
 - `screenshot` _(required)_ - base64 encoded image content
 - `user_type` _(required)_ - submitter user type, `user`, `employee` or `proofreader`
-- `project` -(optional)_ - the project belongs to
+- `project` _(optional)_ - the project belongs to
 - `email` _(optional)_ -  user email to reply
 - `comment` _(optional)_ - comment on feedback
 - `blocks` _(optional)_ - blocks array to create
