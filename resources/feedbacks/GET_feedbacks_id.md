@@ -30,7 +30,7 @@ None
             "locale": "ja",
             "region" : "JP"
         },
-        "screenshot_url":"<screen shot url>",
+        "screenshot_url":"<screenshot url>",
         "submitter":{
             "user_type":"employee",
             "email":"contact@oneskyapp.com"

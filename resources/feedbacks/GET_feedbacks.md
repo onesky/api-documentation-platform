@@ -34,7 +34,7 @@ Returns a listing of feedbacks in the platform.
                 "locale": "ja",
                 "region" : "JP"
             },
-            "screenshot_url":"<screen shot url>",
+            "screenshot_url":"<screenshot url>",
             "submitter":{
                 "user_type":"employee",
                 "email":"contact@oneskyapp.com"
@@ -82,7 +82,7 @@ Returns a listing of feedbacks in the platform.
                 "locale": "zh",
                 "region" : "CN"
             },
-            "screenshot_url":"<screen shot url>",
+            "screenshot_url":"<screenshot url>",
             "submitter":{
                 "user_type":"proofreader",
                 "email":"contact@oneskyapp.com"

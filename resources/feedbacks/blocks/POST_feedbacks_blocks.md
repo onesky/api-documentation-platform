@@ -14,7 +14,7 @@ Create a feedback block
 - `string` _(required)_ - for type `string`, feedback string
 - `comment` _(optional)_ - comment on feedback block
 - `suggestion` _(optional)_ - suggestion on feedback
-- `translated_string` _(optional) - translated string id in platform to associated with
+- `translated_string` _(optional)_ - translated string id in platform to associated with
 
 ## Example
 **Request**

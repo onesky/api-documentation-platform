@@ -26,7 +26,7 @@ None
         "type":"string",
         "strings":"onesky is bad",
         "comment":"unacceptable typo mistake",
-        "suggestion":"onesky is excellent"
+        "suggestion":"onesky is excellent",
         "status":"process",
         "translated_string":{
             "id":12308,
