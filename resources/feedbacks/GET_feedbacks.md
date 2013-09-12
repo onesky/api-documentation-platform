@@ -23,7 +23,7 @@ Returns a listing of feedbacks in the platform.
 {
     "feedbacks": [
         {
-            "id":"123",
+            "id":123,
             "created_at":"2013-03-03T03:03:03+0000",
             "created_at_timestamp":1328475945,
             "url":"http://www.oneskyapp.com",
@@ -71,7 +71,7 @@ Returns a listing of feedbacks in the platform.
             ]
         },
         {
-            "id":"456",
+            "id":456,
             "created_at":"2013-03-04T04:04:04+0000",
             "created_at_timestamp":1365066244,
             "url":"http://www.oneskyapp.com",
