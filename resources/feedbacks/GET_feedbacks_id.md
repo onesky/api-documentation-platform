@@ -19,7 +19,7 @@ None
 ``` json
 {
     "feedback": {
-        "id":"123",
+        "id":123,
         "created_at":"2013-03-03T03:03:03+0000",
         "created_at_timestamp":1328475945,
         "url":"http://www.oneskyapp.com",
