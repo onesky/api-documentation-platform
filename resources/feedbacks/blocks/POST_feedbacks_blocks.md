@@ -10,7 +10,7 @@ Create a feedback block
 ## Parameters
 - `category` _(required)_ - feedback category ([reference](/reference/feedbacks/blocks/category.md))
 - `type` _(required)_ - feedback block type, either `string` or `non-textual`
-- `ridx` _(required)_ - for type `non-textual`, id marked on screenshot
+- `index` _(required)_ - for type `non-textual`, id marked on screenshot
 - `string` _(required)_ - for type `string`, feedback string
 - `comment` _(optional)_ - comment on feedback block
 - `suggestion` _(optional)_ - suggestion on feedback

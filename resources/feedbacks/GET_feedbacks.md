@@ -63,7 +63,7 @@ Returns a listing of feedbacks in the platform.
                     "created_at_timestamp":1362301383,
                     "category":"format",
                     "type":"non-textual",
-                    "ridx":"2",
+                    "index":"2",
                     "comment":"improper format",
                     "suggestion":"shouldn't use underscore",
                     "status":"new"
