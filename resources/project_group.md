@@ -1,9 +1,10 @@
 ## Project Group
-- [List project groups](#list---retrieve-all-project-groups)
-- [Show project group](#show---retrieve-details-of-a-project-group)
-- [Create project group](#create---create-a-new-project-group)
-- [Update project group](#Rename---update-name-of-a-project-group)
-- [Delete project group](#delete---remove-a-project-group)
+- [List](#list---retrieve-all-project-groups)
+- [Show](#show---retrieve-details-of-a-project-group)
+- [Create](#create---create-a-new-project-group)
+- [Rename](#rename---update-name-of-a-project-group)
+- [Delete](#delete---remove-a-project-group)
+- [List enabled languages](#languages---list-enabled-languages-of-a-project-group)
 
 
 ### List - retrieve all project groups
@@ -157,60 +158,6 @@ status 201 Created
 ```
 
 
-### Languages - list enabled languages of a project group
-
-    GET https://platform.api.onesky.io/1/project-groups/:project_group_id/languages
-
-**Authentication**
-
-- Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-NONE
-
-**Response**
-
-```
-status 200 OK
-```
-``` json
-{
-    "meta": {
-        "status": 200
-    },
-    "data": {
-        "base_language": {
-            "code": "en-US",
-            "english_name": "English (United States)",
-            "local_name": "English (United States)",
-            "locale": "en",
-            "region" : "US"
-        },
-        "enabled_languages": {
-            "count": 2,
-            "languages": [
-                {
-                    "code": "ja-JP",
-                    "english_name": "Japanese",
-                    "local_name": "日本語",
-                    "locale": "ja",
-                    "region" : "JP"
-                },
-                {
-                    "code": "ko-KR",
-                    "english_name": "Korean",
-                    "local_name": "한국어",
-                    "locale": "ko",
-                    "region" : "KR"
-                }
-            ]
-        }
-    }
-}
-```
-
-
 ### Rename - update name of a project group
 
     PUT https://platform.api.onesky.io/1/project-groups/:project_group_id/rename
@@ -274,5 +221,59 @@ status 200 OK
         "status": 200
     },
     "data": {}
+}
+```
+
+
+### Languages - list enabled languages of a project group
+
+    GET https://platform.api.onesky.io/1/project-groups/:project_group_id/languages
+
+**Authentication**
+
+- Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+NONE
+
+**Response**
+
+```
+status 200 OK
+```
+``` json
+{
+    "meta": {
+        "status": 200
+    },
+    "data": {
+        "base_language": {
+            "code": "en-US",
+            "english_name": "English (United States)",
+            "local_name": "English (United States)",
+            "locale": "en",
+            "region" : "US"
+        },
+        "enabled_languages": {
+            "count": 2,
+            "languages": [
+                {
+                    "code": "ja-JP",
+                    "english_name": "Japanese",
+                    "local_name": "日本語",
+                    "locale": "ja",
+                    "region" : "JP"
+                },
+                {
+                    "code": "ko-KR",
+                    "english_name": "Korean",
+                    "local_name": "한국어",
+                    "locale": "ko",
+                    "region" : "KR"
+                }
+            ]
+        }
+    }
 }
 ```
