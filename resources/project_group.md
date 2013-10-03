@@ -1,7 +1,8 @@
 ## Project Group
-- [List project groups](#list---retireve-all-project-groups)
-- [Show project group](#show---retireve-details-of-a-project-group)
-- [Update project group](#update---update-details-of-a-project-group)
+- [List project groups](#list---retrieve-all-project-groups)
+- [Show project group](#show---retrieve-details-of-a-project-group)
+- [Create project group](#create---create-a-new-project-group)
+- [Update project group](#Rename---update-name-of-a-project-group)
 - [Delete project group](#delete---remove-a-project-group)
 
 
