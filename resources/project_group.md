@@ -61,6 +61,7 @@ status 200 OK
     ]
 }
 ```
+[Back to top](#project-group)
 
 
 ### Show - retrieve details of a project group
@@ -100,6 +101,7 @@ status 200 OK
     }
 }
 ```
+[Back to top](#project-group)
 
 
 ### Create - create a new project group
@@ -156,6 +158,7 @@ status 201 Created
     }
 }
 ```
+[Back to top](#project-group)
 
 
 ### Rename - update name of a project group
@@ -196,6 +199,7 @@ status 200 OK
     "data": {}
 }
 ```
+[Back to top](#project-group)
 
 
 ### Delete - remove a project group
@@ -223,6 +227,7 @@ status 200 OK
     "data": {}
 }
 ```
+[Back to top](#project-group)
 
 
 ### Languages - list enabled languages of a project group
@@ -277,3 +282,4 @@ status 200 OK
     }
 }
 ```
+[Back to top](#project-group)
