@@ -18,10 +18,10 @@
 
 <table>
     <tr>
-        <td></td>
-        <td>Required?</td>
-        <td>Default</td>
-        <td>Description</td>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>page</td>
@@ -113,10 +113,10 @@ status 200 OK
 
 <table>
     <tr>
-        <td></td>
-        <td>Required?</td>
-        <td>Default</td>
-        <td>Description</td>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>name</td>
@@ -127,8 +127,8 @@ status 200 OK
     <tr>
         <td>locale</td>
         <td>optional</td>
-        <td>`en-US`</td>
-        <td>base language of the project group. Please refer to [GET locales](/endpoints/locale/GET_locales.md)</td>
+        <td><code>en-US</code></td>
+        <td>locale code of the project group base language. Please refer to <a href="/resources/locales.md">GET locales</a></td>
     </tr>
 </table>
 
@@ -169,10 +169,10 @@ status 201 Created
 
 <table>
     <tr>
-        <td></td>
-        <td>Required?</td>
-        <td>Default</td>
-        <td>Description</td>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>name</td>
