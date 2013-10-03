@@ -46,7 +46,7 @@ status 200 OK
 {
     "meta": {
         "status": 200,
-        "records_count": 2
+        "record_count": 2
     },
     "data": [
         {
@@ -151,6 +151,60 @@ status 201 Created
             "local_name": "English (United States)",
             "locale": "en",
             "region" : "US"
+        }
+    }
+}
+```
+
+
+### Languages - list enabled languages of a project group
+
+    GET https://platform.api.onesky.io/1/project-groups/:project_group_id/languages
+
+**Authentication**
+
+- Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+NONE
+
+**Response**
+
+```
+status 200 OK
+```
+``` json
+{
+    "meta": {
+        "status": 200
+    },
+    "data": {
+        "base_language": {
+            "code": "en-US",
+            "english_name": "English (United States)",
+            "local_name": "English (United States)",
+            "locale": "en",
+            "region" : "US"
+        },
+        "enabled_languages": {
+            "count": 2,
+            "languages": [
+                {
+                    "code": "ja-JP",
+                    "english_name": "Japanese",
+                    "local_name": "日本語",
+                    "locale": "ja",
+                    "region" : "JP"
+                },
+                {
+                    "code": "ko-KR",
+                    "english_name": "Korean",
+                    "local_name": "한국어",
+                    "locale": "ko",
+                    "region" : "KR"
+                }
+            ]
         }
     }
 }
