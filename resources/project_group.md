@@ -13,7 +13,7 @@
 
 **Authentication**
 
-- Required. Details described [here](/README.md#authentication)
+Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
@@ -70,7 +70,7 @@ status 200 OK
 
 **Authentication**
 
-- Required. Details described [here](/README.md#authentication)
+Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
@@ -110,7 +110,7 @@ status 200 OK
 
 **Authentication**
 
-- Required. Details described [here](/README.md#authentication)
+Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
@@ -167,7 +167,7 @@ status 201 Created
 
 **Authentication**
 
-- Required. Details described [here](/README.md#authentication)
+Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
@@ -208,7 +208,7 @@ status 200 OK
 
 **Authentication**
 
-- Required. Details described [here](/README.md#authentication)
+Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
@@ -236,7 +236,7 @@ status 200 OK
 
 **Authentication**
 
-- Required. Details described [here](/README.md#authentication)
+Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
