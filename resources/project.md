@@ -99,19 +99,19 @@ Required. Details described [here](/README.md#authentication)
         <td>project_type</td>
         <td>required</td>
         <td></td>
-        <td>project type, e.g. `website`. Please refer to <a href="/resources/project_type.md">GET project_type</a></td>
+        <td>Project type, e.g. `website`. Please refer to <a href="/resources/project_type.md">GET project_type</a></td>
     </tr>
     <tr>
         <td>name</td>
         <td>optional</td>
         <td></td>
-        <td>project name</td>
+        <td>Project name</td>
     </tr>
     <tr>
         <td>description</td>
         <td>optional</td>
         <td></td>
-        <td>project description</td>
+        <td>Project description</td>
     </tr>
 </table>
 
@@ -156,7 +156,7 @@ Required. Details described [here](/README.md#authentication)
         <td>name</td>
         <td>required</td>
         <td></td>
-        <td>new name of the project group</td>
+        <td>New name of the project group</td>
     </tr>
 </table>
 

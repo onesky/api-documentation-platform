@@ -28,13 +28,13 @@ Required. Details described [here](/README.md#authentication)
         <td>page</td>
         <td>optional</td>
         <td>1</td>
-        <td>set page number to retrieve</td>
+        <td>Set page number to retrieve</td>
     </tr>
     <tr>
         <td>per_page</td>
         <td>optional</td>
         <td>50</td>
-        <td>set how many groups to retrieve for each time</td>
+        <td>Set how many groups to retrieve for each time</td>
     </tr>
 </table>
 
@@ -125,13 +125,13 @@ Required. Details described [here](/README.md#authentication)
         <td>name</td>
         <td>required</td>
         <td></td>
-        <td>name of the project group</td>
+        <td>Name of the project group</td>
     </tr>
     <tr>
         <td>locale</td>
         <td>optional</td>
         <td><code>en-US</code></td>
-        <td>locale code of the project group base language. Please refer to <a href="/resources/locales.md">GET locales</a></td>
+        <td>Locale code of the project group base language. Please refer to <a href="/resources/locales.md">GET locales</a></td>
     </tr>
 </table>
 
@@ -182,7 +182,7 @@ Required. Details described [here](/README.md#authentication)
         <td>name</td>
         <td>required</td>
         <td></td>
-        <td>new name of the project group</td>
+        <td>New name of the project group</td>
     </tr>
 </table>
 
