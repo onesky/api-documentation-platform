@@ -2,6 +2,7 @@
 - [List](#list---list-uploaded-files)
 - [Upload](#upload---upload-a-file)
 - [Delete](#delete---delete-a-file)
+- [Rename](#rename---rename-a-file)
 
 
 ### List - list uploaded files
@@ -180,6 +181,39 @@ Required. Details described [here](/README.md#authentication)
 **Parameters**
 
 NONE
+
+**Response**
+
+```
+status 200 OK
+```
+[Back to top](#file)
+
+
+### Rename - rename a file
+
+    POST https://platform.api.onesky.io/1/projects/:project_id/files/:file_id
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>required</td>
+        <td></td>
+        <td>New name of the file</td>
+    </tr>
+</table>
 
 **Response**
 
