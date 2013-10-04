@@ -191,14 +191,6 @@ Required. Details described [here](/README.md#authentication)
 ```
 status 200 OK
 ```
-``` json
-{
-    "meta": {
-        "status": 200
-    },
-    "data": {}
-}
-```
 [Back to top](#project-group)
 
 
@@ -218,14 +210,6 @@ NONE
 
 ```
 status 200 OK
-```
-``` json
-{
-    "meta": {
-        "status": 200
-    },
-    "data": {}
-}
 ```
 [Back to top](#project-group)
 
