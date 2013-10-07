@@ -1,6 +1,7 @@
 ## File
 - [List](#list---list-uploaded-files)
 - [Upload](#upload---upload-a-file)
+- [Download](#download---download-a-file)
 - [Delete](#delete---delete-a-file)
 - [Rename](#rename---rename-a-file)
 
@@ -49,23 +50,12 @@ status 200 OK
     },
     "data": [
         {
-            "id": 639,
             "file_name": "strings.po",
-            "version": 2,
             "strings_count": 936,
             "status": "in-progress"
         },
         {
-            "id": 638,
-            "file_name": "strings.po",
-            "version": 1,
-            "strings_count": 910,
-            "status": "imported"
-        },
-        {
-            "id": 637,
             "file_name": "en.yml",
-            "version": 1,
             "strings_count": 835,
             "status": "imported"
         },
@@ -136,12 +126,6 @@ Required. Details described [here](/README.md#authentication)
         </td>
     </tr>
     <tr>
-        <td>version</td>
-        <td>optional</td>
-        <td>[current version]</td>
-        <td>Specify the target version of the project</td>
-    </tr>
-    <tr>
         <td>locale</td>
         <td>optional</td>
         <td>[base language]</td>
@@ -154,45 +138,12 @@ Required. Details described [here](/README.md#authentication)
 ```
 status 201 Created
 ```
-``` json
-{
-    "meta": {
-        "status": 201
-    },
-    "data": {
-        "id": 737,
-        "file_name": "strings.po",
-        "version": 1,
-        "status": "in-progress"
-    }
-}
-```
 [Back to top](#file)
 
 
-### Delete - delete a file
+### Download - download a file
 
-    DELETE https://platform.api.onesky.io/1/projects/:project_id/files/:file_id
-
-**Authentication**
-
-Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-NONE
-
-**Response**
-
-```
-status 200 OK
-```
-[Back to top](#file)
-
-
-### Rename - rename a file
-
-    POST https://platform.api.onesky.io/1/projects/:project_id/files/:file_id
+    GET https://platform.api.onesky.io/1/projects/:project_id/files/download
 
 **Authentication**
 
@@ -208,7 +159,79 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>name</td>
+        <td>file_name</td>
+        <td>required</td>
+        <td></td>
+        <td>Specify the file to remove</td>
+    </tr>
+</table>
+
+**Response**
+
+```
+File
+```
+[Back to top](#file)
+
+
+### Delete - delete a file
+
+    DELETE https://platform.api.onesky.io/1/projects/:project_id/files/delete
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>file_name</td>
+        <td>required</td>
+        <td></td>
+        <td>Specify the file to remove</td>
+    </tr>
+</table>
+
+**Response**
+
+```
+status 200 OK
+```
+[Back to top](#file)
+
+
+### Rename - rename a file
+
+    POST https://platform.api.onesky.io/1/projects/:project_id/files/rename
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>file_name</td>
+        <td>required</td>
+        <td></td>
+        <td>Specify file to rename</td>
+    </tr>
+    <tr>
+        <td>new_name</td>
         <td>required</td>
         <td></td>
         <td>New name of the file</td>
