@@ -111,7 +111,7 @@ Required. Details described [here](/README.md#authentication)
         <td>locale</td>
         <td>optional</td>
         <td>[base language]</td>
-        <td><code>"zh-TW"</code></td>
+        <td><code>zh-TW</code></td>
         <td>Specify the input language. If locale is different from base language, the strings will add to translation strings. Please refer to <a href="/resources/locale.md">GET locales</a></td>
     </tr>
 </table>
