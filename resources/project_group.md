@@ -30,14 +30,14 @@ Required. Details described [here](/README.md#authentication)
         <td>optional</td>
         <td><code>1</code></td>
         <td></td>
-        <td>Set page number to retrieve. Min:<code>1</code></td>
+        <td>Set page number to retrieve. (min: 1)</td>
     </tr>
     <tr>
         <td>per_page</td>
         <td>optional</td>
         <td><code>50</code></td>
         <td></td>
-        <td>Set how many groups to retrieve for each time. (Max: <code>100</code> Min: <code>1</code>)</td>
+        <td>Set how many groups to retrieve for each time. (max: 100, min: 1)</td>
     </tr>
 </table>
 
