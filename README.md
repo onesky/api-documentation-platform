@@ -7,6 +7,7 @@ OneSky Platform API provides programmatic access to OneSky's platform management
 - [**Project Group**](/resources/project_group.md)
 - [**Project**](/resources/project.md)
 - [**File**](/resources/file.md)
+- [**Translation**](/resources/translation.md)
 - [**Locale**](/resources/locale.md)
 - [**Project type**](/resources/project_type.md)
 

@@ -21,19 +21,22 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>page</td>
         <td>optional</td>
-        <td>1</td>
-        <td>set page number to retrieve</td>
+        <td><code>1</code></td>
+        <td></td>
+        <td>Set page number to retrieve. Min:<code>1</code></td>
     </tr>
     <tr>
         <td>per_page</td>
         <td>optional</td>
-        <td>50</td>
-        <td>set how many groups to retrieve for each time</td>
+        <td><code>50</code></td>
+        <td></td>
+        <td>Set how many groups to retrieve for each time. (Max: <code>100</code> Min: <code>1</code>)</td>
     </tr>
 </table>
 
@@ -52,12 +55,16 @@ status 200 OK
         {
             "file_name": "strings.po",
             "strings_count": 936,
-            "status": "in-progress"
+            "status": "in-progress",
+            "uploaded_at": 2013-10-07T15:27:10+0000,
+            "uploaded_at_timestamp": 1381159630
         },
         {
             "file_name": "en.yml",
             "strings_count": 835,
             "status": "imported"
+            "uploaded_at": 2013-10-05T12:36:52+0000,
+            "uploaded_at_timestamp": 1380976612
         },
         ...
     ]
@@ -81,55 +88,29 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>file</td>
         <td>required</td>
         <td></td>
+        <td></td>
         <td>File contains strings to translate</td>
     </tr>
     <tr>
-        <td>file_type</td>
+        <td>format</td>
         <td>required</td>
         <td></td>
-        <td>
-            Specify the file type
-            <br>
-            File type can be one of the following:
-            <ul>
-                <li>IOS_STRINGS</li>
-                <li>GNU_PO</li>
-                <li>ANDROID_XML</li>
-                <li>ANDROID_JSON</li>
-                <li>JAVA_PROPERTIES</li>
-                <li>RUBY_YML</li>
-                <li>RUBY_YAML</li>
-                <li>FLASH_XML</li>
-                <li>GNU_POT</li>
-                <li>RRC</li>
-                <li>RESX</li>
-                <li>RESJSON</li>
-                <li>HIERARCHICAL_JSON</li>
-                <li>PHP</li>
-                <li>PHP_VARIABLES</li>
-                <li>HTML</li>
-                <li>RESW</li>
-                <li>YML</li>
-                <li>YAML</li>
-                <li>ADEMPIERE_XML</li>
-                <li>QT_TS_XML</li>
-                <li>TMX</li>
-                <li>L10N</li>
-                <li>INI</li>
-            </ul>
-        </td>
+        <td><code>IOS_STRINGS</code></td>
+        <td>Specify the input format. Please refer to <a href="/reference/format.md">format list</a></td>
     </tr>
     <tr>
         <td>locale</td>
         <td>optional</td>
         <td>[base language]</td>
-        <td>Specify the locale of the strings. If locale is different from base language, the strings will add to translation strings.</td>
+        <td><code>"zh-TW"</code></td>
+        <td>Specify the input language. If locale is different from base language, the strings will add to translation strings. Please refer to <a href="/resources/locale.md">GET locales</a></td>
     </tr>
 </table>
 
@@ -156,13 +137,15 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>file_name</td>
         <td>required</td>
         <td></td>
-        <td>Specify the file to remove</td>
+        <td></td>
+        <td>Name of the file to download</td>
     </tr>
 </table>
 
@@ -189,13 +172,15 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>file_name</td>
         <td>required</td>
         <td></td>
-        <td>Specify the file to remove</td>
+        <td></td>
+        <td>Name of the file to remove</td>
     </tr>
 </table>
 
@@ -222,17 +207,20 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>file_name</td>
         <td>required</td>
         <td></td>
-        <td>Specify file to rename</td>
+        <td></td>
+        <td>Name of the file to rename</td>
     </tr>
     <tr>
         <td>new_name</td>
         <td>required</td>
+        <td></td>
         <td></td>
         <td>New name of the file</td>
     </tr>

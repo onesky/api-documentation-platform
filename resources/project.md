@@ -93,23 +93,27 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>project_type</td>
         <td>required</td>
         <td></td>
-        <td>Project type, e.g. `website`. Please refer to <a href="/resources/project_type.md">GET project_type</a></td>
+        <td><code>website</code></td>
+        <td>Please refer to <a href="/resources/project_type.md">GET project_type</a></td>
     </tr>
     <tr>
         <td>name</td>
         <td>optional</td>
+        <td></td>
         <td></td>
         <td>Project name</td>
     </tr>
     <tr>
         <td>description</td>
         <td>optional</td>
+        <td></td>
         <td></td>
         <td>Project description</td>
     </tr>
@@ -150,11 +154,13 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>name</td>
         <td>required</td>
+        <td></td>
         <td></td>
         <td>New name of the project group</td>
     </tr>

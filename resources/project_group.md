@@ -22,19 +22,22 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>page</td>
         <td>optional</td>
-        <td>1</td>
-        <td>Set page number to retrieve</td>
+        <td><code>1</code></td>
+        <td></td>
+        <td>Set page number to retrieve. Min:<code>1</code></td>
     </tr>
     <tr>
         <td>per_page</td>
         <td>optional</td>
-        <td>50</td>
-        <td>Set how many groups to retrieve for each time</td>
+        <td><code>50</code></td>
+        <td></td>
+        <td>Set how many groups to retrieve for each time. (Max: <code>100</code> Min: <code>1</code>)</td>
     </tr>
 </table>
 
@@ -119,18 +122,21 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>name</td>
         <td>required</td>
         <td></td>
+        <td></td>
         <td>Name of the project group</td>
     </tr>
     <tr>
         <td>locale</td>
         <td>optional</td>
-        <td><code>en-US</code></td>
+        <td><code>en</code></td>
+        <td><code>zh-TW</code></td>
         <td>Locale code of the project group base language. Please refer to <a href="/resources/locales.md">GET locales</a></td>
     </tr>
 </table>
@@ -176,11 +182,13 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Name</strong></td>
         <td><strong>Required?</strong></td>
         <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
         <td><strong>Description</strong></td>
     </tr>
     <tr>
         <td>name</td>
         <td>required</td>
+        <td></td>
         <td></td>
         <td>New name of the project group</td>
     </tr>
