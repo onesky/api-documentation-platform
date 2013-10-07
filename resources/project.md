@@ -159,17 +159,17 @@ Required. Details described [here](/README.md#authentication)
     </tr>
     <tr>
         <td>name</td>
-        <td>required</td>
+        <td>optional</td>
         <td></td>
         <td></td>
-        <td>New name of the project group</td>
+        <td>New project name</td>
     </tr>
     <tr>
         <td>description</td>
         <td>optional</td>
         <td></td>
         <td></td>
-        <td>Project description</td>
+        <td>New project description</td>
     </tr>
 </table>
 
