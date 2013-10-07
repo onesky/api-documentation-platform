@@ -164,6 +164,13 @@ Required. Details described [here](/README.md#authentication)
         <td></td>
         <td>New name of the project group</td>
     </tr>
+    <tr>
+        <td>description</td>
+        <td>optional</td>
+        <td></td>
+        <td></td>
+        <td>Project description</td>
+    </tr>
 </table>
 
 **Response**
