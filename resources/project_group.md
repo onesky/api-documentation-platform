@@ -190,7 +190,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>New name of the project group</td>
+        <td>New project group name</td>
     </tr>
 </table>
 
