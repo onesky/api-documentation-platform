@@ -1,6 +1,6 @@
 ## Screenshot
 - [List](#list---list-project-screenshots)
-- [Show](#show---show-a-screendshot-details)
+- [Show](#show---show-a-screenshot-details)
 - [Upload](#upload---upload-a-screenshot)
 - [Delete](#delete---remove-a-screenshot)
 
@@ -101,7 +101,7 @@ status 200 OK
         "image": "<Base64 encoded image data>",
         "width": 1261,
         "height": 1918,
-        "tags_count": 35,
+        "tag_count": 35,
         "created_at": "2013-09-26T10:30:27+0000",
         "created_at_timestamp": 1380191427,
     }
@@ -133,7 +133,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>Base64 encoded image data in Data URI scheme structure. Please reference to <a href="http://en.wikipedia.org/wiki/Data_URI_scheme">Data URI scheme</a> and <a href="http://en.wikipedia.org/wiki/Base64">Base64</a></td>
+        <td>Base64 encoded image data in Data URI scheme structure. Please reference to <a href="http://en.wikipedia.org/wiki/Data_URI_scheme" target="_blank">Data URI scheme</a> and <a href="http://en.wikipedia.org/wiki/Base64" target="_blank">Base64</a></td>
     </tr>
     <tr>
         <td>width</td>
@@ -154,7 +154,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>Translations bind to the screenshot. Please refer to [tags](/reference/tag.md)</td>
+        <td>Translations bind to the screenshot. Please refer to <a href="/reference/tag.md">tags</a></td>
     </tr>
 </table>
 
@@ -166,7 +166,6 @@ status 200 OK
 [Back to top](#screenshot)
 
 
-- [Delete](#delete---remove-a-screenshot)
 ### Delete - remove a screenshot
 
     DELETE https://platform.api.onesky.io/1/projects/:project_id/screenshots/:screenshot_id
