@@ -99,8 +99,8 @@ status 200 OK
             "locale": "en",
             "region" : "US"
         },
-        "enabled_languages_count": 3,
-        "projects_count": 6
+        "enabled_language_count": 3,
+        "project_count": 6
     }
 }
 ```
