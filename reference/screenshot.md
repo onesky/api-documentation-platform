@@ -17,18 +17,6 @@
         <td>Base64 encoded image data in Data URI scheme structure. Please reference to <a href="http://en.wikipedia.org/wiki/Data_URI_scheme" target="_blank">Data URI scheme</a> and <a href="http://en.wikipedia.org/wiki/Base64" target="_blank">Base64</a></td>
     </tr>
     <tr>
-        <td>width</td>
-        <td>required</td>
-        <td><code>1261</code></td>
-        <td>Width of screenshot (in pixel)</td>
-    </tr>
-    <tr>
-        <td>height</td>
-        <td>required</td>
-        <td><code>1918</code></td>
-        <td>Height of screenshot (in pixel)</td>
-    </tr>
-    <tr>
         <td>tags</td>
         <td>required</td>
         <td></td>
@@ -44,8 +32,6 @@
     "screenshots": [
         {
             "image": "<Base64 encoded image data>",
-            "width": 1261,
-            "height": 1918,
             "tags": [
                 {
                     "key": "common.nav.product.smartphone",
@@ -66,8 +52,6 @@
         },
         {
             "image": "<Base64 encoded image data>",
-            "width": 1261,
-            "height": 528,
             "tags": [
                 {
                     "key": "common.footer.aboutus",
