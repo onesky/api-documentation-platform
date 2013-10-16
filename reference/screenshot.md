@@ -43,7 +43,7 @@
 {
     "screenshots": [
         {
-            "image": <Base64 encoded image data>,
+            "image": "<Base64 encoded image data>",
             "width": 1261,
             "height": 1918,
             "tags": [
@@ -65,7 +65,7 @@
             ]
         },
         {
-            "image": <Base64 encoded image data>,
+            "image": "<Base64 encoded image data>",
             "width": 1261,
             "height": 528,
             "tags": [
