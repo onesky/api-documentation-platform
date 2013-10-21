@@ -116,7 +116,7 @@ Required. Details described [here](/README.md#authentication)
         <td>Specify the input language. If locale is different from base language, the strings will add to translation strings. Please refer to <a href="/resources/locale.md">GET locales</a></td>
     </tr>
     <tr>
-        <td>is_deprecate_non_exist</td>
+        <td>is_deprecate</td>
         <td>optional</td>
         <td><code>false</code></td>
         <td></td>
