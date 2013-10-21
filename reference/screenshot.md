@@ -31,6 +31,7 @@
 {
     "screenshots": [
         {
+            "name": "screen-1.jpg",
             "image": "<Base64 encoded image data>",
             "tags": [
                 {
@@ -51,6 +52,7 @@
             ]
         },
         {
+            "name": "screen-2.jpg",
             "image": "<Base64 encoded image data>",
             "tags": [
                 {
