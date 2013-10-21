@@ -54,7 +54,7 @@ status 200 OK
     "data": [
         {
             "file_name": "strings.po",
-            "format": "GNU_PO",
+            "file_format": "GNU_PO",
             "strings_count": 936,
             "status": "in-progress",
             "uploaded_at": 2013-10-07T15:27:10+0000,
@@ -62,7 +62,7 @@ status 200 OK
         },
         {
             "file_name": "en.yml",
-            "format": "YAML",
+            "file_format": "YAML",
             "strings_count": 835,
             "status": "imported"
             "uploaded_at": 2013-10-05T12:36:52+0000,
@@ -102,7 +102,7 @@ Required. Details described [here](/README.md#authentication)
         <td>File contains strings to translate</td>
     </tr>
     <tr>
-        <td>format</td>
+        <td>file_format</td>
         <td>required</td>
         <td></td>
         <td><code>IOS_STRINGS</code></td>
