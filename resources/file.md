@@ -57,7 +57,7 @@ status 200 OK
             "file_format": "GNU_PO",
             "strings_count": 936,
             "status": "in-progress",
-            "uploaded_at": 2013-10-07T15:27:10+0000,
+            "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
         {
@@ -65,7 +65,7 @@ status 200 OK
             "file_format": "YAML",
             "strings_count": 835,
             "status": "imported"
-            "uploaded_at": 2013-10-05T12:36:52+0000,
+            "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
         },
         ...
