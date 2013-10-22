@@ -116,11 +116,11 @@ Required. Details described [here](/README.md#authentication)
         <td>Specify the input language. If locale is different from base language, the strings will add to translation strings. Please refer to <a href="/resources/locale.md">GET locales</a></td>
     </tr>
     <tr>
-        <td>is_deprecate</td>
+        <td>is_keeping_all_strings</td>
         <td>optional</td>
-        <td><code>false</code></td>
+        <td><code>true</code></td>
         <td></td>
-        <td>Deprecate strings that does not exist in uploaded file if set to TRUE. Otherwise, keep those strings unchanged.</td>
+        <td>For strings that cannot be found in newly uploaded file, keep those strings unchange if set to TRUE. Deprecate those strings if set to FALSE.</td>
     </tr>
 </table>
 
