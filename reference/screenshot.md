@@ -11,6 +11,12 @@
         <td><strong>Description</strong></td>
     </tr>
     <tr>
+        <td>name</td>
+        <td>required</td>
+        <td></td>
+        <td>A unique name to identify where the image located at your website, apps, blogs, etc... (Hints: path of the webpage)</td>
+    </tr>
+    <tr>
         <td>image</td>
         <td>required</td>
         <td></td>
@@ -26,7 +32,6 @@
 
 
 **Sample**
-
 ``` json
 {
     "screenshots": [
@@ -125,7 +130,6 @@ Translations bind to a screenshot.
 
 
 **Sample**
-
 ``` json
 {
     "tags": [
