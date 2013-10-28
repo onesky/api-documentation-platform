@@ -1,6 +1,6 @@
 ## Project Group
 - [Translate](#translate---create-a-translation-for-a-key-in-a-specified-language)
-- [Post Comment](#post-comment---create--a-comment-for-a-key)
+- [Post Comment](#post-comment---create-a-comment-for-a-key)
 - [Add heart] (#add-heart---add-a-heart-to-a-translation)
 - [Finalize] (#finalize---finalize-a-translation)
 - [Approve] (#approve---approve-a-translation)
@@ -62,7 +62,7 @@ status 201 Created
 
 [Back to top](#project-group)
 
-## Post Comment - create  a comment for a key
+## Post Comment - create a comment for a key
 
     POST https://platform.api.onesky.io/1/in-context/comment
 
@@ -85,21 +85,21 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>Key of the string to translate</td>
+        <td>Key of the string to comment</td>
     </tr>
     <tr>
         <td>content</td>
         <td>required</td>
         <td></td>
         <td></td>
-        <td>The comment to the string</td>
+        <td>The comment content</td>
     </tr>
     <tr>
         <td>language-code</td>
         <td>required</td>
         <td></td>
         <td>en-US</td>
-        <td>The language code of the translation result</td>
+        <td>The language code of the comment</td>
     </tr>
 </table>
 
