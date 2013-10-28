@@ -1,14 +1,14 @@
 ## Project Group
 - [Translate](#translate---translate-a-string-by-key)
-- [List Translations](#translate---translate-a-string-by-key)
-- [List Comment](#list---list-all-comment-for-a-string)
 - [Post Comment](#list---list-all-comment-for-a-string)
-
+- [Add heart] (#addheart---add-a-heart-to-a-translation)
+- [Finalize] (#finalize---finalize-a-translation)
+- [Approve] (#approve---approve-a-translation)
 
 
 ### Translate - create a translation for a key in a specified language
 
-    GET https://platform.api.onesky.io/1/project-groups
+    GET https://platform.api.onesky.io/1/in-context/translate
 
 **Authentication**
 
@@ -62,159 +62,9 @@ status 201 Created
 
 [Back to top](#project-group)
 
-### List Translations- retrieve all project groups
-
-    GET https://platform.api.onesky.io/1/in-context/comments
-
-**Authentication**
-
-Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>key</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>Set page number to retrieve. (min: 1)</td>
-    </tr>
-    <tr>
-        <td>language-code</td>
-        <td>required</td>
-        <td></td>
-        <td>en-US</td>
-        <td>The language code of the translation result</td>
-    </tr>
-    <tr>
-        <td>page</td>
-        <td>optional</td>
-        <td><code>1</code></td>
-        <td></td>
-        <td>Set page number to retrieve. (min: 1)</td>
-    </tr>
-    <tr>
-        <td>per_page</td>
-        <td>optional</td>
-        <td><code>10</code></td>
-        <td></td>
-        <td>Set how many groups to retrieve for each time. (max: 100, min: 1)</td>
-    </tr>
-</table>
-
-**Response**
-
-```
-status 200 OK
-```
-``` json
-{
-    "meta": {
-        "status": 200,
-        "record_count": 2
-    },
-    "data": [
-        {
-            "id": 365,
-            "content": "Travel Magazine",
-            "name": "Anthony"
-        },
-        {
-            "id": 366,
-            "content": "Fashion Magazine",
-            "name": "Anthony"
-        }
-    ]
-}
-```
-[Back to top](#project-group)
-
-### List Comments- retrieve all project groups
-
-    GET https://platform.api.onesky.io/1/in-context/comments
-
-**Authentication**
-
-Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>key</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>Set page number to retrieve. (min: 1)</td>
-    </tr>
-    <tr>
-        <td>language-code</td>
-        <td>required</td>
-        <td></td>
-        <td>en-US</td>
-        <td>The language code of the translation result</td>
-    </tr>
-    <tr>
-        <td>page</td>
-        <td>optional</td>
-        <td><code>1</code></td>
-        <td></td>
-        <td>Set page number to retrieve. (min: 1)</td>
-    </tr>
-    <tr>
-        <td>per_page</td>
-        <td>optional</td>
-        <td><code>10</code></td>
-        <td></td>
-        <td>Set how many groups to retrieve for each time. (max: 100, min: 1)</td>
-    </tr>
-</table>
-
-**Response**
-
-```
-status 200 OK
-```
-``` json
-{
-    "meta": {
-        "status": 200,
-        "record_count": 2
-    },
-    "data": [
-        {
-            "id": 365,
-            "content": "Travel Magazine",
-            "name": "Anthony"
-        },
-        {
-            "id": 366,
-            "content": "Fashion Magazine",
-            "name": "Anthony"
-        }
-    ]
-}
-```
-[Back to top](#project-group)
-
 ## Post Comment- retrieve all project groups
 
-    POST https://platform.api.onesky.io/1/in-context/comments
+    POST https://platform.api.onesky.io/1/in-context/comment
 
 **Authentication**
 
@@ -250,6 +100,129 @@ Required. Details described [here](/README.md#authentication)
         <td></td>
         <td>en-US</td>
         <td>The language code of the translation result</td>
+    </tr>
+</table>
+
+**Response**
+
+```
+status 201 Created
+```
+``` json
+{
+    "meta": {
+        "status": 201
+    }
+}
+```
+[Back to top](#project-group)
+
+## Add heart- add a heart to a translation
+
+    POST https://platform.api.onesky.io/1/in-context/add-heart
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>translation-id</td>
+        <td>required</td>
+        <td></td>
+        <td></td>
+        <td>The Id of the translation</td>
+    </tr>
+</table>
+
+**Response**
+
+```
+status 201 Created
+```
+``` json
+{
+    "meta": {
+        "status": 201
+    }
+}
+```
+[Back to top](#project-group)
+
+## Finalize- finalize a translation
+
+    POST https://platform.api.onesky.io/1/in-context/finalize
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>translation-id</td>
+        <td>required</td>
+        <td></td>
+        <td></td>
+        <td>The Id of the translation</td>
+    </tr>
+</table>
+
+**Response**
+
+```
+status 201 Created
+```
+``` json
+{
+    "meta": {
+        "status": 201
+    }
+}
+```
+[Back to top](#project-group)
+
+## Approve- approve a translation
+
+    POST https://platform.api.onesky.io/1/in-context/approve
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>translation-id</td>
+        <td>required</td>
+        <td></td>
+        <td></td>
+        <td>The Id of the translation</td>
     </tr>
 </table>
 
