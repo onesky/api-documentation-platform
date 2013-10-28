@@ -94,7 +94,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td>This translation is true to the original</td>
-        <td>The comment content</td>
+        <td>The content of the comment. Simply a text comment to the translation.</td>
     </tr>
     <tr>
         <td>locale</td>
