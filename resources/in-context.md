@@ -62,9 +62,9 @@ status 201 Created
 }
 ```
 
-[Back to top](#-In-context-Translation)
+[Back to top](#In-context-Translation)
 
-## Post Comment - create a comment for a key
+### Post Comment - create a comment for a key
 
     POST https://platform.api.onesky.io/1/in-context/project/:project_id/comment
 
@@ -119,9 +119,9 @@ status 201 Created
     }
 }
 ```
-[Back to top](#-In-context-Translation)
+[Back to top](#In-context-Translation)
 
-## Vote - vote a translation
+### Vote - vote a translation
 
     POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/vote
 
@@ -162,9 +162,9 @@ status 201 Created
     }
 }
 ```
-[Back to top](#-In-context-Translation)
+[Back to top](#In-context-Translation)
 
-## Finalize - finalize a translation
+### Finalize - finalize a translation
 
     POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/finalize
 
@@ -205,9 +205,9 @@ status 201 Created
     }
 }
 ```
-[Back to top](#-In-context-Translation)
+[Back to top](#In-context-Translation)
 
-## Approve - approve a translation
+### Approve - approve a translation
 
     POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/approve
 
@@ -248,4 +248,4 @@ status 201 Created
     }
 }
 ```
-[Back to top](#-In-context-Translation)
+[Back to top](#In-context-Translation)
