@@ -1,7 +1,7 @@
 ## Project Group
-- [Translate](#translate---translate-a-string-by-key)
-- [Post Comment](#list---list-all-comment-for-a-string)
-- [Add heart] (#addheart---add-a-heart-to-a-translation)
+- [Translate](#translate---create-a-translation-for-a-key-in-a-specified-language)
+- [Post Comment](#comment---create-a-comment-for-a-key)
+- [Add heart] (#add-heart---add-a-heart-to-a-translation)
 - [Finalize] (#finalize---finalize-a-translation)
 - [Approve] (#approve---approve-a-translation)
 
@@ -62,7 +62,7 @@ status 201 Created
 
 [Back to top](#project-group)
 
-## Post Comment- retrieve all project groups
+## Post Comment - create  a comment for a key
 
     POST https://platform.api.onesky.io/1/in-context/comment
 
@@ -85,7 +85,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>Set page number to retrieve. (min: 1)</td>
+        <td>Key of the string to translate</td>
     </tr>
     <tr>
         <td>content</td>
@@ -117,7 +117,7 @@ status 201 Created
 ```
 [Back to top](#project-group)
 
-## Add heart- add a heart to a translation
+## Add heart - add a heart to a translation
 
     POST https://platform.api.onesky.io/1/in-context/add-heart
 
@@ -158,7 +158,7 @@ status 201 Created
 ```
 [Back to top](#project-group)
 
-## Finalize- finalize a translation
+## Finalize - finalize a translation
 
     POST https://platform.api.onesky.io/1/in-context/finalize
 
@@ -199,7 +199,7 @@ status 201 Created
 ```
 [Back to top](#project-group)
 
-## Approve- approve a translation
+## Approve - approve a translation
 
     POST https://platform.api.onesky.io/1/in-context/approve
 
