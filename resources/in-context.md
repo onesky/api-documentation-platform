@@ -8,7 +8,7 @@
 
 ### Translate - create a translation for a key in a specified language
 
-    POST https://platform.api.onesky.io/1/in-context/project/:project_id/translate
+    POST https://platform.api.onesky.io/1/in_context/project/:project_id/translate
 
 **Authentication**
 
@@ -66,7 +66,7 @@ status 201 Created
 
 ### Post Comment - create a comment for a key
 
-    POST https://platform.api.onesky.io/1/in-context/project/:project_id/comment
+    POST https://platform.api.onesky.io/1/in_context/project/:project_id/comment
 
 **Authentication**
 
@@ -123,7 +123,7 @@ status 201 Created
 
 ### Vote - vote a translation
 
-    POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/vote
+    POST https://platform.api.onesky.io/1/in_context/translations/:translation_id/vote
 
 **Authentication**
 
@@ -131,22 +131,7 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>translation-id</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>The Id of the translation</td>
-    </tr>
-</table>
+NONE
 
 **Response**
 
@@ -166,7 +151,7 @@ status 201 Created
 
 ### Finalize - finalize a translation
 
-    POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/finalize
+    POST https://platform.api.onesky.io/1/in_context/translations/:translation_id/finalize
 
 **Authentication**
 
@@ -174,22 +159,7 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>translation-id</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>The Id of the translation</td>
-    </tr>
-</table>
+NONE
 
 **Response**
 
@@ -209,7 +179,7 @@ status 201 Created
 
 ### Approve - approve a translation
 
-    POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/approve
+    POST https://platform.api.onesky.io/1/in_context/translations/:translation_id/approve
 
 **Authentication**
 
@@ -217,22 +187,7 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>translation-id</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>The Id of the translation</td>
-    </tr>
-</table>
+NONE
 
 **Response**
 
