@@ -62,7 +62,7 @@ status 201 Created
 }
 ```
 
-[Back to top](#project-group)
+[Back to top](#In-context-Translation)
 
 ## Post Comment - create a comment for a key
 
@@ -119,7 +119,7 @@ status 201 Created
     }
 }
 ```
-[Back to top](#project-group)
+[Back to top](#In-context-Translation)
 
 ## Vote - vote a translation
 
@@ -162,7 +162,7 @@ status 201 Created
     }
 }
 ```
-[Back to top](#project-group)
+[Back to top](#In-context-Translation)
 
 ## Finalize - finalize a translation
 
@@ -205,7 +205,7 @@ status 201 Created
     }
 }
 ```
-[Back to top](#project-group)
+[Back to top](#In-context-Translation)
 
 ## Approve - approve a translation
 
@@ -248,4 +248,4 @@ status 201 Created
     }
 }
 ```
-[Back to top](#project-group)
+[Back to top](#In-context-Translation)
