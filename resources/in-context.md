@@ -1,6 +1,6 @@
 ## Project Group
 - [Translate](#translate---create-a-translation-for-a-key-in-a-specified-language)
-- [Post Comment](#comment---create-a-comment-for-a-key)
+- [Post Comment](#post-comment---create--a-comment-for-a-key)
 - [Add heart] (#add-heart---add-a-heart-to-a-translation)
 - [Finalize] (#finalize---finalize-a-translation)
 - [Approve] (#approve---approve-a-translation)
