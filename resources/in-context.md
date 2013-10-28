@@ -1,14 +1,14 @@
-## Project Group
+## In-context Translation
 - [Translate](#translate---create-a-translation-for-a-key-in-a-specified-language)
 - [Post Comment](#post-comment---create-a-comment-for-a-key)
-- [Add heart] (#add-heart---add-a-heart-to-a-translation)
+- [Vote] (#vote---vote-a-translation)
 - [Finalize] (#finalize---finalize-a-translation)
 - [Approve] (#approve---approve-a-translation)
 
 
 ### Translate - create a translation for a key in a specified language
 
-    GET https://platform.api.onesky.io/1/in-context/translate
+    POST https://platform.api.onesky.io/1/in-context/project/:project_id/translate
 
 **Authentication**
 
@@ -39,11 +39,11 @@ Required. Details described [here](/README.md#authentication)
         <td>The translation of the string which specified by key</td>
     </tr>
     <tr>
-        <td>language-code</td>
+        <td>locale</td>
         <td>required</td>
-        <td></td>
+        <td>en</td>
         <td>en-US</td>
-        <td>The language code of the translation result</td>
+        <td>The locale of the translation result</td>
     </tr>
 </table>
 
@@ -56,6 +56,8 @@ status 201 Created
 {
     "meta": {
         "status": 201
+    },
+    "data": {
     }
 }
 ```
@@ -64,7 +66,7 @@ status 201 Created
 
 ## Post Comment - create a comment for a key
 
-    POST https://platform.api.onesky.io/1/in-context/comment
+    POST https://platform.api.onesky.io/1/in-context/project/:project_id/comment
 
 **Authentication**
 
@@ -91,15 +93,15 @@ Required. Details described [here](/README.md#authentication)
         <td>content</td>
         <td>required</td>
         <td></td>
-        <td></td>
+        <td>This translation is true to the original</td>
         <td>The comment content</td>
     </tr>
     <tr>
-        <td>language-code</td>
+        <td>locale</td>
         <td>required</td>
-        <td></td>
+        <td>en</td>
         <td>en-US</td>
-        <td>The language code of the comment</td>
+        <td>The locale of the comment</td>
     </tr>
 </table>
 
@@ -112,14 +114,16 @@ status 201 Created
 {
     "meta": {
         "status": 201
+    },
+    "data": {
     }
 }
 ```
 [Back to top](#project-group)
 
-## Add heart - add a heart to a translation
+## Vote - vote a translation
 
-    POST https://platform.api.onesky.io/1/in-context/add-heart
+    POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/vote
 
 **Authentication**
 
@@ -153,6 +157,8 @@ status 201 Created
 {
     "meta": {
         "status": 201
+    },
+    "data": {
     }
 }
 ```
@@ -160,7 +166,7 @@ status 201 Created
 
 ## Finalize - finalize a translation
 
-    POST https://platform.api.onesky.io/1/in-context/finalize
+    POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/finalize
 
 **Authentication**
 
@@ -194,6 +200,8 @@ status 201 Created
 {
     "meta": {
         "status": 201
+    },
+    "data": {
     }
 }
 ```
@@ -201,7 +209,7 @@ status 201 Created
 
 ## Approve - approve a translation
 
-    POST https://platform.api.onesky.io/1/in-context/approve
+    POST https://platform.api.onesky.io/1/in-context/translations/:translation_id/approve
 
 **Authentication**
 
@@ -235,6 +243,8 @@ status 201 Created
 {
     "meta": {
         "status": 201
+    },
+    "data": {
     }
 }
 ```
