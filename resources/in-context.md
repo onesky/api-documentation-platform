@@ -54,8 +54,7 @@ status 200 OK
     "data": {
         "value1": "OneSky",
         "value2": "hi",
-        "value3": "world",
-        ...
+        "value3": "world"
     }
 }
 ```
