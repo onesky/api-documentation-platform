@@ -49,7 +49,8 @@ status 200 OK
 ``` json
 {
     "meta": {
-        "status": 200
+        "status": 200,
+        "record_count": 3
     },
     "data": {
         "value1": "OneSky",
