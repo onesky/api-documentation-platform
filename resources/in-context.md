@@ -30,14 +30,14 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td>["key1", "key2", "key3"]</td>
-        <td>Keys of the key string mapping to get</td>
+        <td>Keys of the key string mapping to get.</td>
     </tr>
     <tr>
         <td>locale</td>
         <td>required</td>
         <td>en</td>
         <td>en-US</td>
-        <td>The locale of the translation result</td>
+        <td>The locale of the translation result.</td>
     </tr>
 </table>
 
@@ -85,21 +85,21 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>Key of the string to translate</td>
+        <td>Key of the string to translate.</td>
     </tr>
     <tr>
         <td>translation</td>
         <td>required</td>
         <td></td>
         <td></td>
-        <td>The translation of the string which specified by key</td>
+        <td>The translation of the string which specified by key.</td>
     </tr>
     <tr>
         <td>locale</td>
         <td>required</td>
         <td>en</td>
         <td>en-US</td>
-        <td>The locale of the translation result</td>
+        <td>The locale of the translation result.</td>
     </tr>
 </table>
 
@@ -132,7 +132,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>Key of the string to comment</td>
+        <td>Key of the string to comment.</td>
     </tr>
     <tr>
         <td>content</td>
@@ -146,7 +146,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td>en</td>
         <td>en-US</td>
-        <td>The locale of the comment</td>
+        <td>The locale of the comment.</td>
     </tr>
 </table>
 
