@@ -48,7 +48,7 @@ status 200 OK
 ```
 ``` json
 {
-    strings: {
+    "strings": {
         "value1": "OneSky",
         "value2": "hi",
         "value3": "world",
