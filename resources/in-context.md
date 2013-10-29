@@ -9,7 +9,7 @@
 
 ### Get Key String Pairs - get the key string mapping
 
-    POST https://platform.api.onesky.io/1/in_context/project/:project_id/key_string_pairs
+    GET https://platform.api.onesky.io/1/in_context/project/:project_id/key_string_pairs
 
 **Authentication**
 
