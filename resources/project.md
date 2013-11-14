@@ -70,7 +70,10 @@ status 200 OK
         "id": 6968,
         "name": "Website",
         "description": "Words from company website.",
-        "project_type": "website",
+        "project_type": {
+        	"code": "website",
+        	"name": "Website"
+        },
         "word_count": 2956
     }
 }
@@ -131,7 +134,10 @@ status 201 Created
     },
     "data": {
         "id": 10476,
-        "project_type" : "website",
+        "project_type": {
+        	"code": "website",
+        	"name": "Website"
+        },
         "name": "Website",
         "description": "Words from company website"
     }
