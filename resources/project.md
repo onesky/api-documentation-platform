@@ -131,6 +131,7 @@ status 201 Created
     },
     "data": {
         "id": 10476,
+        "project_type" : "website",
         "name": "Website",
         "description": "Words from company website"
     }
