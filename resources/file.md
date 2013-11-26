@@ -1,9 +1,9 @@
 ## File
 - [List](#list---list-uploaded-files)
 - [Upload](#upload---upload-a-file)
-- [Download](#download---download-a-file)
 - [Delete](#delete---delete-a-file)
 - [Rename](#rename---rename-a-file)
+- [Status](#status---string-import-status-of-a-file)
 
 
 ### List - list uploaded files
@@ -53,18 +53,20 @@ status 200 OK
     },
     "data": [
         {
+            "file_id": 98,
             "file_name": "strings.po",
             "file_format": "GNU_PO",
-            "strings_count": 936,
-            "status": "in-progress",
+            "strings_count": 236,
+            "words_count": 1260,
             "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
         {
+            "file_id": 99,
             "file_name": "en.yml",
             "file_format": "YAML",
-            "strings_count": 835,
-            "status": "imported"
+            "strings_count": 335,
+            "words_count": 1982,
             "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
         },
@@ -129,41 +131,19 @@ Required. Details described [here](/README.md#authentication)
 ```
 status 201 Created
 ```
-[Back to top](#file)
-
-
-### Download - download a file
-
-    GET https://platform.api.onesky.io/1/projects/:project_id/files/download
-
-**Authentication**
-
-Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>file_name</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>Name of the file to download</td>
-    </tr>
-</table>
-
-**Response**
-
+``` json
+{
+    meta: {
+        status: 201,
+        import_status_url: "https://platform.api.onesky.io/1/projects/:project_id/files/154/status"
+    },
+    data: {
+        file_id: 154
+    }
+}
 ```
-File
-```
+Remark: After uploaded string file, string import process will be performed in background. Please check the import status via [status endpoint](#status---string-import-status-of-a-file)
+
 [Back to top](#file)
 
 
@@ -241,4 +221,35 @@ Required. Details described [here](/README.md#authentication)
 ```
 status 200 OK
 ```
+[Back to top](#file)
+
+
+### Status - string import status of a file
+
+    GET https://platform.api.onesky.io/1/projects/:project_id/files/:file_id/status
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+NONE
+
+**Response**
+
+``` json
+{
+    meta: {
+        status: 200
+    },
+    data: {
+        "file_id": 99,
+        "file_name": "en.yml",
+        "import_status": "in-progress"
+    }
+}
+```
+Remark: `import_status` can be either `in-progress` or `completed`
+
 [Back to top](#file)
