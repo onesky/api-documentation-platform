@@ -112,7 +112,7 @@ file
 
 When your copy of translation file is up-to-date.
 ```
-status 304 not modified
+status 304 Not Modified
 ```
 
 [Back to top](#translation)
