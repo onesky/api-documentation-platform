@@ -133,12 +133,12 @@ status 201 Created
 ```
 ``` json
 {
-    meta: {
-        status: 201,
-        import_status_url: "https://platform.api.onesky.io/1/projects/:project_id/files/154/status"
+    "meta": {
+        "status": 201,
+        "import_status_url": "https://platform.api.onesky.io/1/projects/:project_id/files/154/status"
     },
-    data: {
-        file_id: 154
+    "data": {
+        "file_id": 154
     }
 }
 ```
@@ -240,10 +240,10 @@ NONE
 
 ``` json
 {
-    meta: {
-        status: 200
+    "meta": {
+        "status": 200
     },
-    data: {
+    "data": {
         "file_id": 99,
         "file_name": "en.yml",
         "import_status": "in-progress"
