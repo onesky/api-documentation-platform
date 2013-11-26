@@ -62,7 +62,7 @@ You can add a header `If-Modified-Since` with the modified time of your download
 
 Exmaple: `If-Modified-Since: 2013-10-07T15:27:10+0000`
 
-Remark: This endpoint may have 5 minutes delay approximately. That means new translation will be updated to the file in 5 minutes.
+> Remark: This endpoint may have **5 minutes** delay approximately. That means new translation will be updated to the file in **5 minutes**.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/translations/export
 
@@ -102,13 +102,11 @@ When translation file is not ready. If the file is not processing, this will tri
 ```
 status 202 Accepted
 ```
-***
 
 When translation file is ready.
 ```
 file
 ```
-***
 
 When your copy of translation file is up-to-date.
 ```
