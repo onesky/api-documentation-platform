@@ -134,8 +134,7 @@ status 201 Created
 ``` json
 {
     "meta": {
-        "status": 201,
-        "import_status_url": "https://platform.api.onesky.io/1/projects/:project_id/files/154/status"
+        "status": 201
     },
     "data": {
         "file_id": 154
