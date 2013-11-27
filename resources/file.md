@@ -2,7 +2,6 @@
 - [List](#list---list-uploaded-files)
 - [Upload](#upload---upload-a-file)
 - [Delete](#delete---delete-a-file)
-- [Rename](#rename---rename-a-file)
 - [Status](#status---string-import-status-of-a-file)
 
 
@@ -55,7 +54,6 @@ status 200 OK
         {
             "file_id": 98,
             "file_name": "strings.po",
-            "file_format": "GNU_PO",
             "strings_count": 236,
             "words_count": 1260,
             "uploaded_at": "2013-10-07T15:27:10+0000",
@@ -64,7 +62,6 @@ status 200 OK
         {
             "file_id": 99,
             "file_name": "en.yml",
-            "file_format": "YAML",
             "strings_count": 335,
             "words_count": 1982,
             "uploaded_at": "2013-10-05T12:36:52+0000",
@@ -148,7 +145,7 @@ Remark: After uploaded string file, string import process will be performed in b
 
 ### Delete - delete a file
 
-    DELETE https://platform.api.onesky.io/1/projects/:project_id/files/delete
+    DELETE https://platform.api.onesky.io/1/projects/:project_id/files/:file_id/delete
 
 **Authentication**
 
@@ -156,64 +153,7 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>file_name</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>Name of the file to remove</td>
-    </tr>
-</table>
-
-**Response**
-
-```
-status 200 OK
-```
-[Back to top](#file)
-
-
-### Rename - rename a file
-
-    POST https://platform.api.onesky.io/1/projects/:project_id/files/rename
-
-**Authentication**
-
-Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>file_name</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>Name of the file to rename</td>
-    </tr>
-    <tr>
-        <td>new_name</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>New name of the file</td>
-    </tr>
-</table>
+NONE
 
 **Response**
 
