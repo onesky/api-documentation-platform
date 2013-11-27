@@ -54,16 +54,16 @@ status 200 OK
         {
             "file_id": 98,
             "file_name": "strings.po",
-            "strings_count": 236,
-            "words_count": 1260,
+            "string_count": 236,
+            "word_count": 1260,
             "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
         {
             "file_id": 99,
             "file_name": "en.yml",
-            "strings_count": 335,
-            "words_count": 1982,
+            "string_count": 335,
+            "word_count": 1982,
             "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
         },
