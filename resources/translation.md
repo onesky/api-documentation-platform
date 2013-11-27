@@ -60,12 +60,6 @@ status 200 OK
 ### Export - export translations into files
 This action will create files from translations with specified locales and format. When translation file is ready, this action will simply response with the file.
 
-You can add a header `If-Modified-Since` with the modified time of your downloaded copy of translation file.
-
-Exmaple: `If-Modified-Since: 2013-10-07T15:27:10+0000`
-
-> Remark: This endpoint may have **5 minutes** delay approximately. That means new translation will be updated to the file in **5 minutes**.
-
     POST https://platform.api.onesky.io/1/projects/:project_id/translations/export
 
 **Authentication**
@@ -113,14 +107,15 @@ When translation file is not ready. If the file is not processing, this will tri
 status 202 Accepted
 ```
 
+When no string is ready in the file.
+```
+status 200 Nothing to export
+```
+
 When translation file is ready.
 ```
 file
 ```
 
-When your copy of translation file is up-to-date.
-```
-status 304 Not Modified
-```
 
 [Back to top](#translation)
