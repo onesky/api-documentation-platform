@@ -84,17 +84,25 @@ Required. Details described [here](/README.md#authentication)
         <td>locale</td>
         <td>required</td>
         <td></td>
-        <td><code>"zh-TW"</code></td>
+        <td><code>zh-TW</code></td>
         <td>Specify languages of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
     </tr>
     <tr>
-        <td>format</td>
+        <td>source_file_name</td>
         <td>required</td>
         <td></td>
-        <td><code>IOS_STRINGS</code></td>
-        <td>Specify the output format. Please refer to <a href="/reference/format.md">format list</a></td>
+        <td><code>string.po</code></td>
+        <td>Specify the name of the source file.</td>
+    </tr>
+    <tr>
+        <td>export_file_name</td>
+        <td>optional</td>
+        <td>*<code>string_zh-TW.po</code></td>
+        <td><code>zh-TW.po</code></td>
+        <td>Specify the name of export file that is the file to be returned.</td>
     </tr>
 </table>
+*Assume `locale = "zh-TW"` and `source_file_name = "string.po"`
 
 **Response**
 
