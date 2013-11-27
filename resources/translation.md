@@ -35,6 +35,7 @@ status 200 OK
                 "region" : "US"
             },
             "progress": "100%",
+            "string_count": 847,
             "word_count": 2549
         },
         {
@@ -46,6 +47,7 @@ status 200 OK
                 "region" : "JP"
             },
             "progress": "100%",
+            "string_count": 1359,
             "word_count": 3956
         },
         ...
