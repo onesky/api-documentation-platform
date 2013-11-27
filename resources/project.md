@@ -74,6 +74,7 @@ status 200 OK
         	"code": "website",
         	"name": "Website"
         },
+        "string_count": 1385,
         "word_count": 2956
     }
 }
