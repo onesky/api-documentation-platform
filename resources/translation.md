@@ -109,7 +109,7 @@ status 202 Accepted
 
 When no string is ready in the file.
 ```
-status 200 Nothing to export
+status 204 No content
 ```
 
 When translation file is ready.
