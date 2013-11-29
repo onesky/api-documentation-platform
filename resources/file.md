@@ -119,7 +119,7 @@ Required. Details described [here](/README.md#authentication)
         <td>optional</td>
         <td><code>true</code></td>
         <td></td>
-        <td>For strings that cannot be found in newly uploaded file with same file name, keep those strings unchange if set to <code>TRUE</code>. Deprecate those strings if set to <code>FALSE</code>. Notice that different files will not interfere each other in the same project. For example, with setting <code>is_keeping_all_strings</code> to <code>TRUE</code>, uploading <code>en2.po</code> will not deprecate strings of previously uploaded file, <code>en.po</code>.</td>
+        <td>For strings that cannot be found in newly uploaded file with same file name, keep those strings unchange if set to <code>true</code>. Deprecate those strings if set to <code>false</code>. Notice that different files will not interfere each other in the same project. For example, with setting <code>is_keeping_all_strings</code> to <code>false</code>, uploading <code>en2.po</code> will not deprecate strings of previously uploaded file, <code>en.po</code>.</td>
     </tr>
 </table>
 
