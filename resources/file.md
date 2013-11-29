@@ -2,7 +2,7 @@
 - [List](#list---list-uploaded-files)
 - [Upload](#upload---upload-a-file)
 - [Delete](#delete---delete-a-file)
-- [Importing tasks](#importing-tasks---list-of-importing-tasks)
+- [Import status](#import-status---show-status-of-an-import-task)
 
 
 ### List - list uploaded files
@@ -55,6 +55,7 @@ status 200 OK
             "file_name": "strings.po",
             "string_count": 236,
             "word_count": 1260,
+            "import_status": "in-progress",
             "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
@@ -62,6 +63,7 @@ status 200 OK
             "file_name": "en.yml",
             "string_count": 335,
             "word_count": 1982,
+            "import_status": "completed",
             "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
         },
@@ -73,7 +75,7 @@ status 200 OK
 
 
 ### Upload - upload a file
-Add or update strings with uploaded file.
+Add or update strings by file.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/files
 
@@ -136,7 +138,7 @@ status 201 Created
     }
 }
 ```
-Remark: After string file uploaded, string import process will be performed in background. Please check the import status via [Importing tasks](#importing-tasks---list-of-importing-tasks) endpoint.
+Remark: After string file uploaded, string import process will be performed in background. Please check the import status via [Import status](#import-status---show-status-of-an-import-task) endpoint.
 
 [Back to top](#file)
 
@@ -176,9 +178,9 @@ status 200 OK
 [Back to top](#file)
 
 
-### Importing tasks - list of importing tasks
+### Import status - show status of an import task
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/files/importing-tasks
+    GET https://platform.api.onesky.io/1/projects/:project_id/files/import-status/:import_id
 
 **Authentication**
 
@@ -195,17 +197,16 @@ NONE
     "meta": {
         "status": 200
     },
-    "data": [
-        {
-            "file_name": "en.yml",
-            "import_status": "in-progress"
-        },
-        {
-            "file_name": "string.po",
-            "import_status": "in-progress"
-        },
-        ...
-    ]
+    "data": {
+        "file_name": "en.yml",
+        "string_count": 236,
+        "word_count": 1260,
+        "import_status": "in-progress",
+        "imported_at": "2013-10-07T15:27:10+0000",
+        "imported_at_timestamp": 1381159630
+    }
 }
 ```
+Remark: `import_status` can be either `completed` or `in-progress`.
+
 [Back to top](#file)
