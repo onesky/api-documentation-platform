@@ -52,7 +52,6 @@ status 200 OK
     },
     "data": [
         {
-            "file_id": 98,
             "file_name": "strings.po",
             "string_count": 236,
             "word_count": 1260,
@@ -60,7 +59,6 @@ status 200 OK
             "uploaded_at_timestamp": 1381159630
         },
         {
-            "file_id": 99,
             "file_name": "en.yml",
             "string_count": 335,
             "word_count": 1982,
@@ -134,7 +132,7 @@ status 201 Created
         "status": 201
     },
     "data": {
-        "file_id": 154
+        "import_id": 154
     }
 }
 ```
@@ -145,7 +143,7 @@ Remark: After uploaded string file, string import process will be performed in b
 
 ### Delete - delete a file
 
-    DELETE https://platform.api.onesky.io/1/projects/:project_id/files/:file_id/delete
+    DELETE https://platform.api.onesky.io/1/projects/:project_id/files
 
 **Authentication**
 
@@ -153,7 +151,22 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-NONE
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>file_name</td>
+        <td>required</td>
+        <td></td>
+        <td><code>string.po</code></td>
+        <td>Specify name of file to delete.</td>
+    </tr>
+</table>
 
 **Response**
 
@@ -165,7 +178,7 @@ status 200 OK
 
 ### Status - string import status of a file
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/files/:file_id/status
+    GET https://platform.api.onesky.io/1/projects/:project_id/files/status
 
 **Authentication**
 
@@ -173,7 +186,22 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-NONE
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>file_name</td>
+        <td>required</td>
+        <td></td>
+        <td><code>string.po</code></td>
+        <td>Specify name of file to delete.</td>
+    </tr>
+</table>
 
 **Response**
 
@@ -183,7 +211,6 @@ NONE
         "status": 200
     },
     "data": {
-        "file_id": 99,
         "file_name": "en.yml",
         "import_status": "in-progress"
     }
