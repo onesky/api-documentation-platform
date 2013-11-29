@@ -2,7 +2,7 @@
 - [List](#list---list-uploaded-files)
 - [Upload](#upload---upload-a-file)
 - [Delete](#delete---delete-a-file)
-- [Status](#status---string-import-status-of-a-file)
+- [Importing tasks](#importing-tasks---list-of-importing-tasks)
 
 
 ### List - list uploaded files
@@ -136,7 +136,7 @@ status 201 Created
     }
 }
 ```
-Remark: After uploaded string file, string import process will be performed in background. Please check the import status via [status endpoint](#status---string-import-status-of-a-file)
+Remark: After string file uploaded, string import process will be performed in background. Please check the import status via [Importing tasks](#importing-tasks---list-of-importing-tasks) endpoint.
 
 [Back to top](#file)
 
@@ -176,9 +176,9 @@ status 200 OK
 [Back to top](#file)
 
 
-### Status - string import status of a file
+### Importing tasks - list of importing tasks
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/files/status
+    GET https://platform.api.onesky.io/1/projects/:project_id/files/importing-tasks
 
 **Authentication**
 
@@ -186,22 +186,7 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>file_name</td>
-        <td>required</td>
-        <td></td>
-        <td><code>string.po</code></td>
-        <td>Specify name of file to delete.</td>
-    </tr>
-</table>
+NONE
 
 **Response**
 
@@ -210,12 +195,17 @@ Required. Details described [here](/README.md#authentication)
     "meta": {
         "status": 200
     },
-    "data": {
-        "file_name": "en.yml",
-        "import_status": "in-progress"
-    }
+    "data": [
+        {
+            "file_name": "en.yml",
+            "import_status": "in-progress"
+        },
+        {
+            "file_name": "string.po",
+            "import_status": "in-progress"
+        },
+        ...
+    ]
 }
 ```
-Remark: `import_status` can be either `in-progress` or `completed`
-
 [Back to top](#file)
