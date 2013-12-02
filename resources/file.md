@@ -134,7 +134,8 @@ status 201 Created
         "status": 201
     },
     "data": {
-        "import_id": 154
+        "import_id": 154 // the return ID is not consistent as creating project
+        /* Please add more detail as creating project */
     }
 }
 ```
@@ -203,7 +204,8 @@ NONE
         "word_count": 1260,
         "import_status": "in-progress",
         "imported_at": "2013-10-07T15:27:10+0000",
-        "imported_at_timestamp": 1381159630
+        "imported_at_timestamp": 1381159630,
+        "locale": .....
     }
 }
 ```
