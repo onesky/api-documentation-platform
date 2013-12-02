@@ -207,6 +207,6 @@ NONE
     }
 }
 ```
-Remark: `import_status` can be either `completed` or `in-progress`.
+Remark: `import_status` can be either `completed`, `in-progress` or `failed`.
 
 [Back to top](#file)
