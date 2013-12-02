@@ -56,6 +56,7 @@ status 200 OK
             "string_count": 236,
             "word_count": 1260,
             "import_status": "in-progress",
+            // Please add last import ID here
             "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
