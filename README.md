@@ -9,15 +9,9 @@ OneSky Platform API provides programmatic access to OneSky's platform management
 - [**File**](/resources/file.md)
 - [**Translation**](/resources/translation.md)
 - [**Screenshot**](/resources/screenshot.md)
+- [**Feedback**](/resources/feedback.md)
 - [**Locale**](/resources/locale.md)
 - [**Project type**](/resources/project_type.md)
-
-## Endpoints
-
-#### Feedback Resources
-- `GET`  [feedbacks](/resources/feedbacks/GET_feedbacks.md)
-- `GET`  [feedbacks/:id](/resources/feedbacks/GET_feedbacks_id.md)
-- `POST`  [feedbacks](/resources/feedbacks/POST_feedbacks.md)
 
 ## Authentication
 
