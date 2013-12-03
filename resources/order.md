@@ -125,12 +125,13 @@ status 200 OK
                 },
                 "completed_at": "2013-08-17T13:05:20+0000",
                 "completed_at_timestamp": 1376744720
+                // any estimated delivery time?
             },
             ...
         ],
         "order_type": "translate-only",
-        "string_count": 835,
-        "word_count": 3056,
+        "string_count": 835, // this should be task level, it can vary depends on the completeness of each langauge
+        "word_count": 3056,  // same as above
         "is_including_not_translated": true,
         "is_including_not_approved": false,
         "is_including_outdated": true,
