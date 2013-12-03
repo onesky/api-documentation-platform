@@ -1,8 +1,8 @@
 ## Quotation
-- [Show](#show---retrieve-a-quotation)
+- [Show](#show---make-a-quotation)
 
 
-### Show - retrieve a quotation
+### Show - make a quotation
 
     GET https://platform.api.onesky.io/1/projects/:project_id/quotations
 
