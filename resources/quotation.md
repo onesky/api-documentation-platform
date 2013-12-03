@@ -24,7 +24,7 @@ Required. Details described [here](/README.md#authentication)
         <td>files</td>
         <td>required</td>
         <td></td>
-        <td><code>['string.po', 'string2.po']</code></td>
+        <td><code>['string.po']</code></td>
         <td>Files to be translated in the order</td>
     </tr>
     <tr>
@@ -38,21 +38,21 @@ Required. Details described [here](/README.md#authentication)
         <td>is_including_not_translated</td>
         <td>optional</td>
         <td><code>true</code></td>
-        <td></td>
+        <td><code>false</code></td>
         <td>Include not translated phrases to translate</td>
     </tr>
     <tr>
         <td>is_including_not_approved</td>
         <td>optional</td>
         <td><code>true</code></td>
-        <td></td>
+        <td><code>false</code></td>
         <td>Include not approved phrases to translate</td>
     </tr>
     <tr>
         <td>is_including_outdated</td>
         <td>optional</td>
         <td><code>true</code></td>
-        <td></td>
+        <td><code>false</code></td>
         <td>Include outdated phrases to translate that is updated since last order.</td>
     </tr>
     <tr>
