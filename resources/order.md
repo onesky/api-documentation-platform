@@ -129,6 +129,8 @@ status 200 OK
             ...
         ],
         "order_type": "translate-only",
+        "string_count": 835,
+        "word_count": 3056,
         "is_including_not_translated": true,
         "is_including_not_approved": false,
         "is_including_outdated": true,
@@ -167,7 +169,7 @@ Required. Details described [here](/README.md#authentication)
         <td>files</td>
         <td>required</td>
         <td></td>
-        <td><code>['string.po', 'string2.po']</code></td>
+        <td><code>['string.po']</code></td>
         <td>Files to be translated in the order</td>
     </tr>
     <tr>
@@ -187,9 +189,9 @@ Required. Details described [here](/README.md#authentication)
             <br>
             Types:
             <ul>
-                <li><code>translate-only</code> - perform translations only</li>
-                <li><code>review-only</code> - review translations only</li>
-                <li><code>translate-review</code> - perform translations and review afterwards</li>
+                <li><code>translate-only</code> - perform translation only</li>
+                <li><code>review-only</code> - review translation only</li>
+                <li><code>translate-review</code> - perform translation and review afterwards</li>
             </ul>
         </td>
     </tr>
@@ -197,21 +199,21 @@ Required. Details described [here](/README.md#authentication)
         <td>is_including_not_translated</td>
         <td>optional</td>
         <td><code>true</code></td>
-        <td></td>
+        <td><code>false</code></td>
         <td>Include not translated phrases to translate</td>
     </tr>
     <tr>
         <td>is_including_not_approved</td>
         <td>optional</td>
         <td><code>true</code></td>
-        <td></td>
+        <td><code>false</code></td>
         <td>Include not approved phrases to translate</td>
     </tr>
     <tr>
         <td>is_including_outdated</td>
         <td>optional</td>
         <td><code>true</code></td>
-        <td></td>
+        <td><code>false</code></td>
         <td>Include outdated phrases to translate that is updated since last order.</td>
     </tr>
     <tr>
@@ -305,8 +307,15 @@ status 201 Created
             "locale": "ja",
             "region" : "JP"
         },
+        "order_type": "translate-only",
         "string_count": 835,
         "word_count": 3056,
+        "is_including_not_translated": true,
+        "is_including_not_approved": false,
+        "is_including_outdated": true,
+        "tone": "formal",
+        "specialization": "general",
+        "note": "Message to translator",
         "ordered_at": "2013-08-15T08:12:40+0000",
         "ordered_at_timestamp":13283746583,
     }
