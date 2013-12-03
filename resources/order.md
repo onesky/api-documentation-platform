@@ -123,6 +123,8 @@ status 200 OK
                 "translator":{
                     "name": "Jinny O."
                 },
+                "string_count": 835,
+                "word_count": 3056,
                 "completed_at": "2013-08-17T13:05:20+0000",
                 "completed_at_timestamp": 1376744720
                 // any estimated delivery time?
@@ -130,8 +132,6 @@ status 200 OK
             ...
         ],
         "order_type": "translate-only",
-        "string_count": 835, // this should be task level, it can vary depends on the completeness of each langauge
-        "word_count": 3056,  // same as above
         "is_including_not_translated": true,
         "is_including_not_approved": false,
         "is_including_outdated": true,
