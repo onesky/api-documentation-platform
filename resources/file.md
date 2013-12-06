@@ -55,8 +55,10 @@ status 200 OK
             "file_name": "strings.po",
             "string_count": 236,
             "word_count": 1260,
-            "import_status": "in-progress",
-            "last_import_id": 123,
+            "last_import": {
+                "id": 123,
+                "status": "in-progress"
+            },
             "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
@@ -64,8 +66,10 @@ status 200 OK
             "file_name": "en.yml",
             "string_count": 335,
             "word_count": 1982,
-            "import_status": "completed",
-            "last_import_id": 109,
+            "last_import": {
+                "id": 109,
+                "status": "completed"
+            },
             "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
         },
@@ -136,20 +140,20 @@ status 201 Created
         "status": 201
     },
     "data": {
-        "import_id": 154,
-        "file": {
-            "name": "string.po",
-            "format": "GNU_PO",
-            "locale": {
-                "code": "en-US",
-                "english_name": "English (United States)",
-                "local_name": "English (United States)",
-                "locale": "en",
-                "region" : "US"
-            }
+        "name": "string.po",
+        "format": "GNU_PO",
+        "locale": {
+            "code": "en-US",
+            "english_name": "English (United States)",
+            "local_name": "English (United States)",
+            "locale": "en",
+            "region" : "US"
         },
-        "imported_at": "2013-10-07T15:27:10+0000",
-        "imported_at_timestamp": 1381159630
+        "import": {
+            "id": 154,
+            "created_at": "2013-10-07T15:27:10+0000",
+            "created_at_timestamp": 1381159630
+        }
     }
 }
 ```
@@ -226,9 +230,9 @@ NONE
         },
         "string_count": 236,
         "word_count": 1260,
-        "import_status": "in-progress",
-        "imported_at": "2013-10-07T15:27:10+0000",
-        "imported_at_timestamp": 1381159630
+        "status": "in-progress",
+        "created_at": "2013-10-07T15:27:10+0000",
+        "created_at_timestamp": 1381159630
     }
 }
 ```
