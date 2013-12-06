@@ -106,10 +106,10 @@ status 200 OK
             "locale": "ja",
             "region" : "JP"
         },
-        "string_count": 2013,
-        "word_count": 639,
         "specialization": "general",
         "translation_only": {
+            "string_count": 2013,
+            "word_count": 639,
             "per_word_cost": "0.01",
             "total_cost": "20.13",
             "estimated_return_datetime": "2013-01-01T23:00:00+0000",
@@ -117,6 +117,8 @@ status 200 OK
             "estimated_seconds_from_now": 1234567
         },
         "translation_and_review": {
+            "string_count": 2013,
+            "word_count": 639,
             "per_word_cost": "0.02",
             "total_cost": "40.26",
             "estimated_return_datetime": "2013-01-02T23:00:00+0000",
@@ -124,6 +126,8 @@ status 200 OK
             "estimated_seconds_from_now": 2345678
         },
         "review_only": {
+            "string_count": 2013,
+            "word_count": 639,
             "per_word_cost": "0.005",
             "total_cost": "10.07",
             "estimated_return_datetime": "2013-01-01T23:00:00+0000",
