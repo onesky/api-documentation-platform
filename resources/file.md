@@ -2,7 +2,6 @@
 - [List](#list---list-uploaded-files)
 - [Upload](#upload---upload-a-file)
 - [Delete](#delete---delete-a-file)
-- [Import status](#import-status---show-status-of-an-import-task)
 
 
 ### List - list uploaded files
@@ -77,8 +76,9 @@ status 200 OK
     ]
 }
 ```
-[Back to top](#file)
+Remark: `status` can be either `completed`, `in-progress` or `failed`.
 
+[Back to top](#file)
 
 ### Upload - upload a file
 Add or update strings by file.
@@ -157,7 +157,7 @@ status 201 Created
     }
 }
 ```
-Remark: After string file uploaded, string import process will be performed in background. Please check the import status via [Import status](#import-status---show-status-of-an-import-task) endpoint by using the `import_id` provided.
+Remark: After string file uploaded, string import process will be performed in background. Please check the import status via [Import](/resources/import.md#show---show-an-import-task) endpoint by using the `import_id` provided.
 
 [Back to top](#file)
 
@@ -194,49 +194,4 @@ Required. Details described [here](/README.md#authentication)
 ```
 status 200 OK
 ```
-[Back to top](#file)
-
-
-### Import status - show status of an import task
-
-    GET https://platform.api.onesky.io/1/projects/:project_id/files/import-status/:import_id
-
-**Authentication**
-
-Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-NONE
-
-**Response**
-
-``` json
-{
-    "meta": {
-        "status": 200
-    },
-    "data": {
-        "id": 176,
-        "file": {
-            "name": "string.po",
-            "format": "GNU_PO",
-            "locale": {
-                "code": "en-US",
-                "english_name": "English (United States)",
-                "local_name": "English (United States)",
-                "locale": "en",
-                "region" : "US"
-            }
-        },
-        "string_count": 236,
-        "word_count": 1260,
-        "status": "in-progress",
-        "created_at": "2013-10-07T15:27:10+0000",
-        "created_at_timestamp": 1381159630
-    }
-}
-```
-Remark: `import_status` can be either `completed`, `in-progress` or `failed`.
-
 [Back to top](#file)
