@@ -217,6 +217,7 @@ NONE
         "status": 200
     },
     "data": {
+        "id": 176,
         "file": {
             "name": "string.po",
             "format": "GNU_PO",
