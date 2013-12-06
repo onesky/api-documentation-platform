@@ -52,7 +52,7 @@ status 200 OK
     },
     "data": [
         {
-            "file_name": "strings.po",
+            "name": "strings.po",
             "string_count": 236,
             "word_count": 1260,
             "last_import": {
@@ -63,7 +63,7 @@ status 200 OK
             "uploaded_at_timestamp": 1381159630
         },
         {
-            "file_name": "en.yml",
+            "name": "en.yml",
             "string_count": 335,
             "word_count": 1982,
             "last_import": {
