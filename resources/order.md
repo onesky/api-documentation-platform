@@ -132,9 +132,6 @@ status 200 OK
             ...
         ],
         "order_type": "translate-only",
-        "is_including_not_translated": true,
-        "is_including_not_approved": false,
-        "is_including_outdated": true,
         "tone": "formal",
         "specialization": "general",
         "note": "Message to translator",
