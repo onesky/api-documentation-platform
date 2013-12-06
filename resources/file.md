@@ -157,7 +157,7 @@ status 201 Created
     }
 }
 ```
-Remark: After string file uploaded, string import process will be performed in background. Please check the import status via [Import](/resources/import.md#show---show-an-import-task) endpoint by using the `import_id` provided.
+Remark: After string file uploaded, string import process will be performed in background. Please check the import status via [Import](/resources/import.md#show---show-an-import-task) endpoint by using the `import.id` provided.
 
 [Back to top](#file)
 
