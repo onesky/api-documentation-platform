@@ -106,6 +106,9 @@ status 200 OK
             "locale": "ja",
             "region" : "JP"
         },
+        "is_including_not_translated": true,
+        "is_including_not_approved": true,
+        "is_including_outdated": false,
         "specialization": "general",
         "translation_only": {
             "string_count": 2013,
