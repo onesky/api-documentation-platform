@@ -149,7 +149,7 @@ status 201 Created
             "locale": "en",
             "region" : "US"
         },
-        "import": {
+        "last_import": {
             "id": 154,
             "created_at": "2013-10-07T15:27:10+0000",
             "created_at_timestamp": 1381159630
