@@ -56,7 +56,7 @@ status 200 OK
             "string_count": 236,
             "word_count": 1260,
             "import_status": "in-progress",
-            // Please add last import ID here
+            "last_import_id": 123,
             "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
@@ -65,6 +65,7 @@ status 200 OK
             "string_count": 335,
             "word_count": 1982,
             "import_status": "completed",
+            "last_import_id": 109,
             "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
         },
@@ -135,8 +136,20 @@ status 201 Created
         "status": 201
     },
     "data": {
-        "import_id": 154 // the return ID is not consistent as creating project
-        /* Please add more detail as creating project */
+        "import_id": 154,
+        "file": {
+            "name": "string.po",
+            "format": "GNU_PO",
+            "locale": {
+                "code": "en-US",
+                "english_name": "English (United States)",
+                "local_name": "English (United States)",
+                "locale": "en",
+                "region" : "US"
+            }
+        },
+        "imported_at": "2013-10-07T15:27:10+0000",
+        "imported_at_timestamp": 1381159630
     }
 }
 ```
@@ -200,13 +213,22 @@ NONE
         "status": 200
     },
     "data": {
-        "file_name": "en.yml",
+        "file": {
+            "name": "string.po",
+            "format": "GNU_PO",
+            "locale": {
+                "code": "en-US",
+                "english_name": "English (United States)",
+                "local_name": "English (United States)",
+                "locale": "en",
+                "region" : "US"
+            }
+        },
         "string_count": 236,
         "word_count": 1260,
         "import_status": "in-progress",
         "imported_at": "2013-10-07T15:27:10+0000",
-        "imported_at_timestamp": 1381159630,
-        "locale": .....
+        "imported_at_timestamp": 1381159630
     }
 }
 ```
