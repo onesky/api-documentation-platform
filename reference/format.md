@@ -1,0 +1,30 @@
+## Format
+Format can be one of the following:
+<table>
+    <ul>
+        <li>IOS_STRINGS</li>
+        <li>GNU_PO</li>
+        <li>ANDROID_XML</li>
+        <li>ANDROID_JSON</li>
+        <li>JAVA_PROPERTIES</li>
+        <li>RUBY_YML</li>
+        <li>RUBY_YAML</li>
+        <li>FLASH_XML</li>
+        <li>GNU_POT</li>
+        <li>RRC</li>
+        <li>RESX</li>
+        <li>RESJSON</li>
+        <li>HIERARCHICAL_JSON</li>
+        <li>PHP</li>
+        <li>PHP_VARIABLES</li>
+        <li>HTML</li>
+        <li>RESW</li>
+        <li>YML</li>
+        <li>YAML</li>
+        <li>ADEMPIERE_XML</li>
+        <li>QT_TS_XML</li>
+        <li>TMX</li>
+        <li>L10N</li>
+        <li>INI</li>
+    </ul>
+</table>

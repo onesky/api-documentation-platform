@@ -2,12 +2,19 @@
 
 OneSky Platform API provides programmatic access to OneSky's platform management.
 
-## Endpoints
+## Resources
 
-#### Feedback Resources
-- `GET`  [feedbacks](/resources/feedbacks/GET_feedbacks.md)
-- `GET`  [feedbacks/:id](/resources/feedbacks/GET_feedbacks_id.md)
-- `POST`  [feedbacks](/resources/feedbacks/POST_feedbacks.md)
+- [**Project Group**](/resources/project_group.md)
+- [**Project**](/resources/project.md)
+- [**File**](/resources/file.md)
+- [**Translation**](/resources/translation.md)
+- [**Import**](/resources/import.md)
+- [**Quotation**](/resources/quotation.md)
+- [**Order**](/resources/order.md)
+- [**Screenshot**](/resources/screenshot.md)
+- [**Feedback**](/resources/feedback.md)
+- [**Locale**](/resources/locale.md)
+- [**Project type**](/resources/project_type.md)
 
 ## Authentication
 
@@ -34,6 +41,14 @@ SSL is applied to protect all request data. Make sure you are using https to ini
 Successful request will response with either `200` or `201` status code togehter with response data if there is. When there is a new record created, `201 Created` will be used. Otherwise, `200 OK` will apply.
 
 Failure request will response with an error status code together with an error message:
-`{'code': 400, 'message': 'Your request cannot be processed'}`
+```
+{
+  'meta': {
+    'status': 400,
+    'message': 'Your request cannot be processed'
+  },
+  'data': {}
+}
+```
 
 Currently, we only support JSON data format in response.
