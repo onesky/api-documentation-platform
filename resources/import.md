@@ -1,10 +1,10 @@
-## Import
+## Import task
 - [Show](#show---show-an-import-task)
 
 
 ### Show - show an import task
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/imports/:import_id
+    GET https://platform.api.onesky.io/1/projects/:project_id/import-tasks/:import_id
 
 **Authentication**
 
