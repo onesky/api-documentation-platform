@@ -12,7 +12,6 @@ OneSky Platform API provides programmatic access to OneSky's platform management
 - [**Quotation**](/resources/quotation.md)
 - [**Order**](/resources/order.md)
 - [**Screenshot**](/resources/screenshot.md)
-- [**Feedback**](/resources/feedback.md)
 - [**Locale**](/resources/locale.md)
 - [**Project type**](/resources/project_type.md)
 
