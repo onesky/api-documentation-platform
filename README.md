@@ -2,6 +2,10 @@
 
 OneSky Platform API provides programmatic access to OneSky's platform management.
 
+## Classic API
+
+This is new Platform API and is not compatible with the [Classic API](http://developer.oneskyapp.com/api). This new API covered most of the endpoints of classic API with numerous of new endpoints added and will continue to develop in the future. On the other hand, the classic API will only have the minimum maintenance.
+
 ## Resources
 
 - [**Project Group**](/resources/project_group.md)
@@ -76,6 +80,3 @@ status 400 bad request
 ```
 
 Currently, we only support JSON data format in response.
-
-## Classic (old) API
-This is new Platform API and is not compatible with the [Classic API](http://developer.oneskyapp.com/api). This new API covered most of the endpoints of classic API with numerous of new endpoints added and will continue to develop in the future. On the other hand, the classic API will only have the minimum maintenance.
