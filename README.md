@@ -20,16 +20,32 @@ OneSky Platform API provides programmatic access to OneSky's platform management
 All of the endpoints require you to do authentication. You will have to find your own API key and API secret. First login to [oneskyapp](http://www.oneksyapp.com) and find the API key and secret in **Site Settings** under **API Keys & Usage**.
 
 #### Parameters
-- string `api_key`
-  > Your own API key
-
-- int `timestamp`
-  > Current unix timestamp
-
-- string `dev_hash`
-  > Calculate with `api_secret` and `timestamp`
-  >
-  > Formula: `md5(concatenate(<timestamp>, <api_secret>))`
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Type</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td><code>api_key</code></td>
+        <td>string</td>
+        <td>Your own API key</td>
+    </tr>
+    <tr>
+        <td><code>timestamp</code></td>
+        <td>integer</td>
+        <td>Current unix timestamp</td>
+    </tr>
+    <tr>
+        <td><code>dev_hash</code></td>
+        <td>string</td>
+        <td>
+            Calculate with <code>timestamp</code> and <code>api_secret</code>
+            <br>
+            Formula: <code>md5(concatenate(&lt;timestamp&gt;, &lt;api_secret&gt;))</code>
+        </td>
+    </tr>
+</table>
 
 ## Request
 We accept request data in JSON format. Please specify request header with `content-type: application/json` and encode the data in JSON format.
@@ -37,17 +53,29 @@ We accept request data in JSON format. Please specify request header with `conte
 SSL is applied to protect all request data. Make sure you are using https to initiate request.
 
 ## Response
-Successful request will response with either `200` or `201` status code togehter with response data if there is. When there is a new record created, `201 Created` will be used. Otherwise, `200 OK` will apply.
+Response body will be in JSON format with 2 objects.
+- `meta` contains the metadata of the response and additional information such as status code, total record count, paginations, etc...
+- `data` contains the data from your request such as project information, file information, etc...
 
-Failure request will response with an error status code together with an error message:
+Successful request will response with `2xx` status code together with response body if there is. Details of response body is shown at the bottom of each endpoints.
+
+Failure request will response with an error status code together with an error message.
+
+Example:
 ```
+status 400 bad request
+```
+```json
 {
-  'meta': {
-    'status': 400,
-    'message': 'Your request cannot be processed'
+  "meta": {
+    "status": 400,
+    "message": "Your request cannot be processed"
   },
-  'data': {}
+  "data": {}
 }
 ```
 
 Currently, we only support JSON data format in response.
+
+## Classic (old) API
+This is new Platform API and is not compatible with the [Classic API](http://developer.oneskyapp.com/api). This new API covered most of the endpoints of classic API with numerous of new endpoints added and will continue to develop in the future. On the other hand, the classic API will only have the minimum maintenance.
