@@ -12,7 +12,7 @@ This is new Platform API and is not compatible with the [Classic API](http://dev
 - [**Project**](/resources/project.md)
 - [**File**](/resources/file.md)
 - [**Translation**](/resources/translation.md)
-- [**Import**](/resources/import.md)
+- [**Import Task**](/resources/import_task.md)
 - [**Quotation**](/resources/quotation.md)
 - [**Order**](/resources/order.md)
 - [**Screenshot**](/resources/screenshot.md)
