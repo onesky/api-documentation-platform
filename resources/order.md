@@ -52,13 +52,13 @@ status 200 OK
     "data": [
         {
             "id": 123,
-            "amount": "358.00",
+            "status": "in-progress",
             "ordered_at": "2013-08-15T08:12:40+0000",
             "ordered_at_timestamp":13283746583
         },
         {
             "id": 122,
-            "amount": "1593.50",
+            "status": "completed",
             "ordered_at": "2013-08-15T08:12:40+0000",
             "ordered_at_timestamp":13283746583
         },
@@ -67,6 +67,8 @@ status 200 OK
 }
 ```
 [Back to top](#order)
+
+Remark: `status` can be either `pending`, `in-progress` or `completed`. Details please refer to [Order Status](/reference/order_status.md#order-status)
 
 
 ### Show - retrieve details of an order
@@ -93,6 +95,7 @@ status 200 OK
     },
     "data": {
         "id": 123,
+        "status": "in-progress",
         "amount": "695.00",
         "files": [
             {
@@ -125,9 +128,11 @@ status 200 OK
                 },
                 "string_count": 835,
                 "word_count": 3056,
+                "will_complete_at": null,
+                "will_complete_at_timestamp": null,
+                "seconds_to_complete": 0,
                 "completed_at": "2013-08-17T13:05:20+0000",
                 "completed_at_timestamp": 1376744720
-                // any estimated delivery time?
             },
             ...
         ],
@@ -140,7 +145,9 @@ status 200 OK
     }
 }
 ```
-Remark: `status` can be either `completed` or `in-progress`.
+Remark:
+- `status` of order (inside `data`) can be either `pending`, `in-progress` or `completed`. Details please refer to [Order Status](/reference/order_status.md#order-status)
+- `status` of order tasks (inside `tasks`) can be either `in-progress` or `completed`. Details please refer to [Order Task Status](/reference/order_status.md#order-task-status)
 
 [Back to top](#order)
 
@@ -281,7 +288,6 @@ status 201 Created
     },
     "data": {
         "id": 372,
-        "amount": "50.00",
         "files": [
             {
                 "name": "string.po"
@@ -306,8 +312,6 @@ status 201 Created
             "region" : "JP"
         },
         "order_type": "translate-only",
-        "string_count": 835,
-        "word_count": 3056,
         "is_including_not_translated": true,
         "is_including_not_approved": false,
         "is_including_outdated": true,
