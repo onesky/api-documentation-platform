@@ -115,27 +115,27 @@ status 200 OK
             "word_count": 639,
             "per_word_cost": "0.01",
             "total_cost": "20.13",
-            "estimated_return_datetime": "2013-01-01T23:00:00+0000",
-            "estimated_return_timestamp": 13453435132,
-            "estimated_seconds_from_now": 1234567
+            "will_complete_at": "2013-01-01T23:00:00+0000",
+            "will_complete_at_timestamp": 13453435132,
+            "seconds_to_complete": 1234567
         },
         "translation_and_review": {
             "string_count": 2013,
             "word_count": 639,
             "per_word_cost": "0.02",
             "total_cost": "40.26",
-            "estimated_return_datetime": "2013-01-02T23:00:00+0000",
-            "estimated_return_timestamp": 1357167600,
-            "estimated_seconds_from_now": 2345678
+            "will_complete_at": "2013-01-02T23:00:00+0000",
+            "will_complete_at_timestamp": 1357167600,
+            "seconds_to_complete": 2345678
         },
         "review_only": {
             "string_count": 2013,
             "word_count": 639,
             "per_word_cost": "0.005",
             "total_cost": "10.07",
-            "estimated_return_datetime": "2013-01-01T23:00:00+0000",
-            "estimated_return_timestamp": 13453435132,
-            "estimated_seconds_from_now": 1234567
+            "will_complete_at": "2013-01-01T23:00:00+0000",
+            "will_complete_at_timestamp": 13453435132,
+            "seconds_to_complete": 1234567
         }
     }
 }
