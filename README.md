@@ -57,12 +57,17 @@ We accept request data in JSON format. Please specify request header with `conte
 SSL is applied to protect all request data. Make sure you are using https to initiate request.
 
 ## Response
+
 Response body will be in JSON format with 2 objects.
 - `meta` contains the metadata of the response and additional information such as status code, total record count, paginations, etc...
 - `data` contains the data from your request such as project information, file information, etc...
 
+Currently, we only support JSON data format in response.
+
+#### Success
 Successful request will response with `2xx` status code together with response body if there is. Details of response body is shown at the bottom of each endpoints.
 
+#### Failure
 Failure request will response with an error status code together with an error message.
 
 Example:
@@ -79,4 +84,4 @@ status 400 bad request
 }
 ```
 
-Currently, we only support JSON data format in response.
+
