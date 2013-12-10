@@ -142,7 +142,7 @@ status 201 Created
     "data": {
         "name": "string.po",
         "format": "GNU_PO",
-        "locale": {
+        "language": {
             "code": "en-US",
             "english_name": "English (United States)",
             "local_name": "English (United States)",
