@@ -2,7 +2,6 @@
 - [List](#list---retrieve-all-project-groups)
 - [Show](#show---retrieve-details-of-a-project-group)
 - [Create](#create---create-a-new-project-group)
-- [Rename](#rename---update-name-of-a-project-group)
 - [Delete](#delete---remove-a-project-group)
 - [List enabled languages](#languages---list-enabled-languages-of-a-project-group)
 
@@ -163,41 +162,6 @@ status 201 Created
         }
     }
 }
-```
-[Back to top](#project-group)
-
-
-### Rename - update name of a project group
-
-    PUT https://platform.api.onesky.io/1/project-groups/:project_group_id/rename
-
-**Authentication**
-
-Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>name</td>
-        <td>required</td>
-        <td></td>
-        <td></td>
-        <td>New project group name</td>
-    </tr>
-</table>
-
-**Response**
-
-```
-status 200 OK
 ```
 [Back to top](#project-group)
 
