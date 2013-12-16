@@ -130,6 +130,7 @@ Required. Details described [here](/README.md#authentication)
 </table>
 
 **Request**
+
 Since this endpoint required to upload file, please use `Content-Type: multipart/form-data` for the request and submit the request like a form data.
 
 **Response**
