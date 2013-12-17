@@ -20,14 +20,6 @@
         <td><code>completed</code></td>
         <td>Order completed that means all translation tasks are finished.</td>
     </tr>
-    <tr>
-        <td><code>done</code></td>
-        <td>Order finished with no charge since no strings is being proceeded.</td>
-    </tr>
-    <tr>
-        <td><code>failed</code></td>
-        <td>Order failed due to insufficient credit.</td>
-    </tr>
 </table>
 
 
