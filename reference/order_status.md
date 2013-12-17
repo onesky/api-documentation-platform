@@ -25,7 +25,7 @@
         <td>Order finished with no charge since no strings is being proceeded.</td>
     </tr>
     <tr>
-        <td><code>fail</code></td>
+        <td><code>failed</code></td>
         <td>Order failed due to insufficient credit.</td>
     </tr>
 </table>
