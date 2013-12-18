@@ -68,7 +68,7 @@ status 200 OK
 ```
 [Back to top](#order)
 
-Remark: `status` can be either `pending`, `in-progress` or `completed`. Details please refer to [Order Status](/reference/order_status.md#order-status)
+Remark: `status` can be either `pending`, `in-progress`, `completed` or `failed`. Details please refer to [Order Status](/reference/order_status.md#order-status)
 
 
 ### Show - retrieve details of an order
@@ -146,7 +146,7 @@ status 200 OK
 }
 ```
 Remark:
-- `status` of order (inside `data`) can be either `pending`, `in-progress` or `completed`. Details please refer to [Order Status](/reference/order_status.md#order-status)
+- `status` of order (inside `data`) can be either `pending`, `in-progress`, `completed` or `failed`. Details please refer to [Order Status](/reference/order_status.md#order-status)
 - `status` of order tasks (inside `tasks`) can be either `in-progress` or `completed`. Details please refer to [Order Task Status](/reference/order_status.md#order-task-status)
 
 [Back to top](#order)
