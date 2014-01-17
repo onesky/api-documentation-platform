@@ -3,7 +3,7 @@
 - [Show](#show---retrieve-details-of-a-project-group)
 - [Create](#create---create-a-new-project-group)
 - [Delete](#delete---remove-a-project-group)
-- [List enabled languages](#languages---list-enabled-languages-of-a-project-group)
+- [Languages](#languages---list-enabled-languages-of-a-project-group)
 
 
 ### List - retrieve all project groups
@@ -206,36 +206,36 @@ status 200 OK
 ``` json
 {
     "meta": {
-        "status": 200
+        "status": 200,
+        "record_count": 3
     },
-    "data": {
-        "base_language": {
+    "data": [
+        {
             "code": "en-US",
             "english_name": "English (United States)",
             "local_name": "English (United States)",
             "locale": "en",
-            "region" : "US"
+            "region" : "US",
+            "is_base_language": true
         },
-        "enabled_languages": {
-            "count": 2,
-            "languages": [
-                {
-                    "code": "ja-JP",
-                    "english_name": "Japanese",
-                    "local_name": "日本語",
-                    "locale": "ja",
-                    "region" : "JP"
-                },
-                {
-                    "code": "ko-KR",
-                    "english_name": "Korean",
-                    "local_name": "한국어",
-                    "locale": "ko",
-                    "region" : "KR"
-                }
-            ]
-        }
-    }
+        {
+            "code": "ja-JP",
+            "english_name": "Japanese",
+            "local_name": "日本語",
+            "locale": "ja",
+            "region" : "JP",
+            "is_base_language": false
+        },
+        {
+            "code": "ko-KR",
+            "english_name": "Korean",
+            "local_name": "한국어",
+            "locale": "ko",
+            "region" : "KR",
+            "is_base_language": false
+        },
+        ...
+    ]
 }
 ```
 [Back to top](#project-group)
