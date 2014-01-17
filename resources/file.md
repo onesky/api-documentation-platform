@@ -72,6 +72,11 @@ status 200 OK
             "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
         },
+        {
+            "name": "Manually input",
+            "string_count": 285,
+            "word_count": 37
+        },
         ...
     ]
 }
