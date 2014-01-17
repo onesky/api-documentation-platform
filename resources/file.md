@@ -81,7 +81,9 @@ status 200 OK
     ]
 }
 ```
-Remark: `status` can be either `completed`, `in-progress` or `failed`.
+Remark:
+- `status` can be either `completed`, `in-progress` or `failed`.
+- Manual input strings will display as a separate file with no `last_import`, `uploaded_at` and `uploaded_at_timestamp`.
 
 [Back to top](#file)
 
