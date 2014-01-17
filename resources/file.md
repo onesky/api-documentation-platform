@@ -53,7 +53,6 @@ status 200 OK
         {
             "name": "strings.po",
             "string_count": 236,
-            "word_count": 1260,
             "last_import": {
                 "id": 123,
                 "status": "in-progress"
@@ -64,7 +63,6 @@ status 200 OK
         {
             "name": "en.yml",
             "string_count": 335,
-            "word_count": 1982,
             "last_import": {
                 "id": 109,
                 "status": "completed"
@@ -75,7 +73,6 @@ status 200 OK
         {
             "name": "Manually input",
             "string_count": 285,
-            "word_count": 37
         },
         ...
     ]
