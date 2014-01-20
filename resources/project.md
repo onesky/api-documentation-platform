@@ -4,6 +4,7 @@
 - [Create](#create---create-a-new-project)
 - [Update](#update---update-project)
 - [Delete](#delete---remove-project)
+- [Languages](#languages---list-languages-of-a-project)
 
 
 ### List - list projects of a project group
@@ -205,5 +206,63 @@ NONE
 
 ```
 status 200 OK
+```
+[Back to top](#project)
+
+
+### Languages - list languages of a project
+
+    GET https://platform.api.onesky.io/1/projects/:project_id/languages
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+NONE
+
+**Response**
+
+```
+status 200 OK
+```
+``` json
+{
+    "meta": {
+        "status": 200,
+        "record_count": 3
+    },
+    "data": [
+        {
+            "code": "en-US",
+            "english_name": "English (United States)",
+            "local_name": "English (United States)",
+            "locale": "en",
+            "region": "US",
+            "is_base_language": true,
+            "is_ready_to_publish": true,
+        },
+        {
+            "code": "ja-JP",
+            "english_name": "Japanese",
+            "local_name": "日本語",
+            "locale": "ja",
+            "region": "JP",
+            "is_base_language": false,
+            "is_ready_to_publish": true,
+        },
+        {
+            "code": "ko-KR",
+            "english_name": "Korean",
+            "local_name": "한국어",
+            "locale": "ko",
+            "region": "KR",
+            "is_base_language": false,
+            "is_ready_to_publish": true,
+        },
+        ...
+    ]
+}
 ```
 [Back to top](#project)
