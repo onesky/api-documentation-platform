@@ -4,7 +4,7 @@ OneSky Platform API provides programmatic access to OneSky's platform management
 
 ## Classic API
 
-This is new Platform API and is not compatible with the [Classic API](http://developer.oneskyapp.com/api). This new API covered most of the endpoints of classic API with numerous of new endpoints added and will continue to develop in the future. On the other hand, the classic API will only have the minimum maintenance.
+This is new Platform API and is not compatible with the [Classic API](http://developer.oneskyapp.com/api). This new API covers most of the endpoints of classic API with numerous of new endpoints added and will continue to be actively developed going forward.
 
 ## Resources
 
@@ -21,7 +21,7 @@ This is new Platform API and is not compatible with the [Classic API](http://dev
 
 ## Authentication
 
-All of the endpoints require you to do authentication. You will have to find your own API key and API secret. First login to [oneskyapp](http://www.oneksyapp.com) and find the API key and secret in **Site Settings** under **API Keys & Usage**.
+All of the endpoints require you to authenticate. You will have to find your own API key and API secret. First login to [oneskyapp](http://www.oneksyapp.com) and find the API key and secret in **Site Settings** under **API Keys & Usage**.
 
 #### Parameters
 <table>
