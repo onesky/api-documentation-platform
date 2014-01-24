@@ -2,7 +2,7 @@
 
 OneSky Platform API provides programmatic access to OneSky's platform management.
 
-## Classic API
+## The new API
 
 This is new Platform API and is not compatible with the [Classic API](http://developer.oneskyapp.com/api). This new API covers most of the endpoints of classic API with numerous of new endpoints added and will continue to be actively developed going forward.
 
