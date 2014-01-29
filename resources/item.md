@@ -93,7 +93,7 @@ status 200 OK
         "key": "question_001",
         "content": {
             "question_001": {
-                "title": "Which name is correct team name in National Basketball Association (NBA)?",
+                "title": "Which one is correct team name in National Basketball Association (NBA)?",
                 "answer1": "New York Bulls",
                 "answer2": "Los Angeles Kings",
                 "answer3": "Golden State Warriros",
