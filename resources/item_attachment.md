@@ -124,7 +124,7 @@ Since this endpoint required to upload file, please use `Content-Type: multipart
 **Response**
 
 ```
-status 201 OK
+status 201 Created
 ```
 ``` json
 {
@@ -174,7 +174,7 @@ Required. Details described [here](/README.md#authentication)
 **Response**
 
 ```
-status 200 Created
+status 200 OK
 ```
 ```
 file
@@ -182,7 +182,7 @@ file
 
 [Back to top](#item-attachment)
 
-### Delete - delete an attachement
+### Delete - delete an attachment
 
     Delete https://platform.api.onesky.io/1/projects/:project_id/item-attachments
 
@@ -212,7 +212,7 @@ Required. Details described [here](/README.md#authentication)
 **Response**
 
 ```
-status 200 Created
+status 200 OK
 ```
 
 [Back to top](#item-attachment)
@@ -255,7 +255,7 @@ Required. Details described [here](/README.md#authentication)
 **Response**
 
 ```
-status 200 Created
+status 200 OK
 ```
 ``` json
 {
