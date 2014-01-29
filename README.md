@@ -18,6 +18,7 @@ This is new Platform API and is not compatible with the [Classic API](http://dev
 - [**Screenshot**](/resources/screenshot.md)
 - [**Locale**](/resources/locale.md)
 - [**Project type**](/resources/project_type.md)
+- [**Item**](/resources/item.md)
 
 ## Authentication
 
