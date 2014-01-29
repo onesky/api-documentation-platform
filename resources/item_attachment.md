@@ -113,7 +113,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td><code>question_001</code></td>
-        <td>Specify an item that files attach to</td>
+        <td>Specify an item that file attach to</td>
     </tr>
 </table>
 
@@ -146,7 +146,7 @@ status 201 Created
 
 ### Download - download an attachment
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/item-attachments
+    GET https://platform.api.onesky.io/1/projects/:project_id/item-attachments/download
 
 **Authentication**
 
