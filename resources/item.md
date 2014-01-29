@@ -135,7 +135,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>Specify strings in items. Format please refer to <a href="/references/item_format.md">Items format</a></td>
+        <td>Specify strings in items. Format please refer to <a href="/reference/item_format.md">Items format</a></td>
     </tr>
     <tr>
         <td>locale</td>
