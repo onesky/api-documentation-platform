@@ -69,7 +69,7 @@ status 200 OK
 
 ### Show - show an item
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/items/:item_key
+    GET https://platform.api.onesky.io/1/projects/:project_id/items/show
 
 **Authentication**
 
@@ -77,7 +77,22 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-NONE
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>item_key</td>
+        <td>required</td>
+        <td></td>
+        <td><code>question_001</code></td>
+        <td>Specify key of an item to show</td>
+    </tr>
+</table>
 
 **Response**
 
