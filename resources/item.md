@@ -51,13 +51,11 @@ status 200 OK
     },
     "data": [
         {
-            "item_id": 1,
             "key": "question_001",
             "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
         {
-            "item_id": 2,
             "key": "question_002",
             "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
@@ -92,7 +90,6 @@ status 200 OK
         "status": 200
     },
     "data": {
-        "id": 1,
         "key": "question_001",
         "content": {
             "question_001": {
