@@ -69,7 +69,7 @@ status 200 OK
 
 ### Show - show an item
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/items/:item_id
+    GET https://platform.api.onesky.io/1/projects/:project_id/items/:item_key
 
 **Authentication**
 
@@ -100,6 +100,15 @@ status 200 OK
                 "answer4": "Huston Heat"
             }
         },
+        "attachments" : [
+            {
+                "name": "q001-answer1.jpg"
+            },
+            {
+                "name": "q001-answer2.jpg"
+            },
+            ...
+        ],
         "uploaded_at": "2013-10-07T15:27:10+0000",
         "uploaded_at_timestamp": 1381159630
     }
