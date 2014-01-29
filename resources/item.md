@@ -67,7 +67,7 @@ status 200 OK
 }
 ```
 
-[Back to top](#file)
+[Back to top](#item)
 
 ### Show - show an item
 
@@ -109,7 +109,7 @@ status 200 OK
 }
 ```
 
-[Back to top](#file)
+[Back to top](#item)
 
 ### Create - create items
 Add or update strings as items.
@@ -174,4 +174,4 @@ status 201 Created
 ```
 Remark: After request made successfully, string import process will be performed in background. Please check the import status via [Import Task](/resources/import_task.md#show---show-an-import-task) endpoint by using the `import.id` provided.
 
-[Back to top](#file)
+[Back to top](#item)
