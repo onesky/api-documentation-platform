@@ -211,6 +211,7 @@ status 200 OK
 [Back to top](#item-attachment)
 
 ### Attach - attach to an item
+Note that this will replace previously attached items list.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/item-attachments/attach
 
@@ -240,7 +241,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td><code>["question_001", "question_002"]</code></td>
-        <td>Specify items to attach</td>
+        <td>Specify items to attach.</td>
     </tr>
 </table>
 
