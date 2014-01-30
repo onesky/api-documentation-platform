@@ -26,13 +26,6 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>item_key</td>
-        <td>optional</td>
-        <td></td>
-        <td><code>question_001</code></td>
-        <td>Only show attachments of the item.</td>
-    </tr>
-    <tr>
         <td>page</td>
         <td>optional</td>
         <td><code>1</code></td>
