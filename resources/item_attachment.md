@@ -55,17 +55,11 @@ status 200 OK
     "data": [
         {
             "name": "q001-answer1.jpg",
-            "item_attached_to" :{
-                "key": "question_001"
-            },
             "uploaded_at": "2013-10-07T15:27:10+0000",
             "uploaded_at_timestamp": 1381159630
         },
         {
             "name": "q001-answer2.jpg",
-            "item_attached_to" :{
-                "key": "question_001"
-            },
             "uploaded_at": "2013-10-05T12:36:52+0000",
             "uploaded_at_timestamp": 1380976612
         },
@@ -134,6 +128,7 @@ status 201 Created
     }
 }
 ```
+Remark: Attachment name should be unique. If name of newly uploaded file is found, the previously uploaded file will be replaced.
 
 [Back to top](#item-attachment)
 
