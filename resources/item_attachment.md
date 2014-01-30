@@ -71,6 +71,7 @@ status 200 OK
 [Back to top](#item-attachment)
 
 ### Upload - upload an attachment
+Attachment name should be unique. If name of newly uploaded file is found, the previously uploaded file will be replaced.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/item-attachments
 
@@ -133,7 +134,6 @@ status 201 Created
     }
 }
 ```
-Remark: Attachment name should be unique. If name of newly uploaded file is found, the previously uploaded file will be replaced.
 
 [Back to top](#item-attachment)
 
