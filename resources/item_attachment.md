@@ -97,11 +97,11 @@ Required. Details described [here](/README.md#authentication)
         <td>File attached to an item</td>
     </tr>
     <tr>
-        <td>item_keys</td>
+        <td>item_key</td>
         <td>required</td>
         <td></td>
-        <td><code>["question_001", "question_002"]</code></td>
-        <td>Specify items to attach</td>
+        <td><code>question_001</code></td>
+        <td>Specify an item to attach</td>
     </tr>
 </table>
 
@@ -121,14 +121,9 @@ status 201 Created
     },
     "data": {
         "name": "q001-answer1.jpg",
-        "items_attached_to": [
-            {
-                "key": "question_001"
-            },
-            {
-                "key": "question_002"
-            }
-        ],
+        "item_attached_to":  {
+            "key": "question_001"
+        },
         "uploaded_at": "2013-10-07T15:27:10+0000",
         "uploaded_at_timestamp": 1381159630
     }
@@ -211,7 +206,7 @@ status 200 OK
 [Back to top](#item-attachment)
 
 ### Attach - attach to an item
-Note that this will replace previously attached items list.
+Note that this will modify the item previously attached to.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/item-attachments/attach
 
@@ -237,11 +232,11 @@ Required. Details described [here](/README.md#authentication)
         <td>Name of the attachment</td>
     </tr>
     <tr>
-        <td>item_keys</td>
+        <td>item_key</td>
         <td>required</td>
         <td></td>
-        <td><code>["question_001", "question_002"]</code></td>
-        <td>Specify items to attach.</td>
+        <td><code>question_002</code></td>
+        <td>Specify an item to attach.</td>
     </tr>
 </table>
 
@@ -257,14 +252,9 @@ status 200 OK
     },
     "data": {
         "name": "q001-answer1.jpg",
-        "items_attached_to": [
-            {
-                "key": "question_001"
-            },
-            {
-                "key": "question_002"
-            }
-        ],
+        "items_attached_to":  {
+            "key": "question_002"
+        },
         "uploaded_at": "2013-10-07T15:27:10+0000",
         "uploaded_at_timestamp": 1381159630
     }
