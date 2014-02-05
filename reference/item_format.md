@@ -48,7 +48,7 @@
         <td>length_limit - relative_characters</td>
         <td>(either this or absolute_characters if length_limit provided)</td>
         <td></td>
-        <td>Length limit is calculated according to string length. For example, <code>2</code> with string length <code>10</code>, length limit is <code>10 x 2</code>. Then length limit is <code>20</code> characters.</td>
+        <td>Length limit is calculated according to string length. For example, relative_characters <code>2</code> with string length <code>10</code>, length limit is <code>10 x 2</code>. That is <code>20</code> characters.</td>
     </tr>
     <tr>
         <td>length_limit - is_exceed_allowed</td>
