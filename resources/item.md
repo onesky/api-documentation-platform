@@ -111,27 +111,42 @@ status 200 OK
                 "title": {
                     "string": "Which one is correct team name in National Basketball Association (NBA)?",
                     "description": "NBA basketball team name",
-                    "length_limit": 80
+                    "length_limit": {
+                        "absolute_char_count": 80,
+                        "is_exceed_allowed": true
+                    }
                 },
                 "answer1": {
                     "string": "New York Bulls",
                     "description": "New York Knicks, Chicago Bulls",
-                    "length_limit": 20
+                    "length_limit": {
+                        "relative_char_count": 2,
+                        "is_exceed_allowed": false
+                    }
                 },
                 "answer2": {
                     "string": "Los Angeles Kings",
                     "description": "Los Angeles Lakers, Sacramento Kings",
-                    "length_limit": 20
+                    "length_limit": {
+                        "relative_char_count": 2,
+                        "is_exceed_allowed": false
+                    }
                 },
                 "answer3": {
                     "string": "Golden State Warriros",
                     "description": "answer",
-                    "length_limit": 20
+                    "length_limit": {
+                        "relative_char_count": 2,
+                        "is_exceed_allowed": false
+                    }
                 },
                 "answer4": {
                     "string": "Huston Heat",
                     "description": "Huston Rocket, Miami Heat",
-                    "length_limit": 20
+                    "length_limit": {
+                        "relative_char_count": 2,
+                        "is_exceed_allowed": false
+                    }
                 }
             }
         },
