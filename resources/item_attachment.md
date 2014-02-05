@@ -71,7 +71,7 @@ status 200 OK
 [Back to top](#item-attachment)
 
 ### Upload - upload an attachment
-Attachment (file) name should be unique. If name of newly uploaded file is found, the previously uploaded file will be replaced.
+Attachment (file) name should be unique in item. If name of newly uploaded file is found for the same item, the previously uploaded file will be replaced.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/item-attachments
 
@@ -151,6 +151,13 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
+        <td>item_key</td>
+        <td>required</td>
+        <td></td>
+        <td><code>question_001</code></td>
+        <td>Specify an item to attach</td>
+    </tr>
+    <tr>
         <td>name</td>
         <td>required</td>
         <td></td>
@@ -189,6 +196,13 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
+        <td>item_key</td>
+        <td>required</td>
+        <td></td>
+        <td><code>question_001</code></td>
+        <td>Specify an item to attach</td>
+    </tr>
+    <tr>
         <td>name</td>
         <td>required</td>
         <td></td>
@@ -206,7 +220,7 @@ status 200 OK
 [Back to top](#item-attachment)
 
 ### Attach - attach to an item
-Note that this will modify the item previously attached to.
+Note that this will modify the item previously attached to. Also, this would replace the attachment with the same name in the newly attached item.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/item-attachments/attach
 
