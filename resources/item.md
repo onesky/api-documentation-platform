@@ -205,13 +205,6 @@ Required. Details described [here](/README.md#authentication)
         <td></td>
         <td>Specify strings in items. Format please refer to <a href="/reference/item_format.md">Items format</a></td>
     </tr>
-    <tr>
-        <td>locale</td>
-        <td>optional</td>
-        <td>[base language]</td>
-        <td><code>zh-TW</code></td>
-        <td>Specify the input language. If locale is different from base language, the strings will add to translation strings. Please refer to <a href="/resources/locale.md">GET locales</a></td>
-    </tr>
 </table>
 
 **Response**
@@ -225,13 +218,6 @@ status 201 Created
         "status": 201
     },
     "data": {
-        "language": {
-            "code": "en-US",
-            "english_name": "English (United States)",
-            "local_name": "English (United States)",
-            "locale": "en",
-            "region" : "US"
-        },
         "import": {
             "id": 154,
             "created_at": "2013-10-07T15:27:10+0000",
