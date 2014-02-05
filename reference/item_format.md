@@ -39,14 +39,14 @@
         <td>Set the length limit for translator</td>
     </tr>
     <tr>
-        <td>length_limit - absolute_characters</td>
-        <td>(either this or relative_characters if length_limit provided)</td>
+        <td>length_limit - absolute_char_count</td>
+        <td>(either this or relative_char_count if length_limit provided)</td>
         <td></td>
         <td>Absolute number of characters limit for translation</td>
     </tr>
     <tr>
-        <td>length_limit - relative_characters</td>
-        <td>(either this or absolute_characters if length_limit provided)</td>
+        <td>length_limit - relative_char_count</td>
+        <td>(either this or absolute_char_count if length_limit provided)</td>
         <td></td>
         <td>Length limit is calculated according to string length. For example, relative_characters <code>2</code> with string length <code>10</code>, length limit is <code>10 x 2</code>. That is <code>20</code> characters.</td>
     </tr>
@@ -67,8 +67,8 @@
             "string": "<string to be translated>",
             "description" "<string description>",
             "length_limit": {
-                "absolute_characters": "<absolute characters count>",
-                "relative_characters": "<relative characters count>",
+                "absolute_char_count": "<absolute characters count>",
+                "relative_char_count": "<relative characters count>",
                 "is_exceed_allowed": "<whether allow translation exceeding the length limit a little>"
             }
         }
@@ -85,7 +85,7 @@
             "string": "Which one is correct team name in National Basketball Association (NBA)?",
             "description": "NBA basketball team name",
             "length_limit": {
-                "absolute_characters": 80,
+                "absolute_char_count": 80,
                 "is_exceed_allowed": true
             }
         },
@@ -93,7 +93,7 @@
             "string": "New York Bulls",
             "description": "New York Knicks, Chicago Bulls",
             "length_limit": {
-                "relative_characters": 1,
+                "relative_char_count": 1,
                 "is_exceed_allowed": false
             }
         },
@@ -101,7 +101,7 @@
             "string": "Los Angeles Kings",
             "description": "Los Angeles Lakers, Sacramento Kings",
             "length_limit": {
-                "relative_characters": 1,
+                "relative_char_count": 1,
                 "is_exceed_allowed": false
             }
         },
@@ -109,7 +109,7 @@
             "string": "Golden State Warriros",
             "description": "This is the answer",
             "length_limit": {
-                "relative_characters": 1,
+                "relative_char_count": 1,
                 "is_exceed_allowed": false
             }
         },
@@ -117,7 +117,7 @@
             "string": "Huston Heat",
             "description": "Huston Rocket, Miami Heat",
             "length_limit": {
-                "relative_characters": 1,
+                "relative_char_count": 1,
                 "is_exceed_allowed": false
             }
         }
@@ -127,7 +127,7 @@
             "string": "Albert Einstein was born in which country?",
             "description": "Albery Einstein"
             "length_limit": {
-                "absolute_characters": 70,
+                "absolute_char_count": 70,
                 "is_exceed_allowed": true
             }
         },
