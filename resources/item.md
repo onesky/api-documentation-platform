@@ -106,14 +106,46 @@ status 200 OK
     },
     "data": {
         "key": "question_001",
-        "content": {
-            "question_001": {
-                "title": "Which one is correct team name in National Basketball Association (NBA)?",
-                "answer1": "New York Bulls",
-                "answer2": "Los Angeles Kings",
-                "answer3": "Golden State Warriros",
-                "answer4": "Huston Heat"
+        "base_language": {
+            "en": {
+                "title": {
+                    "string": "Which one is correct team name in National Basketball Association (NBA)?",
+                    "description": "NBA basketball team name",
+                    "length_limit": 80
+                },
+                "answer1": {
+                    "string": "New York Bulls",
+                    "description": "New York Knicks, Chicago Bulls",
+                    "length_limit": 20
+                },
+                "answer2": {
+                    "string": "Los Angeles Kings",
+                    "description": "Los Angeles Lakers, Sacramento Kings",
+                    "length_limit": 20
+                },
+                "answer3": {
+                    "string": "Golden State Warriros",
+                    "description": "answer",
+                    "length_limit": 20
+                },
+                "answer4": {
+                    "string": "Huston Heat",
+                    "description": "Huston Rocket, Miami Heat",
+                    "length_limit": 20
+                }
             }
+        },
+        "translations": {
+            "zh-TW": {
+                "title": "請選出正確的美國職業籃球聯賽球隊名稱",
+                "answer1": "紐約公牛",
+                "answer2": "洛杉磯帝王",
+                "answer3": "金州勇士",
+                "answer4": "休斯頓熱火"
+            },
+            "fr": {...},
+            "de": {...},
+            "jp": {...}
         },
         "attachments" : [
             {
