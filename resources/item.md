@@ -180,7 +180,7 @@ status 200 OK
 [Back to top](#item)
 
 ### Create - create items
-Add or update strings as items.
+Add or update strings of base language as items.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/items
 
