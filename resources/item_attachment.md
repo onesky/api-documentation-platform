@@ -239,18 +239,18 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>name</td>
-        <td>required</td>
-        <td></td>
-        <td><code>q001-answer1.jpg</code></td>
-        <td>Name of the attachment</td>
-    </tr>
-    <tr>
         <td>item_key</td>
         <td>required</td>
         <td></td>
         <td><code>question_002</code></td>
         <td>Specify an item to attach.</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>required</td>
+        <td></td>
+        <td><code>q001-answer1.jpg</code></td>
+        <td>Name of the attachment</td>
     </tr>
 </table>
 
