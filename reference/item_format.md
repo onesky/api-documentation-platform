@@ -35,7 +35,7 @@
     <tr>
         <td>length_limit</td>
         <td>optional</td>
-        <td></td>
+        <td>[no limit]</td>
         <td>Set the length limit for translator</td>
     </tr>
     <tr>
