@@ -39,16 +39,29 @@
         <td>Set the length limit for translator</td>
     </tr>
     <tr>
-        <td>length_limit - absolute_char_count</td>
-        <td>(either this or relative_char_count if length_limit provided)</td>
+        <td>length_limit - type</td>
+        <td>(required if length_limit provided)</td>
         <td></td>
-        <td>Absolute number of characters limit for translation</td>
+        <td>
+            <ul>
+                <li>
+                    <code>absolute</code>
+                    <br>
+                    Absolute number of characters limited for translation
+                </li>
+                <li>
+                    <code>relative</code>
+                    <br>
+                    Number of characters limited is calculated according to string length. For example, length limit value <code>2</code> with string length <code>10</code>, formula will be <code>10 x 2</code>. That is <code>20</code> characters.
+                </li>
+            </ul>
+        </td>
     </tr>
     <tr>
-        <td>length_limit - relative_char_count</td>
-        <td>(either this or absolute_char_count if length_limit provided)</td>
+        <td>length_limit - value</td>
+        <td>(required if length_limit provided)</td>
         <td></td>
-        <td>Length limit is calculated according to string length. For example, relative_char_count <code>2</code> with string length <code>10</code>, length limit is <code>10 x 2</code>. That is <code>20</code> characters.</td>
+        <td>Value either used as absolute characters limited or to calculate the limitation</td>
     </tr>
     <tr>
         <td>length_limit - is_exceed_allowed</td>
@@ -57,8 +70,6 @@
         <td>Whether allow translation exceeding the length limit a little</td>
     </tr>
 </table>
-
-Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_count` provided, `length_limit.absolute_char_count` will be used.
 
 **Structure**
 
@@ -69,8 +80,8 @@ Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_co
             "string": "<string to be translated>",
             "description" "<string description>",
             "length_limit": {
-                "absolute_char_count": "<absolute characters count>",
-                "relative_char_count": "<relative characters count>",
+                "type": "[absolute, relative]",
+                "value": "<value of length limit>",
                 "is_exceed_allowed": "<whether allow translation exceeding the length limit a little>"
             }
         }
@@ -87,7 +98,8 @@ Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_co
             "string": "Which one is correct team name in National Basketball Association (NBA)?",
             "description": "NBA basketball team name",
             "length_limit": {
-                "absolute_char_count": 80,
+                "type": "absolute",
+                "value": 80,
                 "is_exceed_allowed": true
             }
         },
@@ -95,7 +107,8 @@ Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_co
             "string": "New York Bulls",
             "description": "New York Knicks, Chicago Bulls",
             "length_limit": {
-                "relative_char_count": 1,
+                "type": "relative",
+                "value": 1,
                 "is_exceed_allowed": false
             }
         },
@@ -103,7 +116,8 @@ Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_co
             "string": "Los Angeles Kings",
             "description": "Los Angeles Lakers, Sacramento Kings",
             "length_limit": {
-                "relative_char_count": 1,
+                "type": "relative",
+                "value": 1,
                 "is_exceed_allowed": false
             }
         },
@@ -111,7 +125,8 @@ Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_co
             "string": "Golden State Warriros",
             "description": "This is the answer",
             "length_limit": {
-                "relative_char_count": 1,
+                "type": "relative",
+                "value": 1,
                 "is_exceed_allowed": false
             }
         },
@@ -119,7 +134,8 @@ Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_co
             "string": "Huston Heat",
             "description": "Huston Rocket, Miami Heat",
             "length_limit": {
-                "relative_char_count": 1,
+                "type": "relative",
+                "value": 1,
                 "is_exceed_allowed": false
             }
         }
@@ -129,7 +145,8 @@ Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_co
             "string": "Albert Einstein was born in which country?",
             "description": "Albery Einstein"
             "length_limit": {
-                "absolute_char_count": 70,
+                "type": "absolute",
+                "value": 70,
                 "is_exceed_allowed": true
             }
         },
