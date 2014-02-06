@@ -15,7 +15,7 @@
         <td>Unique key to item</td>
     </tr>
     <tr>
-        <td>content_key</td>
+        <td>string_key</td>
         <td>required</td>
         <td></td>
         <td>Unique key to string within an item</td>
@@ -63,7 +63,7 @@
 ``` json
 {
     "<item_key>": {
-        "<content_key>": {
+        "<string_key>": {
             "string": "<string to be translated>",
             "description" "<string description>",
             "length_limit": {
