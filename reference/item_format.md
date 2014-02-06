@@ -58,6 +58,8 @@
     </tr>
 </table>
 
+Remark: If `length_limit.absolute_char_count` and `length_limit.relative_char_count` provided, `length_limit.absolute_char_count` will be used.
+
 **Structure**
 
 ``` json
