@@ -112,7 +112,8 @@ status 200 OK
                     "string": "Which one is correct team name in National Basketball Association (NBA)?",
                     "description": "NBA basketball team name",
                     "length_limit": {
-                        "absolute_char_count": 80,
+                        "type": "absolute",
+                        "value": 80,
                         "is_exceed_allowed": true
                     }
                 },
@@ -120,7 +121,8 @@ status 200 OK
                     "string": "New York Bulls",
                     "description": "New York Knicks, Chicago Bulls",
                     "length_limit": {
-                        "relative_char_count": 2,
+                        "type": "relative",
+                        "value": 2,
                         "is_exceed_allowed": false
                     }
                 },
@@ -128,7 +130,8 @@ status 200 OK
                     "string": "Los Angeles Kings",
                     "description": "Los Angeles Lakers, Sacramento Kings",
                     "length_limit": {
-                        "relative_char_count": 2,
+                        "type": "relative",
+                        "value": 2,
                         "is_exceed_allowed": false
                     }
                 },
@@ -136,7 +139,8 @@ status 200 OK
                     "string": "Golden State Warriros",
                     "description": "answer",
                     "length_limit": {
-                        "relative_char_count": 2,
+                        "type": "relative",
+                        "value": 2,
                         "is_exceed_allowed": false
                     }
                 },
@@ -144,7 +148,8 @@ status 200 OK
                     "string": "Huston Heat",
                     "description": "Huston Rocket, Miami Heat",
                     "length_limit": {
-                        "relative_char_count": 2,
+                        "type": "relative",
+                        "value": 2,
                         "is_exceed_allowed": false
                     }
                 }
