@@ -52,13 +52,13 @@ status 200 OK
     "data": [
         {
             "key": "question_001",
-            "uploaded_at": "2013-10-07T15:27:10+0000",
-            "uploaded_at_timestamp": 1381159630
+            "created_at": "2013-10-07T15:27:10+0000",
+            "created_at_timestamp": 1381159630
         },
         {
             "key": "question_002",
-            "uploaded_at": "2013-10-05T12:36:52+0000",
-            "uploaded_at_timestamp": 1380976612
+            "created_at": "2013-10-05T12:36:52+0000",
+            "created_at_timestamp": 1380976612
         },
         ...
     ]
@@ -171,8 +171,8 @@ status 200 OK
             },
             ...
         ],
-        "uploaded_at": "2013-10-07T15:27:10+0000",
-        "uploaded_at_timestamp": 1381159630
+        "created_at": "2013-10-07T15:27:10+0000",
+        "created_at_timestamp": 1381159630
     }
 }
 ```
