@@ -231,6 +231,6 @@ status 201 Created
     }
 }
 ```
-Remark: After request made successfully, string import process will be performed in background. Please check the import status via [Import Task](/resources/import_task.md#show---show-an-import-task) endpoint by using the `import.id` provided.
+Remark: `import.id` is to retrieve the import status and there will be a new action to do so. We are working on it and will be available in the near future. Watch this repo to stay notice of any update.
 
 [Back to top](#item)
