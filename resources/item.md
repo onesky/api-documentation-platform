@@ -2,6 +2,7 @@
 - [List](#list---list-items)
 - [Show](#show---show-an-item)
 - [Import](#import---create-or-edit-items)
+- [Delete](#delete---delete-an-item)
 
 
 ### List - list items
@@ -239,5 +240,40 @@ status 201 Created
 }
 ```
 Remark: `import.id` is to retrieve the import status and there will be a new action to do so. We are working on it and will be available in the near future. Watch this repo to stay notice of any update.
+
+[Back to top](#item)
+
+### Delete - delete an item
+
+    DELETE https://platform.api.onesky.io/1/projects/:project_id/items
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>item_key</td>
+        <td>required</td>
+        <td></td>
+        <td><code>question_001</code></td>
+        <td>Specify key of an item to show</td>
+    </tr>
+</table>
+
+**Response**
+
+```
+status 200 OK
+```
 
 [Back to top](#item)
