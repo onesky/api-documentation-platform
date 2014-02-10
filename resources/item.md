@@ -185,7 +185,7 @@ status 200 OK
 [Back to top](#item)
 
 ### Create - create items
-Add or update strings of base language as items.
+Add or update (re-create) strings of base language as items.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/items
 
@@ -209,6 +209,13 @@ Required. Details described [here](/README.md#authentication)
         <td></td>
         <td></td>
         <td>Specify strings in items. Format please refer to <a href="/reference/item_format.md">Items format</a></td>
+    </tr>
+    <tr>
+        <td>is_keeping_all_strings</td>
+        <td>optional</td>
+        <td><code>true</code></td>
+        <td></td>
+        <td>Whether to deprecate strings within an previously created item that cannot be found in the re-creation of the item. For example, <code>item1</code> (already created) contains <code>string1</code> and <code>string2</code>. Re-create <code>item1</code> with <code>string2</code> and set <code>is_keeping_all_strings</code> to <code>false</code>. <code>string1</code> will be deprecated.</td>
     </tr>
 </table>
 
