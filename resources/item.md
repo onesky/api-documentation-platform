@@ -1,7 +1,7 @@
 ## Item
 - [List](#list---list-items)
 - [Show](#show---show-an-item)
-- [Create](#create---create-items)
+- [Import](#import---create-or-edit-items)
 
 
 ### List - list items
@@ -184,8 +184,8 @@ status 200 OK
 
 [Back to top](#item)
 
-### Create - create items
-Add or update (re-create) strings of base language as items.
+### Import - create or update items
+Import items to create new strings or update existing strings.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/items
 
