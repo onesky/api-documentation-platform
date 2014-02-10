@@ -184,8 +184,8 @@ status 200 OK
 
 [Back to top](#item)
 
-### Import - create or update items
-Import items to create new strings or update existing strings.
+### Import - create or edit items
+Import items to create new strings or edit existing strings.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/items
 
