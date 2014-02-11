@@ -4,7 +4,6 @@ Files attached to an item
 - [Upload](#upload---upload-an-attachment)
 - [Download](#download---download-an-attachment)
 - [Delete](#delete---delete-an-attachment)
-- [Attach](#attach---attach-to-an-item)
 
 
 ### List - list attachments of a project
@@ -215,64 +214,6 @@ Required. Details described [here](/README.md#authentication)
 
 ```
 status 200 OK
-```
-
-[Back to top](#item-attachment)
-
-### Attach - attach to an item
-Note that this will modify the item previously attached to. Also, this would replace the attachment with the same name in the newly attached item.
-
-    POST https://platform.api.onesky.io/1/projects/:project_id/item-attachments/attach
-
-**Authentication**
-
-Required. Details described [here](/README.md#authentication)
-
-**Parameters**
-
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>item_key</td>
-        <td>required</td>
-        <td></td>
-        <td><code>question_002</code></td>
-        <td>Specify an item to attach.</td>
-    </tr>
-    <tr>
-        <td>name</td>
-        <td>required</td>
-        <td></td>
-        <td><code>q001-answer1.jpg</code></td>
-        <td>Name of the attachment</td>
-    </tr>
-</table>
-
-**Response**
-
-```
-status 200 OK
-```
-``` json
-{
-    "meta": {
-        "status": 200
-    },
-    "data": {
-        "name": "q001-answer1.jpg",
-        "items_attached_to":  {
-            "key": "question_002"
-        },
-        "uploaded_at": "2013-10-07T15:27:10+0000",
-        "uploaded_at_timestamp": 1381159630
-    }
-}
 ```
 
 [Back to top](#item-attachment)
