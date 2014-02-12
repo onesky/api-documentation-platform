@@ -1,5 +1,5 @@
-## Item Attachment
-Files attached to an item
+## Phrase Collection Attachment
+Files attached to an phrase collection
 - [List](#list---list-attachments-of-a-project)
 - [Upload](#upload---upload-an-attachment)
 - [Download](#download---download-an-attachment)
@@ -8,7 +8,7 @@ Files attached to an item
 
 ### List - list attachments of a project
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/item-attachments
+    GET https://platform.api.onesky.io/1/projects/:project_id/phrase-collection-attachments
 
 **Authentication**
 
@@ -67,12 +67,12 @@ status 200 OK
 }
 ```
 
-[Back to top](#item-attachment)
+[Back to top](#phrase-collection-attachment)
 
 ### Upload - upload an attachment
-Attachment (file) name should be unique in item. If name of newly uploaded file is found for the same item, the previously uploaded file will be replaced.
+Attachment (file) name should be unique in phrase collection. If name of newly uploaded file is found for the same phrase collection, the previously uploaded file will be replaced.
 
-    POST https://platform.api.onesky.io/1/projects/:project_id/item-attachments
+    POST https://platform.api.onesky.io/1/projects/:project_id/phrase-collection-attachments
 
 **Authentication**
 
@@ -93,14 +93,14 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td></td>
-        <td>File attached to an item</td>
+        <td>File attached to an phrase collection</td>
     </tr>
     <tr>
-        <td>item_key</td>
+        <td>collection_key</td>
         <td>required</td>
         <td></td>
         <td><code>question_001</code></td>
-        <td>Specify an item to attach</td>
+        <td>Specify an phrase collection to attach</td>
     </tr>
 </table>
 
@@ -120,7 +120,7 @@ status 201 Created
     },
     "data": {
         "name": "q001-answer1.jpg",
-        "item_attached_to":  {
+        "collection_attached_to":  {
             "key": "question_001"
         },
         "uploaded_at": "2013-10-07T15:27:10+0000",
@@ -129,11 +129,11 @@ status 201 Created
 }
 ```
 
-[Back to top](#item-attachment)
+[Back to top](#phrase-collection-attachment)
 
 ### Download - download an attachment
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/item-attachments/download
+    GET https://platform.api.onesky.io/1/projects/:project_id/phrase-collection-attachments/download
 
 **Authentication**
 
@@ -150,11 +150,11 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>item_key</td>
+        <td>collection_key</td>
         <td>required</td>
         <td></td>
         <td><code>question_001</code></td>
-        <td>Specify an item to attach</td>
+        <td>Specify an phrase collection to attach</td>
     </tr>
     <tr>
         <td>name</td>
@@ -174,11 +174,11 @@ status 200 OK
 file
 ```
 
-[Back to top](#item-attachment)
+[Back to top](#phrase-collection-attachment)
 
 ### Delete - delete an attachment
 
-    Delete https://platform.api.onesky.io/1/projects/:project_id/item-attachments
+    Delete https://platform.api.onesky.io/1/projects/:project_id/phrase-collection-attachments
 
 **Authentication**
 
@@ -195,11 +195,11 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>item_key</td>
+        <td>collection_key</td>
         <td>required</td>
         <td></td>
         <td><code>question_001</code></td>
-        <td>Specify an item to attach</td>
+        <td>Specify an phrase collection to attach</td>
     </tr>
     <tr>
         <td>name</td>
@@ -216,4 +216,4 @@ Required. Details described [here](/README.md#authentication)
 status 200 OK
 ```
 
-[Back to top](#item-attachment)
+[Back to top](#phrase-collection-attachment)

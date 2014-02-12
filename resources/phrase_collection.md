@@ -1,13 +1,13 @@
-## Item
-- [List](#list---list-items)
-- [Show](#show---show-an-item)
-- [Import](#import---create-or-edit-items)
-- [Delete](#delete---delete-an-item)
+## Phrase Collection
+- [List](#list---list-phrase-collections)
+- [Show](#show---show-a-phrase-collection)
+- [Import](#import---create-or-edit-phrase-collections)
+- [Delete](#delete---delete-a-phrase-collection)
 
 
-### List - list items
+### List - list phrase collections
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/items
+    GET https://platform.api.onesky.io/1/projects/:project_id/phrase-collections
 
 **Authentication**
 
@@ -66,11 +66,11 @@ status 200 OK
 }
 ```
 
-[Back to top](#item)
+[Back to top](#phrase-collection)
 
-### Show - show an item
+### Show - show a phrase collection
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/items/show
+    GET https://platform.api.onesky.io/1/projects/:project_id/phrase-collections/show
 
 **Authentication**
 
@@ -87,11 +87,11 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>item_key</td>
+        <td>collection_key</td>
         <td>required</td>
         <td></td>
         <td><code>question_001</code></td>
-        <td>Specify key of an item to show</td>
+        <td>Specify key of a phrase collection to show</td>
     </tr>
 </table>
 
@@ -183,12 +183,12 @@ status 200 OK
 }
 ```
 
-[Back to top](#item)
+[Back to top](#phrase-collection)
 
-### Import - create or edit items
-Import items to create new strings or edit existing strings.
+### Import - create or edit phrase collections
+Import phrase collections to create new strings or edit existing strings.
 
-    POST https://platform.api.onesky.io/1/projects/:project_id/items
+    POST https://platform.api.onesky.io/1/projects/:project_id/phrase-collections
 
 **Authentication**
 
@@ -205,18 +205,18 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>items</td>
+        <td>collections</td>
         <td>required</td>
         <td></td>
         <td></td>
-        <td>Specify strings in items. Format please refer to <a href="/reference/item_format.md">Items format</a></td>
+        <td>Specify strings in phrase collections. Format please refer to <a href="/reference/phrase_collection_format.md">Phrase Collection format</a></td>
     </tr>
     <tr>
         <td>is_keeping_all_strings</td>
         <td>optional</td>
         <td><code>true</code></td>
         <td></td>
-        <td>Whether to deprecate strings within an previously created item that cannot be found in the re-creation of the item. For example, <code>item1</code> (already created) contains <code>string1</code> and <code>string2</code>. Re-create <code>item1</code> with <code>string2</code> and set <code>is_keeping_all_strings</code> to <code>false</code>. <code>string1</code> will be deprecated.</td>
+        <td>Whether to deprecate strings within an previously created phrase collection that cannot be found in the re-creation of the phrase collection. For example, <code>collection1</code> (already created) contains <code>string1</code> and <code>string2</code>. Re-create <code>collection1</code> with <code>string2</code> and set <code>is_keeping_all_strings</code> to <code>false</code>. <code>string1</code> will be deprecated.</td>
     </tr>
 </table>
 
@@ -241,11 +241,11 @@ status 201 Created
 ```
 Remark: `import.id` is to retrieve the import status and there will be a new action to do so. We are working on it and will be available in the near future. Watch this repo to stay notice of any update.
 
-[Back to top](#item)
+[Back to top](#phrase-collection)
 
-### Delete - delete an item
+### Delete - delete an phrase collection
 
-    DELETE https://platform.api.onesky.io/1/projects/:project_id/items
+    DELETE https://platform.api.onesky.io/1/projects/:project_id/phrase-collections
 
 **Authentication**
 
@@ -262,11 +262,11 @@ Required. Details described [here](/README.md#authentication)
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>item_key</td>
+        <td>collection_key</td>
         <td>required</td>
         <td></td>
         <td><code>question_001</code></td>
-        <td>Specify key of an item to show</td>
+        <td>Specify key of a phrase collection to delete</td>
     </tr>
 </table>
 
@@ -276,4 +276,4 @@ Required. Details described [here](/README.md#authentication)
 status 200 OK
 ```
 
-[Back to top](#item)
+[Back to top](#phrase-collection)

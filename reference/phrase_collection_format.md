@@ -1,4 +1,4 @@
-## Item format
+## Phrase Collection format
 **Parameters**
 
 <table>
@@ -9,16 +9,16 @@
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td>item_key</td>
+        <td>collection_key</td>
         <td>required</td>
         <td></td>
-        <td>Unique key to item</td>
+        <td>Unique key to a phrase collection</td>
     </tr>
     <tr>
         <td>string_key</td>
         <td>required</td>
         <td></td>
-        <td>Unique key to string within an item</td>
+        <td>Unique key to string within a phrase collection</td>
     </tr>
     <tr>
         <td>string</td>
@@ -75,7 +75,7 @@
 
 ``` json
 {
-    "<item_key>": {
+    "<collection_key>": {
         "<string_key>": {
             "string": "<string to be translated>",
             "description" "<string description>",
