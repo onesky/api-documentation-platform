@@ -8,16 +8,25 @@ This is new Platform API and is not compatible with the [Classic API](http://dev
 
 ## Resources
 
+**Project**
 - [**Project Group**](/resources/project_group.md)
 - [**Project**](/resources/project.md)
+- [**Project Type**](/resources/project_type.md)
+
+**String**
 - [**File**](/resources/file.md)
 - [**Translation**](/resources/translation.md)
+- [**Item**](/resources/item.md)
+- [**Item Attachment**](/resources/item_attachment.md)
 - [**Import Task**](/resources/import_task.md)
+- [**Screenshot**](/resources/screenshot.md)
+
+**Order**
 - [**Quotation**](/resources/quotation.md)
 - [**Order**](/resources/order.md)
-- [**Screenshot**](/resources/screenshot.md)
+
+**Language**
 - [**Locale**](/resources/locale.md)
-- [**Project type**](/resources/project_type.md)
 
 ## Authentication
 
