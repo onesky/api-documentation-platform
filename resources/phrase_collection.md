@@ -243,7 +243,7 @@ Remark: `import.id` is to retrieve the import status and there will be a new act
 
 [Back to top](#phrase-collection)
 
-### Delete - delete an phrase collection
+### Delete - delete a phrase collection
 
     DELETE https://platform.api.onesky.io/1/projects/:project_id/phrase-collections
 
