@@ -1,5 +1,5 @@
 ## Phrase Collection Attachment
-Files attached to an phrase collection
+Files attached to a phrase collection
 - [List](#list---list-attachments-of-a-project)
 - [Upload](#upload---upload-an-attachment)
 - [Download](#download---download-an-attachment)
@@ -70,7 +70,7 @@ status 200 OK
 [Back to top](#phrase-collection-attachment)
 
 ### Upload - upload an attachment
-Attachment (file) name should be unique in phrase collection. If name of newly uploaded file is found for the same phrase collection, the previously uploaded file will be replaced.
+Attachment (file) name should be unique within a phrase collection. If name of newly uploaded file is found for the same phrase collection, the previously uploaded file will be replaced.
 
     POST https://platform.api.onesky.io/1/projects/:project_id/phrase-collection-attachments
 
