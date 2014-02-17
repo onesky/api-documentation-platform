@@ -83,7 +83,7 @@ Required. Details described [here](/README.md#authentication)
 ```
 Remark:
 - `status` can be either `completed`, `in-progress` or `failed`.
-- Response may vary according to the way used to import strings. More response sample [here](/reference/import_tasks_response_samples.md).
+- Response may vary according to the way used to import strings. More response sample [here](/reference/import_tasks_response_samples.md#list---list-import-tasks).
 
 [Back to top](#import-task)
 
@@ -129,6 +129,6 @@ NONE
 ```
 Remark:
 - `status` can be either `completed`, `in-progress` or `failed`.
-- Response may vary according to the way used to import strings. More response sample [here](/reference/import_tasks_response_samples.md).
+- Response may vary according to the way used to import strings. More response sample [here](/reference/import_tasks_response_samples.md#show---show-an-import-task).
 
 [Back to top](#import-task)
