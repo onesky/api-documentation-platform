@@ -78,7 +78,7 @@
     "<collection_key>": {
         "<string_key>": {
             "string": "<string to be translated>",
-            "description" "<string description>",
+            "description": "<string description>",
             "length_limit": {
                 "type": "[absolute, relative]",
                 "value": "<value of length limit>",
