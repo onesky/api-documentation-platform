@@ -22,6 +22,7 @@ Format can be one of the following:
         <li>YML</li>
         <li>YAML</li>
         <li>ADEMPIERE_XML</li>
+        <li>IDEMPIERE_XML</li>
         <li>QT_TS_XML</li>
         <li>TMX</li>
         <li>L10N</li>
