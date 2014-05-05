@@ -16,8 +16,6 @@ This is new Platform API and is not compatible with the [Classic API](http://dev
 **String**
 - [**File**](/resources/file.md)
 - [**Translation**](/resources/translation.md)
-- [**Phrase Collection**](/resources/phrase_collection.md)
-- [**Phrase Collection Attachment**](/resources/phrase_collection_attachment.md)
 - [**Import Task**](/resources/import_task.md)
 - [**Screenshot**](/resources/screenshot.md)
 
