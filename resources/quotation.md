@@ -136,6 +136,33 @@ status 200 OK
             "will_complete_at": "2013-01-01T23:00:00+0000",
             "will_complete_at_timestamp": 13453435132,
             "seconds_to_complete": 1234567
+        },
+        "translation_only_with_preferred_translator": {
+            "string_count": 2013,
+            "word_count": 639,
+            "per_word_cost": "0.01",
+            "total_cost": "20.13",
+            "will_complete_at": "2013-01-01T23:00:00+0000",
+            "will_complete_at_timestamp": 13453435132,
+            "seconds_to_complete": 1234567
+        },
+        "translation_and_review_with_preferred_translator": {
+            "string_count": 2013,
+            "word_count": 639,
+            "per_word_cost": "0.02",
+            "total_cost": "40.26",
+            "will_complete_at": "2013-01-02T23:00:00+0000",
+            "will_complete_at_timestamp": 1357167600,
+            "seconds_to_complete": 2345678
+        },
+        "review_only_with_preferred_translator": {
+            "string_count": 2013,
+            "word_count": 639,
+            "per_word_cost": "0.005",
+            "total_cost": "10.07",
+            "will_complete_at": "2013-01-01T23:00:00+0000",
+            "will_complete_at_timestamp": 13453435132,
+            "seconds_to_complete": 1234567
         }
     }
 }
