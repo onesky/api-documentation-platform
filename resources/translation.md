@@ -5,7 +5,7 @@
 
 
 ### Export - export translations in files
-This action will create files from translations with specified locales and format. When translation file is ready, this action will simply response with the file.
+This action will create files from translations with specified locale. When translation file is ready, this action will simply response with the file.
 
     GET https://platform.api.onesky.io/1/projects/:project_id/translations
 
@@ -28,7 +28,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td><code>zh-TW</code></td>
-        <td>Specify languages of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
+        <td>Specify language of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
     </tr>
     <tr>
         <td>source_file_name</td>
