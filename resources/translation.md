@@ -69,7 +69,7 @@ file
 ### Export JSON - export translations in JSON
 This action will return translations with specified locale in JSON format.
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/translations/json-export
+    GET https://platform.api.onesky.io/1/projects/:project_id/translations/export/json
 
 **Authentication**
 
