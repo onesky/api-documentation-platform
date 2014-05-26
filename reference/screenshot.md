@@ -44,14 +44,16 @@
                     "x": 460,
                     "y": 30,
                     "width": 150,
-                    "height": 50
+                    "height": 50,
+                    "file": "string.po"
                 },
                 {
                     "key": "common.nav.product.television",
                     "x": 460,
                     "y": 80,
                     "width": 150,
-                    "height": 50
+                    "height": 50,
+                    "file": "string.po"
                 },
                 ...
             ]
@@ -65,14 +67,16 @@
                     "x": 520,
                     "y": 60,
                     "width": 150,
-                    "height": 50
+                    "height": 50,
+                    "file": "string.po"
                 },
                 {
                     "key": "common.footer.contactus",
                     "x": 520,
                     "y": 110,
                     "width": 150,
-                    "height": 50
+                    "height": 50,
+                    "file": "string.po"
                 },
                 ...
             ]
@@ -126,6 +130,12 @@ Translations bind to a screenshot.
         <td></td>
         <td>Height of the translation component</td>
     </tr>
+    <tr>
+        <td>file</td>
+        <td>optional</td>
+        <td><code>en.yml</code></td>
+        <td>Name of the string file</td>
+    </tr>
 </table>
 
 
@@ -138,14 +148,16 @@ Translations bind to a screenshot.
             "x": 460,
             "y": 30,
             "width": 150,
-            "height": 50
+            "height": 50,
+            "file": "string.po"
         },
         {
             "key": "common.nav.product.television",
             "x": 460,
             "y": 180,
             "width": 150,
-            "height": 50
+            "height": 50,
+            "file": "string.po"
         },
         ...
     ]
