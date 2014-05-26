@@ -108,7 +108,15 @@ status 200 OK
 ``` json
 {
     "meta": {
-        "status": 200
+        "status": 200,
+        "language": {
+            "code": "en-US",
+            "english_name": "English (United States)",
+            "local_name": "English (United States)",
+            "locale": "en",
+            "region" : "US"
+        },
+        "file_name": "string.po"
     },
     "data": {
         "key1": "value1",
