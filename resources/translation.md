@@ -1,6 +1,6 @@
 ## Translation
 - [Export](#export---export-translations-in-files)
-- [JSON Export](#export---export-translations-in-json)
+- [Export JSON](#export-json---export-translations-in-json)
 - [Status](#status---translations-status)
 
 
@@ -66,7 +66,7 @@ file
 [Back to top](#translation)
 
 
-### JSON Export - export translations in JSON
+### Export JSON - export translations in JSON
 This action will return translations with specified locale in JSON format.
 
     GET https://platform.api.onesky.io/1/projects/:project_id/translations/json-export
@@ -90,7 +90,7 @@ Required. Details described [here](/README.md#authentication)
         <td>required</td>
         <td></td>
         <td><code>zh-TW</code></td>
-        <td>Specify languages of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
+        <td>Specify language of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
     </tr>
     <tr>
         <td>file_name</td>
