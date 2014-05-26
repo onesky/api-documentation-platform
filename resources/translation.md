@@ -1,5 +1,6 @@
 ## Translation
 - [Export](#export---export-translations-in-files)
+- [JSON Export](#export---export-translations-in-json)
 - [Status](#status---translations-status)
 
 
@@ -61,6 +62,64 @@ status 204 No content
 When translation file is ready.
 ```
 file
+```
+[Back to top](#translation)
+
+
+### JSON Export - export translations in JSON
+This action will return translations with specified locale in JSON format.
+
+    GET https://platform.api.onesky.io/1/projects/:project_id/translations/json-export
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>locale</td>
+        <td>required</td>
+        <td></td>
+        <td><code>zh-TW</code></td>
+        <td>Specify languages of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
+    </tr>
+    <tr>
+        <td>file_name</td>
+        <td>required</td>
+        <td></td>
+        <td><code>string.po</code></td>
+        <td>Specify the name of the source file.</td>
+    </tr>
+</table>
+
+**Response**
+```
+status 200 OK
+```
+``` json
+{
+    "meta": {
+        "status": 200
+    },
+    "data": {
+        "key1": "value1",
+        "key2": "value2",
+        "key3": "value3",
+        "word": {
+            "one": "word",
+            "other": "words"
+        }
+    }
+}
 ```
 [Back to top](#translation)
 
