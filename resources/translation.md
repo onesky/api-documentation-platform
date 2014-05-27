@@ -116,6 +116,14 @@ status 200 OK
         "DESCRIPTION": "App description",
         "APP_KEYWORD": {
             "popular app": "popular app"
+        },
+        "APP_IAP_NAME": {
+            "iap_product1": "Product 1",
+            "iap_product2": "Product 2"
+        },
+        "APP_IAP_DESCRIPTION": {
+            "iap_product1": "Product 1 description",
+            "iap_product2": "Product 2 description"
         }
     }
 }
