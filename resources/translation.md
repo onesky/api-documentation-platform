@@ -1,6 +1,6 @@
 ## Translation
 - [Export](#export---export-translations-in-files)
-- [Export JSON](#export-json---export-translations-in-json)
+- [App Description](#app-description---export-translations-of-app-store-description-in-json)
 - [Status](#status---translations-status)
 
 
@@ -66,10 +66,10 @@ file
 [Back to top](#translation)
 
 
-### Export JSON - export translations in JSON
-This action will return translations with specified locale in JSON format.
+### App Description - export translations of App Store Description in JSON
+This action is available for project of App Store Description and will export translations with specified locale in JSON format.
 
-    GET https://platform.api.onesky.io/1/projects/:project_id/translations/export/json
+    GET https://platform.api.onesky.io/1/projects/:project_id/translations/app-descriptions
 
 **Authentication**
 
@@ -92,13 +92,6 @@ Required. Details described [here](/README.md#authentication)
         <td><code>zh-TW</code></td>
         <td>Specify language of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
     </tr>
-    <tr>
-        <td>file_name</td>
-        <td>required</td>
-        <td></td>
-        <td><code>string.po</code></td>
-        <td>Specify the name of the source file.</td>
-    </tr>
 </table>
 
 **Response**
@@ -115,17 +108,12 @@ status 200 OK
             "local_name": "English (United States)",
             "locale": "en",
             "region" : "US"
-        },
-        "file_name": "string.po"
+        }
     },
     "data": {
-        "key1": "value1",
-        "key2": "value2",
-        "key3": "value3",
-        "word": {
-            "one": "word",
-            "other": "words"
-        }
+        "app_name": "My App Name",
+        "title": "App title",
+        "description": "App description"
     }
 }
 ```
