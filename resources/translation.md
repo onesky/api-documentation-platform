@@ -111,9 +111,12 @@ status 200 OK
         }
     },
     "data": {
-        "app_name": "My App Name",
-        "title": "App title",
-        "description": "App description"
+        "APP_NAME": "My App Name",
+        "TITLE": "App title",
+        "DESCRIPTION": "App description",
+        "APP_KEYWORD": {
+            "popular app": "popular app"
+        }
     }
 }
 ```
