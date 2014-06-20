@@ -1,4 +1,4 @@
-## Groups
+## Groupings
 
 
 **Parameters**
