@@ -88,7 +88,7 @@
         <td>file</td>
         <td>optional</td>
         <td><code>en.yml</code></td>
-        <td>Name of the string file</td>
+        <td>Name of the string file that the phrase belongs to</td>
     </tr>
 </table>
 
