@@ -40,7 +40,7 @@ status 201 Created
 
 ### Grouping - group related strings of same screenshot
 
-    POST https://platform.api.onesky.io/1/projects/:project_id/screenshots/groupping
+    POST https://platform.api.onesky.io/1/projects/:project_id/screenshots/grouping
 
 **Authentication**
 
