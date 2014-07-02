@@ -36,6 +36,13 @@ Required. Details described [here](/README.md#authentication)
         <td></td>
         <td>Set how many groups to retrieve for each time. (max: 100, min: 1)</td>
     </tr>
+    <tr>
+        <td>file_name</td>
+        <td>optional</td>
+        <td></td>
+        <td><code>string.po</code></td>
+        <td>Filter orders by file name.</td>
+    </tr>
 </table>
 
 **Response**
