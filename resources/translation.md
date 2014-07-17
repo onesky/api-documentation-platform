@@ -1,5 +1,6 @@
 ## Translation
 - [Export](#export---export-translations-in-files)
+- [Export Multilingual File](#export-multilingual-file---export-translations-in-multilingual-files)
 - [App Description](#app-description---export-translations-of-app-store-description-in-json)
 - [Status](#status---translations-status)
 
@@ -46,6 +47,60 @@ Required. Details described [here](/README.md#authentication)
     </tr>
 </table>
 *Assume `locale = "zh-TW"` and `source_file_name = "string.po"`
+
+**Response**
+
+When translation file is not ready. If the file is not processing, this will trigger the action to create file.
+```
+status 202 Accepted
+```
+
+When no string is ready in the file.
+```
+status 204 No content
+```
+
+When translation file is ready.
+```
+file
+```
+[Back to top](#translation)
+
+### Export Multilingual File - Export Translations in Multilingual Files
+This action will create files from translations of specified file. When translation file is ready, this action will simply response with the file.
+
+    GET https://platform.api.onesky.io/1/projects/:project_id/translations/multilingual
+
+**Authentication**
+
+Required. Details described [here](/README.md#authentication)
+
+**Parameters**
+
+<table>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td><strong>Required?</strong></td>
+        <td><strong>Default</strong></td>
+        <td><strong>Sample</strong></td>
+        <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+        <td>source_file_name</td>
+        <td>required</td>
+        <td></td>
+        <td><code>app.json</code></td>
+        <td>Specify the name of the source file.</td>
+    </tr>
+    <tr>
+        <td>export_file_name</td>
+        <td>optional</td>
+        <td>*<code>app.json</code></td>
+        <td><code>string.json</code></td>
+        <td>Specify the name of export file that is the file to be returned.</td>
+    </tr>
+</table>
+*Assume `source_file_name = "app.json"`
 
 **Response**
 
