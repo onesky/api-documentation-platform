@@ -202,4 +202,13 @@ Required. Details described [here](/README.md#authentication)
 ```
 status 200 OK
 ```
+``` json
+{
+    "meta": {
+        "status": 200
+    },
+    "data": {
+        "name": "string.po"
+    }
+}
 [Back to top](#file)
