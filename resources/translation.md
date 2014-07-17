@@ -67,7 +67,7 @@ file
 [Back to top](#translation)
 
 ### Export Multilingual File - Export Translations in Multilingual Files
-This action will create files from translations of specified file. When translation file is ready, this action will simply response with the file.
+This action will create files from translations of specified file. When translation file is ready, this action will simply response with the file. Currently supported format is I18NEXT_MULTILINGUAL_JSON .
 
     GET https://platform.api.onesky.io/1/projects/:project_id/translations/multilingual
 
