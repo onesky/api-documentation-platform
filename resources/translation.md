@@ -104,7 +104,7 @@ Required. Details described [here](/README.md#authentication)
         <td>optional</td>
         <td></td>
         <td><code>I18NEXT_MULTILINGUAL_JSON</code></td>
-        <td>Export file format, if different from source file format.<br/><b>Recommend only convert from I18NEXT_HIERARCHICAL_JSON</b></td>
+        <td>Specify export file format, if different from source file format.<br/><b>Recommend only convert from I18NEXT_HIERARCHICAL_JSON</b></td>
     </tr>
 </table>
 *Assume `source_file_name = "app.json"`
