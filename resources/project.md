@@ -242,6 +242,7 @@ status 200 OK
             "region": "US",
             "is_base_language": true,
             "is_ready_to_publish": true,
+            "translation_progress": "100%"
         },
         {
             "code": "ja-JP",
@@ -251,6 +252,7 @@ status 200 OK
             "region": "JP",
             "is_base_language": false,
             "is_ready_to_publish": true,
+            "translation_progress": "98%"
         },
         {
             "code": "ko-KR",
@@ -260,6 +262,7 @@ status 200 OK
             "region": "KR",
             "is_base_language": false,
             "is_ready_to_publish": true,
+            "translation_progress": "56%"
         },
         ...
     ]
