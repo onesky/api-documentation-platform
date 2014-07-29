@@ -240,6 +240,7 @@ status 200 OK
             "local_name": "English (United States)",
             "locale": "en",
             "region": "US",
+            "custom_locale" : "en-Custom",
             "is_base_language": true,
             "is_ready_to_publish": true,
             "translation_progress": "100%"
@@ -250,6 +251,7 @@ status 200 OK
             "local_name": "日本語",
             "locale": "ja",
             "region": "JP",
+            "custom_locale" : "jp-Custom",
             "is_base_language": false,
             "is_ready_to_publish": true,
             "translation_progress": "98%"
@@ -260,6 +262,7 @@ status 200 OK
             "local_name": "한국어",
             "locale": "ko",
             "region": "KR",
+            "custom_locale" : null,
             "is_base_language": false,
             "is_ready_to_publish": true,
             "translation_progress": "56%"
