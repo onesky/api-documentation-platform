@@ -3,6 +3,7 @@ Format can be one of the following:
 <table>
     <ul>
         <li>IOS_STRINGS</li>
+        <li>IOS_STRINGSDICT_XML</li>
         <li>GNU_PO</li>
         <li>ANDROID_XML</li>
         <li>ANDROID_JSON</li>
