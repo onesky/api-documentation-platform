@@ -16,36 +16,12 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>locale</td>
-        <td>required</td>
-        <td></td>
-        <td><code>zh-TW</code></td>
-        <td>Specify language of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
-    </tr>
-    <tr>
-        <td>source_file_name</td>
-        <td>required</td>
-        <td></td>
-        <td><code>string.po</code></td>
-        <td>Specify the name of the source file.</td>
-    </tr>
-    <tr>
-        <td>export_file_name</td>
-        <td>optional</td>
-        <td>*<code>string_zh-TW.po</code></td>
-        <td><code>zh-TW.po</code></td>
-        <td>Specify the name of export file that is the file to be returned.</td>
-    </tr>
-</table>
+Name | Required? | Default | Sample | Description
+---- | --------- | ------- | ------ | -----------
+locale | required | | `zh-TW` | Specify language of translations to export. Please refer to [GET locales](/resources/locale.md).
+source_file_name | required | | `string.po` | Specify the name of the source file.
+export_file_name | optional | *`string_zh-TW.po` | `zh-TW.po` | Specify the name of export file that is the file to be returned.
+
 *Assume `locale = "zh-TW"` and `source_file_name = "string.po"`
 
 **Response**
@@ -67,7 +43,7 @@ file
 [Back to top](#translation)
 
 ### Export Multilingual File - Export Translations in Multilingual Files
-This action will create files from translations of specified file. When translation file is ready, this action will simply response with the file. Currently supported format is I18NEXT_MULTILINGUAL_JSON .
+This action will create files from translations of specified file. When translation file is ready, this action will simply response with the file. Currently supported formats are `I18NEXT_MULTILINGUAL_JSON` and `BADLAND_JSON` .
 
     GET https://platform.api.onesky.io/1/projects/:project_id/translations/multilingual
 
@@ -77,36 +53,12 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>source_file_name</td>
-        <td>required</td>
-        <td></td>
-        <td><code>app.json</code></td>
-        <td>Specify the name of the source file.</td>
-    </tr>
-    <tr>
-        <td>export_file_name</td>
-        <td>optional</td>
-        <td>*<code>app.json</code></td>
-        <td><code>string.json</code></td>
-        <td>Specify the name of export file that is the file to be returned.</td>
-    </tr>
-    <tr>
-        <td>file_format</td>
-        <td>optional</td>
-        <td></td>
-        <td><code>I18NEXT_MULTILINGUAL_JSON</code></td>
-        <td>Specify export file format, if different from source file format.<br/><b>Recommend only convert from I18NEXT_HIERARCHICAL_JSON</b></td>
-    </tr>
-</table>
+Name | Required? | Default | Sample | Description
+---- | --------- | ------- | ------ | -----------
+source_file_name | required | | `app.json` | Specify the name of the source file.
+export_file_name | optional | \*`app.json` | `string.json` | Specify the name of export file that is the file to be returned.
+file_format | optional | | `I18NEXT_MULTILINGUAL_JSON` | Specify export file format, if different from source file format.<br />**Recommend only convert from** `I18NEXT_HIERARCHICAL_JSON`**.**
+
 *Assume `source_file_name = "app.json"`
 
 **Response**
@@ -139,22 +91,9 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>locale</td>
-        <td>required</td>
-        <td></td>
-        <td><code>zh-TW</code></td>
-        <td>Specify language of translations to export. Please refer to <a href="/resources/locale.md">GET locales</a></td>
-    </tr>
-</table>
+Name | Required? | Default | Sample | Description
+---- | --------- | ------- | ------ | -----------
+locale | required | | `zh-TW` | Specify language of translations to export. Please refer to [GET locales](/resources/locale.md).
 
 **Response**
 ```
@@ -204,29 +143,11 @@ Required. Details described [here](/README.md#authentication)
 
 **Parameters**
 
-<table>
-    <tr>
-        <td><strong>Name</strong></td>
-        <td><strong>Required?</strong></td>
-        <td><strong>Default</strong></td>
-        <td><strong>Sample</strong></td>
-        <td><strong>Description</strong></td>
-    </tr>
-    <tr>
-        <td>file_name</td>
-        <td>required</td>
-        <td></td>
-        <td><code>string.po</code></td>
-        <td>Specify the name of the source file to be translated.</td>
-    </tr>
-    <tr>
-        <td>locale</td>
-        <td>required</td>
-        <td></td>
-        <td><code>zh-TW</code></td>
-        <td>Specify language of translation. Please refer to <a href="/resources/locale.md">GET locales</a></td>
-    </tr>
-</table>
+Name | Required? | Default | Sample | Description
+---- | --------- | ------- | ------ | -----------
+file_name | required | | `string.po` | Specify the name of the source file to be translated.
+locale | required | | `zh-TW` | Specify language of translation. Please refer to [GET locales](/resources/locale.md).
+
 **Response**
 
 ```
