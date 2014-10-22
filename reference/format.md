@@ -28,4 +28,3 @@ Format can be one of the following:
 * L10N
 * INI
 * REQUIREJS
-* BADLAND_JSON
