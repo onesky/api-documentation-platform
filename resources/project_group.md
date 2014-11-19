@@ -53,11 +53,11 @@ status 200 OK
     },
     "data": [
         {
-            "id": 365
+            "id": 365,
             "name": "Travel Magazine"
         },
         {
-            "id": 366
+            "id": 366,
             "name": "Fashion Magazine"
         }
     ]
