@@ -97,3 +97,6 @@ status 400 bad request
 
 **Python**
 - [onesky-python](https://github.com/Jana-Mobile/onesky-python) - danob-jana
+
+**Ruby**
+- [onesky-ruby](https://github.com/onesky/onesky-ruby) - OneSky
