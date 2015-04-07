@@ -70,7 +70,8 @@ status 200 OK
 }
 ```
 
-*Assume `page = 2` and `per_page = 25`
+* Assume `page = 2` and `per_page = 25`
+* Note that `next_page`, `prev_page`, `first_page` and `last_page` can be `null`
 
 [Back to top](#project-group)
 
