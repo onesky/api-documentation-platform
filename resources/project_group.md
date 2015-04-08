@@ -51,10 +51,10 @@ status 200 OK
         "status": 200,
         "record_count": 65,
         "page_count": 3,
-        "next_page": "http://platform.api.onesky.io/1/project-groups?per_page=25&page=3", *
-        "prev_page": "http://platform.api.onesky.io/1/project-groups?per_page=25&page=1", *
-        "first_page": "http://platform.api.onesky.io/1/project-groups?per_page=25&page=1", *
-        "last_page": "http://platform.api.onesky.io/1/project-groups?per_page=25&page=3" *
+        "next_page": "http://platform.api.onesky.io/1/project-groups?per_page=25&page=3",
+        "prev_page": "http://platform.api.onesky.io/1/project-groups?per_page=25&page=1",
+        "first_page": "http://platform.api.onesky.io/1/project-groups?per_page=25&page=1",
+        "last_page": "http://platform.api.onesky.io/1/project-groups?per_page=25&page=3"
     },
     "data": [
         {
@@ -69,10 +69,9 @@ status 200 OK
     ]
 }
 ```
-
-\* Assume `page = 2` and `per_page = 25`
-
-\* Note that `next_page`, `prev_page`, `first_page` and `last_page` can be `null`
+Remark:
+* Assume `page = 2` and `per_page = 25`
+* Note that `next_page`, `prev_page`, `first_page` and `last_page` can be `null`
 
 [Back to top](#project-group)
 
