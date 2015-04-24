@@ -101,13 +101,6 @@ status 200 OK
     "data": {
         "id": 365,
         "name": "Travel Magazine",
-        "base_language": {
-            "code": "en-US",
-            "english_name": "English (United States)",
-            "local_name": "English (United States)",
-            "locale": "en",
-            "region" : "US"
-        },
         "enabled_language_count": 3,
         "project_count": 6
     }
