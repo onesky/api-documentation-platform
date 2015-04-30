@@ -47,7 +47,12 @@ status 200 OK
 {
     "meta": {
         "status": 200,
-        "record_count": 16
+        "record_count": 65,
+        "page_count": 3,
+        "next_page": "http://platform.api.onesky.io/1/projects/:project_id/files?per_page=25&page=3",
+        "prev_page": "http://platform.api.onesky.io/1/projects/:project_id/files?per_page=25&page=1",
+        "first_page": "http://platform.api.onesky.io/1/projects/:project_id/files?per_page=25&page=1",
+        "last_page": "http://platform.api.onesky.io/1/projects/:project_id/files?per_page=25&page=3"
     },
     "data": [
         {
@@ -81,6 +86,8 @@ status 200 OK
 Remark:
 - `status` can be either `completed`, `in-progress` or `failed`.
 - Manual input strings will display as a separate file with no `last_import`, `uploaded_at` and `uploaded_at_timestamp`.
+- Assume `page = 2` and `per_page = 25`
+- Note that `next_page`, `prev_page`, `first_page` and `last_page` can be `null`
 
 [Back to top](#file)
 
