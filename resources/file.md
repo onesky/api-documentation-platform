@@ -86,8 +86,8 @@ status 200 OK
 Remark:
 - `status` can be either `completed`, `in-progress` or `failed`.
 - Manual input strings will display as a separate file with no `last_import`, `uploaded_at` and `uploaded_at_timestamp`.
-- Assume `page = 2` and `per_page = 25`
-- Note that `next_page`, `prev_page`, `first_page` and `last_page` can be `null`
+- Assume `page = 2` and `per_page = 25`.
+- Note that `next_page`, `prev_page`, `first_page` and `last_page` can be `null`.
 
 [Back to top](#file)
 
