@@ -54,7 +54,7 @@
         }
     },
     "data": {
-	    "TITLE": "Title",
+	    "TITLE": "App Title",
 	    "DESCRIPTION": "Description",
 	    "RECENT_CHANGES": "Recent Changes",
 	    "SHORT_DESCRIPTION": "Short Description",
@@ -85,7 +85,7 @@
         }
     },
     "data": {
-	    "APP_NAME": "Application Name",
+	    "APP_NAME": "App Name",
 	    "DETAILED_DESCRIPTION": "Detailed Description",
 	    "SHORT_DESCRIPTION": "Short Description",
 	    "KEYWORDS": {
@@ -111,10 +111,10 @@
         }
     },
     "data": {
-	    "AMAZON_APPSTORE_TITLE": "Displaying Title",
+	    "AMAZON_APPSTORE_TITLE": "App Title",
 	    "AMAZON_APPSTORE_SHORT_DESCRIPTION": "Short Description",
 	    "AMAZON_APPSTORE_LONG_DESCRIPTION": "Long Description",
-	    "AMAZON_APPSTORE_FEATURE_BULLETS": "iap_productFeatures",
+	    "AMAZON_APPSTORE_FEATURE_BULLETS": "Features",
 	    "AMAZON_APPSTORE_KEYWORDS": {
 	        "Keyword1": "Keyword 1",
 	        "Keyword2": "Keyword 2"
@@ -138,7 +138,7 @@
         }
     },
     "data": {
-	    "TITLE": "Title",
+	    "TITLE": "App Title",
 	    "DESCRIPTION": "Description",
 	    "APP_TAG": {
 	        "Tag1": "Tag 1",
@@ -164,8 +164,8 @@
     },
     "data": {
 	    "DISPLAY_NAME": "App Name",
-	    "DETAILED_DESCRIPTION": "Long Description",
-	    "DESCRIPTION": "Short Description",
+	    "DETAILED_DESCRIPTION": "Detailed Description",
+	    "DESCRIPTION": "Description",
 	    "TAGLINE": "Tagline"
 	}
 }
