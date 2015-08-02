@@ -100,3 +100,6 @@ status 400 bad request
 
 **Ruby**
 - [onesky-ruby](https://github.com/onesky/onesky-ruby) - OneSky
+
+**Rails**
+- [onesky-rails](https://github.com/onesky/onesky-rails) - OneSky
