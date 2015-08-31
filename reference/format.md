@@ -15,6 +15,7 @@ Format can be one of the following:
 * `RESX`
 * `HIERARCHICAL_JSON` (common key-value JSON format)
 * `PHP`
+* `PHP_SHORT_ARRAY` ([Alternative array syntax supported by PHP >= 5.4](http://php.net/manual/en/language.types.array.php))
 * `PHP_VARIABLES`
 * `HTML`
 * `RESW`
