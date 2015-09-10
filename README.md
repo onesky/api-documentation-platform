@@ -28,7 +28,7 @@ This is new Platform API and is not compatible with the [Classic API](http://dev
 
 ## Authentication
 
-All of the endpoints require you to authenticate. You will have to find your own API key and API secret. First login to [oneskyapp](http://www.oneskyapp.com) and find the [API key](http://support.oneskyapp.com/solution/categories/74754/folders/150388/articles/89104-how-to-find-your-api).
+All of the endpoints require you to authenticate. You will have to find your own API key and API secret. First login to [oneskyapp](http://www.oneskyapp.com) and find the [API key](http://support.oneskyapp.com/hc/en-us/articles/206887797-How-to-find-your-API-keys-).
 
 #### Parameters
 <table>
