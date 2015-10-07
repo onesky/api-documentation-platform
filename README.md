@@ -107,3 +107,9 @@ status 400 bad request
 **Grunt**
 - [grunt-onesky-import](https://github.com/howardhenry/grunt-onesky-import) - howardhenry
 - [grunt-onesky-export](https://github.com/howardhenry/grunt-onesky-export) - howardhenry
+
+**Node.js**
+- [nodejs-onesky-utils](https://github.com/brainly/nodejs-onesky-utils) - Brainly
+
+**Go**
+- [onesky-go](https://github.com/SebastianCzoch/onesky-go) - Sebastian Czoch
