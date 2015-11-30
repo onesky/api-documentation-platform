@@ -133,7 +133,7 @@ status 200 OK
 
 
 ### Status - translations status
-Return the progress of the translation of a speicfic file.
+Return the progress of the translation of a specific file.
 
     GET https://platform.api.onesky.io/1/projects/:project_id/translations/status
 
