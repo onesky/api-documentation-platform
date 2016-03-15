@@ -1,4 +1,4 @@
-## Phrase Collection Attachment
+## Phrase Collection Attachment ( Deprecated )
 Files attached to a phrase collection
 - [List](#list---list-attachments-of-a-project)
 - [Upload](#upload---upload-an-attachment)
