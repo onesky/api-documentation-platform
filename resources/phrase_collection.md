@@ -1,4 +1,4 @@
-## Phrase Collection
+## Phrase Collection ( Deprecated )
 - [List](#list---list-phrase-collections)
 - [Show](#show---show-a-phrase-collection)
 - [Import](#import---create-or-edit-phrase-collections)
