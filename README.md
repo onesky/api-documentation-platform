@@ -95,6 +95,9 @@ status 400 bad request
 **PHP**
 - [api-library-php5](https://github.com/onesky/api-library-php5) - OneSky
 
+**PHP Symphony**
+- [OneSkyBundle](https://github.com/OpenClassrooms/OneSkyBundle) - OpenClassrooms
+
 **Python**
 - [onesky-python](https://github.com/Jana-Mobile/onesky-python) - danob-jana
 
