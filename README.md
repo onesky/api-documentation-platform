@@ -9,22 +9,49 @@ This is new Platform API and is not compatible with the [Classic API](http://dev
 ## Resources
 
 **Project**
-- [**Project Group**](/resources/project_group.md)
-- [**Project**](/resources/project.md)
-- [**Project Type**](/resources/project_type.md)
+- [**Project Group**](/resources/project_group.md): 
+    -   LIST all project groups
+    -   SHOW project group details
+    -   CREATE a new project group
+    -   DELETE a project group
+    -   list enabled LANGUAGES 
+- [**Project**](/resources/project.md): 
+    - LIST projects of a project group
+    - SHOW project details
+    - CREATE a new project
+    - UPDATE a project
+    - DELETE a project
+    - list LANGUAGES of a project 
+- [**Project Type**](/resources/project_type.md): 
+    - LIST all project types
 
 **String**
-- [**File**](/resources/file.md)
-- [**Translation**](/resources/translation.md)
-- [**Import Task**](/resources/import_task.md)
-- [**Screenshot**](/resources/screenshot.md)
+- [**File**](/resources/file.md): 
+    - LIST uploaded files
+    - UPLOAD a file 
+    - DELETE a file
+- [**Translation**](/resources/translation.md): 
+    - EXPORT translations in files
+    - export translations in MULTILINGUAL files
+    - export translations of APP STORE Description
+    - GET translation status
+- [**Import Task**](/resources/import_task.md): 
+    - LIST import tasks
+    - SHOW import task
+- [**Screenshot**](/resources/screenshot.md): 
+    - UPLOAD screenshots
 
 **Order**
-- [**Quotation**](/resources/quotation.md)
-- [**Order**](/resources/order.md)
+- [**Quotation**](/resources/quotation.md): 
+    - SHOW a quotation
+- [**Order**](/resources/order.md): 
+    - LIST all orders 
+    - SHOW order details
+    - CREATE an order
 
 **Language**
-- [**Locale**](/resources/locale.md)
+- [**Locale**](/resources/locale.md): 
+    - LIST all locales
 
 ## Authentication
 
