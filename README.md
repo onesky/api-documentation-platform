@@ -142,3 +142,6 @@ status 400 bad request
 
 **Go**
 - [onesky-go](https://github.com/SebastianCzoch/onesky-go) - Sebastian Czoch
+
+**C#**
+- [OneSky.CSharp](https://github.com/QuadRatNewBy/OneSky.CSharp)- QuadRatNewBy
