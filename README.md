@@ -25,7 +25,7 @@ All of the endpoints require you to authenticate. You will have to find your own
     <tr>
         <td><code>timestamp</code></td>
         <td>integer</td>
-        <td>Current unix timestamp (GMT+0) in <b>seconds</b></td>
+        <td>Current unix timestamp (GMT+0) in <a href="http://www.epochconverter.com/">seconds</a></td>
     </tr>
     <tr>
         <td><code>dev_hash</code></td>
