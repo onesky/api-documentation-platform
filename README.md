@@ -25,7 +25,7 @@ All of the endpoints require you to authenticate. You will have to find your own
     <tr>
         <td><code>timestamp</code></td>
         <td>integer</td>
-        <td>Current unix timestamp (GMT+0)</td>
+        <td>Current unix timestamp (GMT+0) in <b>seconds</b></td>
     </tr>
     <tr>
         <td><code>dev_hash</code></td>
@@ -70,6 +70,8 @@ status 400 bad request
   "data": {}
 }
 ```
+For more authentication error troubleshooting, please see this [article](https://support.oneskyapp.com/hc/en-us/articles/222464588-I-received-an-authentication-error-when-using-the-API).
+
 ## Resources
 
 **Project**
