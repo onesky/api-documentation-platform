@@ -131,6 +131,13 @@ Required. Details described [here](/README.md#authentication)
         <td></td>
         <td>For strings that cannot be found in newly uploaded file with same file name, keep those strings unchange if set to <code>true</code>. Deprecate those strings if set to <code>false</code>. Notice that different files will not interfere each other in the same project. For example, with setting <code>is_keeping_all_strings</code> to <code>false</code>, uploading <code>en2.po</code> will not deprecate strings of previously uploaded file, <code>en.po</code>.</td>
     </tr>
+    <tr>
+        <td>is_allow_translation_same_as_original</td>
+        <td>optional</td>
+        <td><code>false</code></td>
+        <td></td>
+        <td>This setting applies to translation upload, skip importing translations that are the same as source text if set to <code>false</code>. Keeping the translations that are the same as source text if set to <code>true</code>.</td>
+    </tr>
 </table>
 
 **Request**
