@@ -20,7 +20,7 @@ All of the endpoints require you to authenticate. You will have to find your own
     <tr>
         <td><code>api_key</code></td>
         <td>string</td>
-        <td>Your own API key</td>
+        <td>Your own API public key</td>
     </tr>
     <tr>
         <td><code>timestamp</code></td>
