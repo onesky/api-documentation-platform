@@ -25,6 +25,7 @@ Format can be one of the following:
 * `IDEMPIERE_XML`
 * `QT_TS_XML`
 * `XLIFF`
+* `XLF`
 * `RESJSON` ([a Microsoft defined format](https://msdn.microsoft.com/en-us/library/windows/apps/hh465248.aspx))
 * `TMX`
 * `L10N`
