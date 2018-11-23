@@ -150,3 +150,6 @@ For more authentication error troubleshooting, please see this [article](https:/
 
 **.NET**
 - [Sirius.OneSky](https://github.com/siriusch/Sirius.OneSky) - siriusch
+
+**Elixir**
+- [onesky.ex](https://github.com/ahtung/onesky.ex) - Ahtung
