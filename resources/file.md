@@ -81,7 +81,7 @@ status 200 OK
 Remark:
 - `status` can be either `completed`, `in-progress` or `failed`.
 - Manual input strings will display as a separate file with no `last_import`, `uploaded_at` and `uploaded_at_timestamp`.
-- File history is accessible up to one year. For files imported longer than a year ago, `id`  will display as `0` and `status` will display as `completed`.
+- Import history is accessible up to one year. For files imported longer than one year ago, `id`  will display as `0` and `status` will display as `completed`.
 
 [Back to top](#file)
 
