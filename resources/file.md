@@ -51,7 +51,7 @@ status 200 OK
     },
     "data": [
         {
-            "name": "strings.po",
+            "file_name": "strings.po",
             "string_count": 236,
             "last_import": {
                 "id": 123,
@@ -61,7 +61,7 @@ status 200 OK
             "uploaded_at_timestamp": 1381159630
         },
         {
-            "name": "en.yml",
+            "file_name": "en.yml",
             "string_count": 335,
             "last_import": {
                 "id": 109,
@@ -71,7 +71,7 @@ status 200 OK
             "uploaded_at_timestamp": 1380976612
         },
         {
-            "name": "Manually input",
+            "file_name": "Manually input",
             "string_count": 285,
         },
         ...
