@@ -104,8 +104,6 @@ For more authentication error troubleshooting, please see this [article](https:/
 - [**Import Task**](/resources/import_task.md) 
     - LIST import tasks
     - SHOW import task
-- [**Screenshot**](/resources/screenshot.md)
-    - UPLOAD screenshots
 
 **Order**
 - [**Quotation**](/resources/quotation.md)
