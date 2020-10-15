@@ -129,6 +129,9 @@ status 200 OK
     }
 }
 ```
+Remark:
+- Response `data` may vary based on application type. Samples [here](/reference/translation_app_description_samples.md).
+
 [Back to top](#translation)
 
 
