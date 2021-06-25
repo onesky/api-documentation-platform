@@ -121,7 +121,7 @@ For more authentication error troubleshooting, please see this [article](https:/
 **PHP**
 - [api-library-php5](https://github.com/onesky/api-library-php5) - OneSky
 
-**PHP Symphony**
+**PHP Symfony**
 - [OneSkyBundle](https://github.com/OpenClassrooms/OneSkyBundle) - OpenClassrooms
 
 **Python**
