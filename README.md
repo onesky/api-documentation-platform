@@ -31,7 +31,7 @@ All of the endpoints require you to authenticate. You will have to find your own
         <td><code>dev_hash</code></td>
         <td>string</td>
         <td>
-            Calculate with <code>timestamp</code> and <code>api_secret</code>
+            Calculate the hexadecimal digest with <code>timestamp</code> and <code>api_secret</code>
             <br>
             Formula: <code>md5(concatenate(&lt;timestamp&gt;, &lt;api_secret&gt;))</code>
         </td>
@@ -56,6 +56,19 @@ Successful request will response with `2xx` status code together with response b
 
 #### Failure
 Failure request will response with an error status code together with an error message.
+
+Example:
+
+```
+$ timestamp=$(date +%s)
+$ api_key=EXAMPLE26ab0db90d72e28ad0ba1e22ee51
+$ api_secret=EXAMPLEb026324c6904b2a9cb4b88d6d61c
+$ curl "https://platform.api.onesky.io/1/project-groups?api_key=$api_key&timestamp=$timestamp&dev_hash=$(echo -n "$timestamp$api_secret" | md5)"
+{
+    "meta": {"status":200,"record_count":1,"page_count":1,"next_page":null,"prev_page":null,"first_page":null,"last_page":null},
+    "data": [{"id":"34","name":"Test"}]
+}
+```
 
 Example:
 ```
