@@ -243,8 +243,8 @@ status 200 OK
             "is_base_language": true,
             "is_ready_to_publish": true,
             "translation_progress": "100%",
-            "uploaded_at": "2013-10-07T15:27:10+0000",
-            "uploaded_at_timestamp": 1381159630
+            "last_updated_at": "2013-10-07T15:27:10+0000",
+            "last_updated_at_timestamp": 1381159630
         },
         {
             "code": "ja-JP",
@@ -255,8 +255,8 @@ status 200 OK
             "is_base_language": false,
             "is_ready_to_publish": true,
             "translation_progress": "98%",
-            "uploaded_at": "2013-10-07T15:27:10+0000",
-            "uploaded_at_timestamp": 1381159630
+            "last_updated_at": "2013-10-07T15:27:10+0000",
+            "last_updated_at_timestamp": 1381159630
         },
         {
             "code": "ko-KR",
@@ -267,8 +267,8 @@ status 200 OK
             "is_base_language": false,
             "is_ready_to_publish": true,
             "translation_progress": "56%",
-            "uploaded_at": "2013-10-07T15:27:10+0000",
-            "uploaded_at_timestamp": 1381159630
+            "last_updated_at": "2013-10-07T15:27:10+0000",
+            "last_updated_at_timestamp": 1381159630
         },
         ...
     ]
