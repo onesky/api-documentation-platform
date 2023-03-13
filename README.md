@@ -10,6 +10,10 @@ This is new Platform API and is not compatible with the [Classic API](http://dev
 
 All of the endpoints require you to authenticate. You will have to find your own API key and API secret. First login to [OneSky](http://www.oneskyapp.com) and find the [API key](http://support.oneskyapp.com/hc/en-us/articles/206887797-How-to-find-your-API-keys-).
 
+## API Access
+
+This Platform API is available for organizations subscribed to STARTER or above plans.
+
 #### Parameters
 <table>
     <tr>
