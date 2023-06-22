@@ -142,7 +142,7 @@ For more authentication error troubleshooting, please see this [article](https:/
 - [grunt-onesky-export](https://github.com/howardhenry/grunt-onesky-export) - howardhenry
 
 **Node.js**
-- [nodejs-onesky-utils](https://github.com/brainly/nodejs-onesky-utils) - Brainly
+- [nodejs-onesky-utils](https://github.com/brainly/nodejs-onesky-utils) - Brainly (A known issue with the error message ```{ message: 'Unable to fetch document', code: 500 }``` has been identified. To address this issue, a workaround has been proposed here. We recommend that users apply the provided patch before utilizing the package)
 
 **Go**
 - [onesky-go](https://github.com/SebastianCzoch/onesky-go) - Sebastian Czoch
